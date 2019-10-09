@@ -4,9 +4,8 @@ These visualisation codes show visualization modules by Seaborn and Matplotlib o
 ## Area Chart
 By coloring the area between the axis and the line, the area map not only emphasizes the peaks and valleys, but also emphasizes the duration of the high and low points. The longer the high point lasts, the larger the area under the line.
 - Multi-item area chart
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/area.jpg" width="200" height="160" alt="Multi-item area chart"/>
 - Separate multi-item area chart
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/area_grouped.jpg" width="200" height="160" alt="Separate multi-item area chart"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/area.jpg" width="200" height="160" alt="Multi-item area chart"/><img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/area_grouped.jpg" width="200" height="160" alt="Separate multi-item area chart"/>
 ## Bar Chart
 [link text](https:// [link text](https://))
 A bar chart is a classic way to visualise items based on counting or any given indicator.
