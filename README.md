@@ -15,6 +15,7 @@ A bar chart is a classic way to visualise items based on counting or any given i
 - Multi-item grouped bar chart
 - Error bar chart with two groups
 - Stacked bar chart with two groups
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bar.jpg" width="200" height="160" alt="Multi-item area chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bar_grouped.jpg" width="200" height="160" alt="Separate multi-item area chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bar_error.jpg" width="200" height="160" alt="Multi-item area chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bar_stacked.jpg" width="200" height="160" alt="Separate multi-item area chart"/>
 ## Box Plot
 [link text](https:// [link text](https://))
 A box plot or boxplot is a method for graphically depicting groups of numerical data through their quartiles. Displays the five-number summary of a set of data. The five-number summary is the minimum, first quartile, median, third quartile, and maximum.
