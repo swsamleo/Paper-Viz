@@ -53,7 +53,7 @@ A histogram is a graphical display of data using bars of different heights. In a
 A line chart or line plot or line graph or curve chart is a type of chart which displays information as a series of data points called 'markers' connected by straight line segments. It is a basic type of chart common in many fields.
 - Multi-item line chart with categorical colours and marks
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/line.jpg" width="200" height="160" alt="Multi-item line chart with categorical colours and marks"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/line.jpg" width="230" height="160" alt="Multi-item line chart with categorical colours and marks"/>
 
 ## Pie Chart
 A pie chart is the classic way of displaying composition. However, it is generally not recommended now because sometimes the area of the pie would be misleading. Therefore, if you want to use a pie chart, it is highly recommended to explicitly note the percentage or number of each part in the pie chart.
@@ -75,7 +75,7 @@ A radar chart is a graphical method of displaying multivariate data in the form 
 [link text](https:// [link text](https://))
 - Radar chart with two groups
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/radar.jpg" width="180" height="160" alt="Radar chart with two groups"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/radar.jpg" width="190" height="160" alt="Radar chart with two groups"/>
 ## Scatter Plot
 [link text](https:// [link text](https://))
 A scatter plot is a basic chart used to study the relationship between two variables. If you have multiple groups in your data, you might want to visualize each group in a different color.
