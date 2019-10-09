@@ -54,13 +54,14 @@ A line chart or line plot or line graph or curve chart is a type of chart which 
 - Multi-item line chart with categorical colours and marks
 
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/line.jpg" width="200" height="160" alt="Multi-item line chart with categorical colours and marks"/>
+
 ## Pie Chart
 A pie chart is the classic way of displaying composition. However, it is generally not recommended now because sometimes the area of the pie would be misleading. Therefore, if you want to use a pie chart, it is highly recommended to explicitly note the percentage or number of each part in the pie chart.
 [link text](https:// [link text](https://))
 - Pie chart with percentage marked on
 - Circle chart with percentage marked on
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie1.jpg" width="160" height="200" alt="Pie chart with percentage marked on"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie2.jpg" width="160" height="200" alt="Circle chart with percentage marked on"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie1.jpg" width="210" height="160" alt="Pie chart with percentage marked on"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie2.jpg" width="210" height="160" alt="Circle chart with percentage marked on"/>
 ## Pyramid Chart
 [link text](https:// [link text](https://))
 The pyramid can be used to show the distribution of groups sorted by number, or it can be used to show the step-by-step filtering of the population.
