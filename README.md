@@ -60,7 +60,7 @@ A pie chart is the classic way of displaying composition. However, it is general
 - Pie chart with percentage marked on
 - Circle chart with percentage marked on
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie1.jpg" width="200" height="160" alt="Pie chart with percentage marked on"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie2.jpg" width="200" height="160" alt="Circle chart with percentage marked on"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie1.jpg" width="160" height="200" alt="Pie chart with percentage marked on"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie2.jpg" width="160" height="200" alt="Circle chart with percentage marked on"/>
 ## Pyramid Chart
 [link text](https:// [link text](https://))
 The pyramid can be used to show the distribution of groups sorted by number, or it can be used to show the step-by-step filtering of the population.
