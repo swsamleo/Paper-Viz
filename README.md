@@ -61,7 +61,7 @@ A pie chart is the classic way of displaying composition. However, it is general
 - Pie chart with percentage marked on
 - Circle chart with percentage marked on
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie1.jpg" width="230" height="160" alt="Pie chart with percentage marked on"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie2.jpg" width="230" height="160" alt="Circle chart with percentage marked on"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie1.jpg" width="240" height="160" alt="Pie chart with percentage marked on"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie2.jpg" width="240" height="160" alt="Circle chart with percentage marked on"/>
 ## Pyramid Chart
 The pyramid can be used to show the distribution of groups sorted by number, or it can be used to show the step-by-step filtering of the population.
 [link text](https:// [link text](https://))
@@ -69,7 +69,7 @@ The pyramid can be used to show the distribution of groups sorted by number, or 
 - Population pyramid with values marked on
 - Pyramid with values marked on
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pyramid_group.jpg" width="200" height="160" alt="Population pyramid with two groups"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pyramid_groupvalue.jpg" width="200" height="160" alt="Population pyramid with values marked on"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pyramid_group2.jpg" width="200" height="160" alt="Pyramid with values marked on"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pyramid_group.jpg" width="240" height="160" alt="Population pyramid with two groups"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pyramid_groupvalue.jpg" width="240" height="160" alt="Population pyramid with values marked on"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pyramid_group2.jpg" width="240" height="160" alt="Pyramid with values marked on"/>
 ## Radar Chart
 [link text](https:// [link text](https://))
 A radar chart is a graphical method of displaying multivariate data in the form of a two-dimensional chart of three or more quantitative variables represented on axes starting from the same point. The relative position and angle of the axes is typically uninformative.
