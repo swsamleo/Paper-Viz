@@ -32,6 +32,8 @@ A bubble chart is a variation of a scatter chart in which the data points are re
 - Single item bubble plot
 - Multi-item bubble plot with categorical colors
 - Bubble plot with a color map
+
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bubble.jpg" width="200" height="160" alt="Multi-item area chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bubble_multi.jpg" width="200" height="160" alt="Separate multi-item area chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bubblePlotwithColorMap.jpg" width="200" height="160" alt="Multi-item area chart"/>
 ## Heatmap
 [link text](https:// [link text](https://))
 A heatmap is a graphical representation of data where the individual values contained in a matrix are represented as colors. 
