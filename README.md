@@ -21,6 +21,7 @@ A box plot or boxplot is a method for graphically depicting groups of numerical 
 [link text](https:// [link text](https://))
 - Multi-item box plot
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/boxplot.jpg" width="160" height="200" alt="Separate multi-item area chart"/>
+
 ## Bubble Plot
 [link text](https:// [link text](https://))
 A bubble chart is a variation of a scatter chart in which the data points are replaced with bubbles, and an additional dimension of the data is represented in the size of the bubbles. Just like a scatter chart, a bubble chart does not use a category axis — both horizontal and vertical axes are value axes.
