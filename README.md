@@ -24,7 +24,7 @@ A bar chart is a classic way to visualise items based on counting or any given i
 A box plot or boxplot is a method for graphically depicting groups of numerical data through their quartiles. Displays the five-number summary of a set of data. The five-number summary is the minimum, first quartile, median, third quartile, and maximum.
 [link text](https:// [link text](https://))
 - Multi-item box plot
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/boxplot.jpg" width="160" height="200" alt="Multi-item box plot"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/boxplot.jpg" width="170" height="210" alt="Multi-item box plot"/>
 
 ## Bubble Plot
 A bubble chart is a variation of a scatter chart in which the data points are replaced with bubbles, and an additional dimension of the data is represented in the size of the bubbles. Just like a scatter chart, a bubble chart does not use a category axis — both horizontal and vertical axes are value axes.
@@ -40,7 +40,7 @@ A heatmap is a graphical representation of data where the individual values cont
 - Heatmap with values in blue to yellow colours
 - Heatmap with values in blue colours
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/confusion_matrix1.jpg" width="200" height="160" alt="Heatmap with values in blue to yellow colours"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/confusion_matrix2.jpg" width="200" height="160" alt="Heatmap with values in blue colours"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/confusion_matrix1.jpg" width="210" height="170" alt="Heatmap with values in blue to yellow colours"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/confusion_matrix2.jpg" width="210" height="170" alt="Heatmap with values in blue colours"/>
 ## Histogram
 A histogram is a graphical display of data using bars of different heights. In a histogram, each bar groups numbers into ranges. Taller bars show that more data falls in that range. A histogram displays the shape and spread of continuous sample data.
 [link text](https:// [link text](https://))
