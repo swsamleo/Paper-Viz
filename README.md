@@ -78,12 +78,14 @@ A radar chart is a graphical method of displaying multivariate data in the form 
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/radar.jpg" width="195" height="170" alt="Radar chart with two groups"/>
 
 ## Scatter Plot
-[link text](https:// [link text](https://))
 A scatter plot is a basic chart used to study the relationship between two variables. If you have multiple groups in your data, you might want to visualize each group in a different color.
+[link text](https:// [link text](https://))
 - Scatter plot with multiple colors
 - Scatter plot with categorical colours in multi groups
 - Pairwise plot with histogram
 - Pairwise plot with categorical colours and marks
+
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatter.jpg" width="200" height="160" alt="Scatter plot with multiple colors"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatter_multimarkers.jpg" width="200" height="160" alt="Scatter plot with categorical colours in multi groups"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatterandhistogram.jpg" width="200" height="160" alt="Pairwise plot with histogram"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatterandhistogram_multimarks.jpg" width="200" height="160" alt="Pairwise plot with categorical colours and marks"/>
 ## Time Series Plot
 [link text](https:// [link text](https://))
 Time series plots are used to show how a given metric changes over time.
