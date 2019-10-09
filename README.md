@@ -43,6 +43,7 @@ A heatmap is a graphical representation of data where the individual values cont
 - Heatmap with values in blue colours
 
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/confusion_matrix1.jpg" width="210" height="170" alt="Heatmap with values in blue to yellow colours"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/confusion_matrix2.jpg" width="210" height="170" alt="Heatmap with values in blue colours"/>
+
 ## Histogram
 A histogram is a graphical display of data using bars of different heights. In a histogram, each bar groups numbers into ranges. Taller bars show that more data falls in that range. A histogram displays the shape and spread of continuous sample data.
 [link text](https:// [link text](https://))
