@@ -101,4 +101,4 @@ A violin plot is a method of plotting numeric data. It is similar to a box plot,
 - Violin plot
 - Grouped violin plot
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/violin.jpg" width="200" height="160" alt="Violin plot"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/violin_group.jpg" width="200" height="160" alt="Grouped violin plot"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/violin.jpg" width="210" height="170" alt="Violin plot"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/violin_group.jpg" width="210" height="170" alt="Grouped violin plot"/>
