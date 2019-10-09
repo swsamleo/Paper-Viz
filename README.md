@@ -20,6 +20,7 @@ A bar chart is a classic way to visualise items based on counting or any given i
 - Stacked bar chart with two groups
 
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bar.jpg" width="200" height="160" alt="Single item bar chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bar_grouped.jpg" width="200" height="160" alt="Multi-item grouped bar chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bar_error.jpg" width="200" height="160" alt="Error bar chart with two groups"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bar_stacked.jpg" width="200" height="160" alt="Stacked bar chart with two groups"/>
+
 ## Box Plot
 A box plot or boxplot is a method for graphically depicting groups of numerical data through their quartiles. Displays the five-number summary of a set of data. The five-number summary is the minimum, first quartile, median, third quartile, and maximum.
 [link text](https:// [link text](https://))
@@ -34,6 +35,7 @@ A bubble chart is a variation of a scatter chart in which the data points are re
 - Bubble plot with a color map
 
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bubble.jpg" width="200" height="160" alt="Single item bubble plot"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bubble_multi.jpg" width="200" height="160" alt="Multi-item bubble plot with categorical colors"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bubblePlotwithColorMap.jpg" width="200" height="160" alt="Bubble plot with a color map"/>
+
 ## Heatmap
 A heatmap is a graphical representation of data where the individual values contained in a matrix are represented as colors. 
 [link text](https:// [link text](https://))
@@ -48,6 +50,7 @@ A histogram is a graphical display of data using bars of different heights. In a
 - Multi-item histogram with density curves
 
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/hist1.jpg" width="210" height="170" alt="Single item histogram with a density curve"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/hist2.jpg" width="210" height="170" alt="Multi-item histogram with density curves"/>
+
 ## Line Chart
 [link text](https:// [link text](https://))
 A line chart or line plot or line graph or curve chart is a type of chart which displays information as a series of data points called 'markers' connected by straight line segments. It is a basic type of chart common in many fields.
@@ -62,6 +65,7 @@ A pie chart is the classic way of displaying composition. However, it is general
 - Circle chart with percentage marked on
 
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie1.jpg" width="275" height="160" alt="Pie chart with percentage marked on"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie2.jpg" width="270" height="160" alt="Circle chart with percentage marked on"/>
+
 ## Pyramid Chart
 The pyramid can be used to show the distribution of groups sorted by number, or it can be used to show the step-by-step filtering of the population.
 [link text](https:// [link text](https://))
@@ -70,6 +74,7 @@ The pyramid can be used to show the distribution of groups sorted by number, or 
 - Pyramid with values marked on
 
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pyramid_group.jpg" width="230" height="160" alt="Population pyramid with two groups"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pyramid_groupvalue.jpg" width="230" height="160" alt="Population pyramid with values marked on"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pyramid_group2.jpg" width="210" height="160" alt="Pyramid with values marked on"/>
+
 ## Radar Chart
 A radar chart is a graphical method of displaying multivariate data in the form of a two-dimensional chart of three or more quantitative variables represented on axes starting from the same point. The relative position and angle of the axes is typically uninformative.
 [link text](https:// [link text](https://))
@@ -86,6 +91,7 @@ A scatter plot is a basic chart used to study the relationship between two varia
 - Pairwise plot with categorical colours and marks
 
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatter.jpg" width="200" height="160" alt="Scatter plot with multiple colors"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatter_multimarkers.jpg" width="200" height="160" alt="Scatter plot with categorical colours in multi groups"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatterandhistogram.jpg" width="200" height="160" alt="Pairwise plot with histogram"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatterandhistogram_multimarks.jpg" width="200" height="160" alt="Pairwise plot with categorical colours and marks"/>
+
 ## Time Series Plot
 Time series plots are used to show how a given metric changes over time.
 [link text](https:// [link text](https://))
@@ -95,6 +101,7 @@ Time series plots are used to show how a given metric changes over time.
 - Time series decomposition plot
 
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/timeseries.jpg" width="200" height="160" alt="Time series plot with maximum, minimum values and event bar"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/timeseries_peaks.jpg" width="200" height="160" alt="Time series plot with peaks and troughs"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/timeseries_multiple.jpg" width="200" height="160" alt="Time series plot with legend marked on lines"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/timeseries_decomposition.jpg" width="160" height="200" alt="Time series decomposition plot"/>
+
 ## Violin Plot
 A violin plot is a method of plotting numeric data. It is similar to a box plot, with the addition of a rotated kernel density plot on each side.
 [link text](https:// [link text](https://))
