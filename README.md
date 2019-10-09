@@ -96,7 +96,9 @@ Time series plots are used to show how a given metric changes over time.
 
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/timeseries.jpg" width="200" height="160" alt="Time series plot with maximum, minimum values and event bar"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/timeseries_peaks.jpg" width="200" height="160" alt="Time series plot with peaks and troughs"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/timeseries_multiple.jpg" width="200" height="160" alt="Time series plot with legend marked on lines"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/timeseries_decomposition.jpg" width="160" height="200" alt="Time series decomposition plot"/>
 ## Violin Plot
-[link text](https:// [link text](https://))
 A violin plot is a method of plotting numeric data. It is similar to a box plot, with the addition of a rotated kernel density plot on each side.
+[link text](https:// [link text](https://))
 - Violin plot
 - Grouped violin plot
+
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/violin.jpg" width="200" height="160" alt="Violin plot"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/violin_group.jpg" width="200" height="160" alt="Grouped violin plot"/>
