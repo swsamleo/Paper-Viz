@@ -17,9 +17,10 @@ A bar chart is a classic way to visualise items based on counting or any given i
 - Stacked bar chart with two groups
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bar.jpg" width="200" height="160" alt="Multi-item area chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bar_grouped.jpg" width="200" height="160" alt="Separate multi-item area chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bar_error.jpg" width="200" height="160" alt="Multi-item area chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bar_stacked.jpg" width="200" height="160" alt="Separate multi-item area chart"/>
 ## Box Plot
-[link text](https:// [link text](https://))
 A box plot or boxplot is a method for graphically depicting groups of numerical data through their quartiles. Displays the five-number summary of a set of data. The five-number summary is the minimum, first quartile, median, third quartile, and maximum.
+[link text](https:// [link text](https://))
 - Multi-item box plot
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/boxplot.jpg" width="200" height="160" alt="Separate multi-item area chart"/>
 ## Bubble Plot
 [link text](https:// [link text](https://))
 A bubble chart is a variation of a scatter chart in which the data points are replaced with bubbles, and an additional dimension of the data is represented in the size of the bubbles. Just like a scatter chart, a bubble chart does not use a category axis — both horizontal and vertical axes are value axes.
