@@ -75,7 +75,7 @@ A radar chart is a graphical method of displaying multivariate data in the form 
 [link text](https:// [link text](https://))
 - Radar chart with two groups
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/radar.jpg" width="190" height="165" alt="Radar chart with two groups"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/radar.jpg" width="195" height="170" alt="Radar chart with two groups"/>
 
 ## Scatter Plot
 [link text](https:// [link text](https://))
