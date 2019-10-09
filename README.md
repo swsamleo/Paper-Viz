@@ -2,12 +2,15 @@
 # Data Visualisation - Cruise Group
 These visualisation codes show visualization modules by Seaborn and Matplotlib of Python. The codes were written by Cruise Group of RMIT University. If you want to run the codes, you need to install some other Python libraries in addition to Seaborn and Matplotlib, which have been marked in the codes section. Please refer to the following contents for details. If you're not into reading lenghty explanations at all, feel free to jump right into the commented code.
 [link text](https:// [link text](https://))
+
 ## Area Chart
 By coloring the area between the axis and the line, the area map not only emphasizes the peaks and valleys, but also emphasizes the duration of the high and low points. The longer the high point lasts, the larger the area under the line.
 [link text](https:// [link text](https://))
 - Multi-item area chart
 - Separate multi-item area chart
+
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/area.jpg" width="200" height="160" alt="Multi-item area chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/area_grouped.jpg" width="200" height="160" alt="Separate multi-item area chart"/>
+
 ## Bar Chart
 A bar chart is a classic way to visualise items based on counting or any given indicator.
 [link text](https:// [link text](https://))
@@ -15,6 +18,7 @@ A bar chart is a classic way to visualise items based on counting or any given i
 - Multi-item grouped bar chart
 - Error bar chart with two groups
 - Stacked bar chart with two groups
+
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bar.jpg" width="200" height="160" alt="Multi-item area chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bar_grouped.jpg" width="200" height="160" alt="Separate multi-item area chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bar_error.jpg" width="200" height="160" alt="Multi-item area chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bar_stacked.jpg" width="200" height="160" alt="Separate multi-item area chart"/>
 ## Box Plot
 A box plot or boxplot is a method for graphically depicting groups of numerical data through their quartiles. Displays the five-number summary of a set of data. The five-number summary is the minimum, first quartile, median, third quartile, and maximum.
