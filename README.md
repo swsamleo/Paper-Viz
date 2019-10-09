@@ -47,7 +47,7 @@ A histogram is a graphical display of data using bars of different heights. In a
 - Single item histogram with a density curve
 - Multi-item histogram with density curves
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/hist1.jpg" width="200" height="160" alt="Single item histogram with a density curve"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/hist2.jpg" width="200" height="160" alt="Multi-item histogram with density curves"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/hist1.jpg" width="210" height="170" alt="Single item histogram with a density curve"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/hist2.jpg" width="210" height="170" alt="Multi-item histogram with density curves"/>
 ## Line Chart
 [link text](https:// [link text](https://))
 A line chart or line plot or line graph or curve chart is a type of chart which displays information as a series of data points called 'markers' connected by straight line segments. It is a basic type of chart common in many fields.
