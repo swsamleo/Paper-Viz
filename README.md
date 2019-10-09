@@ -87,12 +87,14 @@ A scatter plot is a basic chart used to study the relationship between two varia
 
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatter.jpg" width="200" height="160" alt="Scatter plot with multiple colors"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatter_multimarkers.jpg" width="200" height="160" alt="Scatter plot with categorical colours in multi groups"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatterandhistogram.jpg" width="200" height="160" alt="Pairwise plot with histogram"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatterandhistogram_multimarks.jpg" width="200" height="160" alt="Pairwise plot with categorical colours and marks"/>
 ## Time Series Plot
-[link text](https:// [link text](https://))
 Time series plots are used to show how a given metric changes over time.
+[link text](https:// [link text](https://))
 - Time series plot with maximum, minimum values and event bar
 - Time series plot with peaks and troughs
 - Time series plot with legend marked on lines
 - Time series decomposition plot
+
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatter.jpg" width="200" height="160" alt="Time series plot with maximum, minimum values and event bar"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/timeseries_peaks.jpg" width="200" height="160" alt="Time series plot with peaks and troughs"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/timeseries_multiple.jpg" width="200" height="160" alt="Time series plot with legend marked on lines"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/timeseries_decomposition.jpg" width="160" height="200" alt="Time series decomposition plot"/>
 ## Violin Plot
 [link text](https:// [link text](https://))
 A violin plot is a method of plotting numeric data. It is similar to a box plot, with the addition of a rotated kernel density plot on each side.
