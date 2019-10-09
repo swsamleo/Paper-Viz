@@ -61,7 +61,7 @@ A pie chart is the classic way of displaying composition. However, it is general
 - Pie chart with percentage marked on
 - Circle chart with percentage marked on
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie1.jpg" width="270" height="160" alt="Pie chart with percentage marked on"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie2.jpg" width="260" height="160" alt="Circle chart with percentage marked on"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie1.jpg" width="275" height="160" alt="Pie chart with percentage marked on"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie2.jpg" width="265" height="160" alt="Circle chart with percentage marked on"/>
 ## Pyramid Chart
 The pyramid can be used to show the distribution of groups sorted by number, or it can be used to show the step-by-step filtering of the population.
 [link text](https:// [link text](https://))
@@ -75,7 +75,8 @@ A radar chart is a graphical method of displaying multivariate data in the form 
 [link text](https:// [link text](https://))
 - Radar chart with two groups
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/radar.jpg" width="190" height="160" alt="Radar chart with two groups"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/radar.jpg" width="190" height="170" alt="Radar chart with two groups"/>
+
 ## Scatter Plot
 [link text](https:// [link text](https://))
 A scatter plot is a basic chart used to study the relationship between two variables. If you have multiple groups in your data, you might want to visualize each group in a different color.
