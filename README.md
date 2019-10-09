@@ -6,7 +6,7 @@ By coloring the area between the axis and the line, the area map not only emphas
 - Multi-item area chart
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/area.jpg" width="200" height="160" alt="Multi-item area chart"/>
 - Separate multi-item area chart
-![Separate multi-item area chart](https://github.com/swsamleo/Paper-Viz/blob/master/Images/area_grouped.jpg)
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/area_grouped.jpg" width="200" height="160" alt="Separate multi-item area chart"/>
 ## Bar Chart
 [link text](https:// [link text](https://))
 A bar chart is a classic way to visualise items based on counting or any given indicator.
