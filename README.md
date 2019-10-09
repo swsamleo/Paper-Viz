@@ -71,9 +71,11 @@ The pyramid can be used to show the distribution of groups sorted by number, or 
 
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pyramid_group.jpg" width="230" height="160" alt="Population pyramid with two groups"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pyramid_groupvalue.jpg" width="230" height="160" alt="Population pyramid with values marked on"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pyramid_group2.jpg" width="210" height="160" alt="Pyramid with values marked on"/>
 ## Radar Chart
-[link text](https:// [link text](https://))
 A radar chart is a graphical method of displaying multivariate data in the form of a two-dimensional chart of three or more quantitative variables represented on axes starting from the same point. The relative position and angle of the axes is typically uninformative.
+[link text](https:// [link text](https://))
 - Radar chart with two groups
+
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/radar.jpg" width="200" height="160" alt="Radar chart with two groups"/>
 ## Scatter Plot
 [link text](https:// [link text](https://))
 A scatter plot is a basic chart used to study the relationship between two variables. If you have multiple groups in your data, you might want to visualize each group in a different color.
