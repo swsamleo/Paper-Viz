@@ -1,17 +1,14 @@
-# 数据可视化 -- Cruise Group
+# 数据可视化 -- Cruise Group[link text](https:// [link text](https://))
 这些可视化代码展示了Python的Seaborn和Matplotlib的可视化模块。这些代码是由RMIT大学Cruise Group编写。运行本文代码，除了安装 matplotlib 和 seaborn 可视化库外，还需要安装其他的一些辅助可视化库，已在代码部分作标注，具体内容请查看下面文章内容。如果您不想阅读冗长的说明，请随时跳到注释代码中。
-[link text](https:// [link text](https://))
-## 面积图
+## 面积图[link text](https:// [link text](https://))
 通过对轴和线之间的区域进行着色，面积图不仅强调峰和谷，而且还强调高点和低点的持续时间。 高点持续时间越长，线下面积越大。
-[link text](https:// [link text](https://))
 - 多面积图
 - 分图多面积图
 
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/area.jpg" width="200" height="160" alt="Multi-item area chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/area_grouped.jpg" width="200" height="160" alt="Separate multi-item area chart"/>
 
-## 条形图/柱状图
+## 条形图/柱状图[link text](https:// [link text](https://))
 条形图是基于计数或任何给定指标可视化项目的经典方式。
-[link text](https:// [link text](https://))
 - 单条形图
 - 分组多条形图
 - 误差条形图
