@@ -96,3 +96,14 @@ A violin plot is a method of plotting numeric data. It is similar to a box plot,
 - Grouped violin plot
 
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/violin.jpg" width="210" height="170" alt="Violin plot"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/violin_group.jpg" width="210" height="170" alt="Grouped violin plot"/>
+
+## Map[link text](https:// [link text](https://))
+- Heatmap with colour bar
+- Heatmap with colour bar
+- Map with path
+- Map with path and point marked
+- Map with area filled colour (red and yellow)
+- Map with area filled colour (green and yellow)
+- World map with area marked and colour bar
+
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map_heatmap.png" width="200" height="160" alt="Single item bar chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map_heatmap1.png" width="200" height="160" alt="Multi-item grouped bar chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bar_error.jpg" width="200" height="160" alt="Error bar chart with two groups"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bar_stacked.jpg" width="200" height="160" alt="Stacked bar chart with two groups"/>
