@@ -10,7 +10,8 @@ By coloring the area between the axis and the line, the area map not only emphas
 
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/area.jpg" width="200" height="160" alt="Multi-item area chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/area_grouped.jpg" width="200" height="160" alt="Separate multi-item area chart"/>
 
-## Bar Chart(https://github.com/swsamleo/Paper-Viz/blob/master/Code/Bar.ipynb)
+## Bar Chart
+##### https://github.com/swsamleo/Paper-Viz/blob/master/Code/Bar.ipynb
 A bar chart is a classic way to visualise items based on counting or any given indicator.
 - Single item bar chart
 - Multi-item grouped bar chart
@@ -98,7 +99,8 @@ A violin plot is a method of plotting numeric data. It is similar to a box plot,
 
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/violin.jpg" width="210" height="170" alt="Violin plot"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/violin_group.jpg" width="210" height="170" alt="Grouped violin plot"/>
 
-## Map[link text](https:// [link text](https://))
+## Map
+##### https://github.com/swsamleo/Paper-Viz/blob/master/Code/MapVizSummary.ipynb
 - Heatmap with colour bar
 - Heatmap with colour bar
 - Map with path
