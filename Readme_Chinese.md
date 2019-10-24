@@ -113,13 +113,13 @@
 
 ## Map
 ##### https://github.com/swsamleo/Paper-Viz/blob/master/Code/MapVizSummary.ipynb
-- Heatmap with colour bar
-- Heatmap with colour bar
-- Map with path
-- Map with path and point marked
-- Map with area filled colour (red and yellow)
-- Map with area filled colour (green and yellow)
-- World map with area marked and colour bar
+- 带色条的地图
+- 带色条的地图
+- 带路径的地图
+- 戴路径和指示点的地图
+- 填色地图 (红色和黄色)
+- 填色地图 (绿色和黄色)
+- 带标注和色条的世界地图
 
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map_heatmap.png" width="200" height="120" alt="Single item bar chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map_heatmap1.png" width="200" height="120" alt="Multi-item grouped bar chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map_pathmap.png" width="200" height="120" alt="Error bar chart with two groups"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map_pathandpointmap.png" width="200" height="120" alt="Stacked bar chart with two groups"/>
 
