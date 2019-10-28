@@ -53,14 +53,6 @@ A scatter plot is a basic chart used to study the relationship between two varia
 
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map_area%20filled%20colour%20(red%20and%20yellow).png" width="200" height="120" alt="Single item bar chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map_area%20filled%20colour%20(green%20and%20yellow).png" width="200" height="120" alt="Multi-item grouped bar chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/worldmap.png" width="200" height="120" alt="Error bar chart with two groups"/>
 
-## Heatmap
-##### https://github.com/swsamleo/Paper-Viz/blob/master/Code/confusion_matrix.py
-A heatmap is a graphical representation of data where the individual values contained in a matrix are represented as colors. 
-- Heatmap with values in blue to yellow colours
-- Heatmap with values in blue colours
-
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/confusion_matrix1.jpg" width="210" height="170" alt="Heatmap with values in blue to yellow colours"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/confusion_matrix2.jpg" width="210" height="170" alt="Heatmap with values in blue colours"/>
-
 ## Histogram
 ##### https://github.com/swsamleo/Paper-Viz/blob/master/Code/histogram.py
 A histogram is a graphical display of data using bars of different heights. In a histogram, each bar groups numbers into ranges. Taller bars show that more data falls in that range. A histogram displays the shape and spread of continuous sample data.
@@ -68,6 +60,14 @@ A histogram is a graphical display of data using bars of different heights. In a
 - Multi-item histogram with density curves
 
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/hist1.jpg" width="210" height="170" alt="Single item histogram with a density curve"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/hist2.jpg" width="210" height="170" alt="Multi-item histogram with density curves"/>
+
+## Heatmap
+##### https://github.com/swsamleo/Paper-Viz/blob/master/Code/confusion_matrix.py
+A heatmap is a graphical representation of data where the individual values contained in a matrix are represented as colors. 
+- Heatmap with values in blue to yellow colours
+- Heatmap with values in blue colours
+
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/confusion_matrix1.jpg" width="210" height="170" alt="Heatmap with values in blue to yellow colours"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/confusion_matrix2.jpg" width="210" height="170" alt="Heatmap with values in blue colours"/>
 
 ## Time Series Plot
 ##### https://github.com/swsamleo/Paper-Viz/blob/master/Code/time_series_plot.py
