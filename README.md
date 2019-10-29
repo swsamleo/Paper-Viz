@@ -71,7 +71,7 @@ A heatmap is a graphical representation of data where the individual values cont
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/confusion_matrix1.jpg" width="210" height="170" alt="Heatmap with values in blue to yellow colours"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/confusion_matrix2.jpg" width="210" height="170" alt="Heatmap with values in blue colours"/>
 
 ## Time Series Plot
-##### [Code](Code/Time Series Plot.ipynb)
+##### [Code](Code/Time_Series_Plot.ipynb)
 Time series plots are used to show how a given metric changes over time.
 - Time series plot with maximum, minimum values and event bar
 - Time series plot with peaks and troughs
