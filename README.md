@@ -84,9 +84,13 @@ Time series plots are used to show how a given metric changes over time.
 ## Line Chart
 ##### [Code](Code/Line.ipynb)
 A line chart or line plot or line graph or curve chart is a type of chart which displays information as a series of data points called 'markers' connected by straight line segments. It is a basic type of chart common in many fields.
+- Single line chart
+- Multi-line chart
 - Multi-item line chart with categorical colours and marks
+- Double axis line chart
+- Insetplot line chart
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/line.jpg" width="230" height="160" alt="Multi-item line chart with categorical colours and marks"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/line_single.jpg" width="200" height="160" alt="Single line chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/line_multi.jpg" width="200" height="160" alt="Multi-line chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/line.jpg" width="230" height="160" alt="Multi-item line chart with categorical colours and marks"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/line_doubleaxis.jpg" width="200" height="160" alt="Double axis line chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/line_insetplot.jpg" width="200" height="160" alt="Insetplot line chart"/>
 
 ## Pie Chart
 ##### [Code](Code/Pie.ipynb)
