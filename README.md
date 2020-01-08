@@ -40,9 +40,9 @@ A scatter plot is a basic chart used to study the relationship between two varia
 - Pairwise plot with histogram
 - Pairwise plot with categorical colours and marks
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatter_basic.jpg" width="200" height="160" alt="Single item scatter plot"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatter_multi.jpg" width="200" height="160" alt="Multi-item scatter plot"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatter_multimarkers.jpg" width="200" height="160" alt="Scatter plot with multi-mark"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatter_basic.jpg" width="200" height="160" alt="Single item scatter plot"/>              <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatter_multi.jpg" width="200" height="160" alt="Multi-item scatter plot"/>              <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatter_multimarkers.jpg" width="200" height="160" alt="Scatter plot with multi-mark"/>
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatter_correlogram.jpg" width="200" height="160" alt="Pairwise plot with categorical colours and marks"/>       <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatter_correlogrammulti.jpg" width="200" height="160" alt="Pairwise plot with categorical colours and marks"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatter_correlogram.jpg" width="200" height="160" alt="Pairwise plot with categorical colours and marks"/>             <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatter_correlogrammulti.jpg" width="200" height="160" alt="Pairwise plot with categorical colours and marks"/>
 
 ## Map
 ##### [Code](Code/MapVizSummary.ipynb)
