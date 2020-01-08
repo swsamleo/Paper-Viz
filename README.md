@@ -34,12 +34,13 @@ A bubble chart is a variation of a scatter chart in which the data points are re
 ## Scatter Plot
 ##### [Code](Code/Scatter_plot.ipynb)
 A scatter plot is a basic chart used to study the relationship between two variables. If you have multiple groups in your data, you might want to visualize each group in a different color.
-- Scatter plot with multiple colors
-- Scatter plot with categorical colours in multi groups
+- Single item scatter plot
+- Multi-item scatter plot
+- Scatter plot with multi-mark
 - Pairwise plot with histogram
 - Pairwise plot with categorical colours and marks
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatter.jpg" width="200" height="160" alt="Scatter plot with multiple colors"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatter_multimarkers.jpg" width="200" height="160" alt="Scatter plot with categorical colours in multi groups"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatterandhistogram.jpg" width="200" height="160" alt="Pairwise plot with histogram"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatterandhistogram_multimarks.jpg" width="200" height="160" alt="Pairwise plot with categorical colours and marks"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatter_basic.jpg" width="200" height="160" alt="Single item scatter plot"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatter_multi.jpg" width="200" height="160" alt="Multi-item scatter plot"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatter_multimarkers.jpg" width="200" height="160" alt="Scatter plot with multi-mark"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatter_correlogram.jpg" width="200" height="160" alt="Pairwise plot with categorical colours and marks"/>       <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatter_correlogrammulti.jpg" width="200" height="160" alt="Pairwise plot with categorical colours and marks"/>
 
 ## Map
 ##### [Code](Code/MapVizSummary.ipynb)
