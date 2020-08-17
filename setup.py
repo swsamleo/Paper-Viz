@@ -23,6 +23,6 @@ setup(
         'thesis template'
         'python'
         ],
-    packages = find_packages(),
+    packages=find_packages(),
     include_package_data=True,
-    
+）
