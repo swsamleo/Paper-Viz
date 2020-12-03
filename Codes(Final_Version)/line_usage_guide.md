@@ -75,7 +75,7 @@ line.plot(file='', x_col_name=[''], y_col_name=[''], x_label=[''], y_label=[''],
 
 - *Line Chart with Double Axis*
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/line_chart_doubleaxis.jpg" width="550"  alt="Line Chart with Double Axis"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/line_chart_doubleaxis.jpg" width="560"  alt="Line Chart with Double Axis"/>
 
 ~~~ python
 # Create a line chart with double axis
@@ -84,7 +84,7 @@ line.plot(file='', x_col_name=[['xl1','xl2'],['xr1','xr2']], y_col_name=[['yl1',
 
 - *Line Chart with Inset Plot*
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/line_chart_doubleaxis_inset.jpg" width="550" alt="Line Chart with Inset Plot"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/line_chart_doubleaxis_inset.jpg" width="560" alt="Line Chart with Inset Plot"/>
 
 ~~~ python
 # Create a line chart with inset plot
