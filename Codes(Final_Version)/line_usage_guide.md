@@ -36,7 +36,7 @@ pip install paperviz
 
 ### **Basic Line Chart**
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/line_chart_basic.jpg" width="210" height="160" alt="Basic Line Chart"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/line_chart_basic.jpg" width="500" height="500" alt="Basic Line Chart"/>
 
 Once you have paperviz installed, you're ready to start an unforgettable plotting journey. You could load and plot your first basic line chart as instructed below:
 
