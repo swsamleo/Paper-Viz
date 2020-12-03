@@ -66,7 +66,7 @@ Paper-Viz (Line) provides a convenient way to add markers, double axis, and inse
 
 - *Line Chart with Markers*
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bar.jpg" width="210" height="160" alt="Line Chart with Markers"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/line_chart_markers.jpg" width="500" alt="Line Chart with Markers"/>
 
 ~~~ python
 # Create a line chart with markers
@@ -75,7 +75,7 @@ line.plot(file='', x_col_name=[''], y_col_name=[''], x_label=[''], y_label=[''],
 
 - *Line Chart with Double Axis*
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bar.jpg" width="210" height="160" alt="Line Chart with Double Axis"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/line_chart_doubleaxis.jpg" width="500"  alt="Line Chart with Double Axis"/>
 
 ~~~ python
 # Create a line chart with double axis
@@ -84,7 +84,7 @@ line.plot(file='', x_col_name=[['xl1','xl2'],['xr1','xr2']], y_col_name=[['yl1',
 
 - *Line Chart with Inset Plot*
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bar.jpg" width="210" height="160" alt="Line Chart with Inset Plot"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/line_chart_doubleaxis_inset.jpg" width="500" alt="Line Chart with Inset Plot"/>
 
 ~~~ python
 # Create a line chart with inset plot
