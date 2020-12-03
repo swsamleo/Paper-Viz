@@ -3,14 +3,12 @@
 ### *Hi there, this is CRUISE Group👋*
 
 ## **🔭Introduction to Paper-Viz (Line)**
-------------------------------------------
 
 Paper-Viz (Line) is a library for making scientific line graphics in Python. It is built based on matplotlib and pandas libraries and its plotting function operate on dataframes. 
 
 Paper-Viz (Line) helps you plot elegant and professional line chart in an accurate and efficient manner to meet the publications requirements. Additionally,  it provides an easy way to add/delete elements and adjust chart, such as extra lines, double axis, inset plot, markers and legend. 
 
 ## **📕Installation**
----------------------
 
 Paper-Viz official releases can be installed from `` PyPI ``
 
@@ -32,7 +30,6 @@ pip install paperviz
 
 
 ## **💪Usage Guide**
----------------------
 
 ### **Basic Line Chart**
 
@@ -92,7 +89,6 @@ line.plot(file='', x_col_name=[''], y_col_name=[''], x_label=[''], y_label=[''],
 ~~~
 
 ## **👯Parameters**
--------------------
 
 >line.plot(file, x_col_name, y_col_name, x_label, y_label, legend_label, paper_type,**kwargs) [[source]](https://github.com/swsamleo/Paper-Viz)
 
