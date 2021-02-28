@@ -1,6 +1,8 @@
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/PaperViz.jpg" alt="PaperViz"/>
 
 # Data Visualisation - CRUISE Group
+## Leader Dr Wei Shao
+### Team Member Nan Gao, Zhiqiu Chen, Ying Guo
 ## Professional Python graphs for Scientific Papers
 These visualisation codes show visualization modules by Seaborn and Matplotlib of Python. The codes were written by Cruise Group of RMIT University. If you want to run the codes, you need to install some other Python libraries in addition to Seaborn and Matplotlib, which have been marked in the codes section. Please refer to the following contents for details. If you're not into reading lenghty explanations at all, feel free to jump right into the commented code.
 
@@ -68,7 +70,7 @@ A histogram is a graphical display of data using bars of different heights. In a
 
 ## Heatmap
 ##### [Code](Code/Confusion_matrix.ipynb)
-A heatmap is a graphical representation of data where the individual values contained in a matrix are represented as colors. 
+A heatmap is a graphical representation of data where the individual values contained in a matrix are represented as colors.
 - Heatmap with values in blue to yellow colours
 - Heatmap with values in blue colours
 
