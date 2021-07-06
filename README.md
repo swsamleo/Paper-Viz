@@ -27,11 +27,11 @@ A bar chart is a classic way to visualise items based on counting or any given i
 ## Bubble Plot
 ##### [Code](Code/BubblePlot.ipynb)
 A bubble chart is a variation of a scatter chart in which the data points are replaced with bubbles, and an additional dimension of the data is represented in the size of the bubbles. Just like a scatter chart, a bubble chart does not use a category axis — both horizontal and vertical axes are value axes.
-- Single item bubble plot
+- Bubble chart with each bubble name and sizes
 - Multi-item bubble plot with categorical colors
 - Bubble plot with a color map
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bubble.jpg" width="200" height="160" alt="Single item bubble plot"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bubble_multi.jpg" width="200" height="160" alt="Multi-item bubble plot with categorical colors"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bubblePlotwithColorMap.jpg" width="200" height="160" alt="Bubble plot with a color map"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bubble/gdp.jpg" width="200" height="160" alt="Bubble chart with each bubble name and sizes"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bubble/gdp_continent.jpg" width="200" height="160" alt="Multi-item bubble plot with categorical colors"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bubble/gdp_colorbar.jpg" width="200" height="160" alt="Bubble plot with a color map"/>
 
 ## Scatter Plot
 ##### [Code](Code/Scatter_plot.ipynb)
