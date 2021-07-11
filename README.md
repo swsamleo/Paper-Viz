@@ -13,7 +13,7 @@ By coloring the area between the axis and the line, the area map not only emphas
 - Stacked area chart
 - Percentange area chart
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/area.jpg" width="200" height="160" alt="Multi-item area chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/area_grouped.jpg" width="200" height="160" alt="Separate multi-item area chart"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/Simple_area_chart.png" width="200" height="160" alt="Multi-item area chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/Stack_area_plot.png" width="200" height="160" alt="Stacked area chart"/>      <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/Percentage_Stacked_Area_Chart.png" width="200" height="160" alt="Precentage area chart"/>
 
 ## Bar Chart
 ##### [Code](Code/Bar.ipynb)
