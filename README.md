@@ -99,10 +99,11 @@ A line chart or line plot or line graph or curve chart is a type of chart which 
 ## Pie Chart
 ##### [Code](Code/pie_class.ipynb)
 A pie chart is the classic way of displaying composition. However, it is generally not recommended now because sometimes the area of the pie would be misleading. Therefore, if you want to use a pie chart, it is highly recommended to explicitly note the percentage or number of each part in the pie chart.
-- Pie chart with percentage marked on
-- Circle chart with percentage marked on
+- Pie chart with outside annotation
+- Pie chart with percentage marked on and changable radius and font size
+- Pie chart with some labels exploration
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie1.jpg" width="275" height="160" alt="Pie chart with percentage marked on"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie2.jpg" width="270" height="160" alt="Circle chart with percentage marked on"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie_chart_with_outside_annotation.png" width="275" height="160" alt="pie_chart_with_outside_annotation"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie_chart_with_changeable_radius_and_fontsize.png" width="270" height="160" alt="pie_chart_with_changeable_radius_and_fontsize"/>     <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie_chart_with_label_exploration.png" width="270" height="160" alt="pie_chart_with_label_exploration"/>
 
 ## Pyramid Chart
 ##### [Code](Code/pyramid_class.ipynb)
