@@ -119,6 +119,7 @@ The pyramid can be used to show the distribution of groups sorted by number, or 
 A box plot or boxplot is a method for graphically depicting groups of numerical data through their quartiles. Displays the five-number summary of a set of data. The five-number summary is the minimum, first quartile, median, third quartile, and maximum.
 - Multi-item box plot
 - Multi-item box plot with annotation
+
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/Multi-item_box_plot.png" width="170" height="210" alt="Multi-item box plot"/>     <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/box_plot_with_annotation.png" width="170" height="210" alt="Multi-item box plot with annotation"/>
 
 ## Radar Chart
