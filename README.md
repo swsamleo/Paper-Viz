@@ -61,11 +61,12 @@ A scatter plot is a basic chart used to study the relationship between two varia
 
 ## Histogram
 ##### [Code](Code/histogram_class.ipynb)
-A histogram is a graphical display of data using bars of different heights. In a histogram, each bar groups numbers into ranges. Taller bars show that more data falls in that range. A histogram displays the shape and spread of continuous sample data.
+A histogram is a graphical display of data using bars of different heights. In a histogram, each bar groups numbers into ranges. Taller bars show that more data falls in that range. A histogram displays the shape and spread of continuous sample data. The height can mean density or actual value.
 - Single item histogram with a density curve
-- Multi-item histogram with density curves
+- Multi-item histogram which height means actual value
+- Stacked histogram
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/hist1.jpg" width="210" height="170" alt="Single item histogram with a density curve"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/hist2.jpg" width="210" height="170" alt="Multi-item histogram with density curves"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/single_column_density_histogram.png" width="210" height="170" alt="Single item histogram with a density curve"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/multiple_columns_simple_histogram.png" width="210" height="170" alt="Multi-item histogram"/>    <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/stacked_histogram.png" width="210" height="170" alt="Stacked histogram"/>
 
 ## Heatmap
 ##### [Code](Code/heatmap_class.ipynb)
