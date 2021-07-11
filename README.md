@@ -118,7 +118,8 @@ The pyramid can be used to show the distribution of groups sorted by number, or 
 ##### [Code](Code/box_class.ipynb)
 A box plot or boxplot is a method for graphically depicting groups of numerical data through their quartiles. Displays the five-number summary of a set of data. The five-number summary is the minimum, first quartile, median, third quartile, and maximum.
 - Multi-item box plot
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/boxplot.jpg" width="170" height="210" alt="Multi-item box plot"/>
+- Multi-item box plot with annotation
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/Multi-item_box_plot.png" width="170" height="210" alt="Multi-item box plot"/>     <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/box_plot_with_annotation.png" width="170" height="210" alt="Multi-item box plot with annotation"/>
 
 ## Radar Chart
 ##### [Code](Code/Radar.ipynb)
@@ -131,6 +132,6 @@ A radar chart is a graphical method of displaying multivariate data in the form 
 ##### [Code](Code/violin_class.ipynb)
 A violin plot is a method of plotting numeric data. It is similar to a box plot, with the addition of a rotated kernel density plot on each side.
 - Violin plot
-- Grouped violin plot
+- category violin plot
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/violin.jpg" width="210" height="170" alt="Violin plot"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/violin_group.jpg" width="210" height="170" alt="Grouped violin plot"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/simple_violin_plot.png" width="210" height="170" alt="Violin plot"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/category_violin_plot.png" width="210" height="170" alt="category violin plot"/>
