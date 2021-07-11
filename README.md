@@ -72,9 +72,8 @@ A histogram is a graphical display of data using bars of different heights. In a
 ##### [Code](Code/heatmap_class.ipynb)
 A heatmap is a graphical representation of data where the individual values contained in a matrix are represented as colors.
 - Heatmap with values in blue to yellow colours
-- Heatmap with values in blue colours
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/confusion_matrix1.jpg" width="210" height="170" alt="Heatmap with values in blue to yellow colours"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/confusion_matrix2.jpg" width="210" height="170" alt="Heatmap with values in blue colours"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/heatmap.png" width="210" height="170" alt="Heatmap with values in blue to yellow colours"/>        
 
 ## Time Series Plot
 ##### [Code](Code/Time_Series_Plot.ipynb)
