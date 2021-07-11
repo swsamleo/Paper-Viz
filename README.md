@@ -108,11 +108,10 @@ A pie chart is the classic way of displaying composition. However, it is general
 ## Pyramid Chart
 ##### [Code](Code/pyramid_class.ipynb)
 The pyramid can be used to show the distribution of groups sorted by number, or it can be used to show the step-by-step filtering of the population.
-- Population pyramid with two groups
-- Population pyramid with values marked on
-- Pyramid with values marked on
+- Pyramid with actual value annotation
+- Pyramid with sort functions
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pyramid_group.jpg" width="230" height="160" alt="Population pyramid with two groups"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pyramid_groupvalue.jpg" width="230" height="160" alt="Population pyramid with values marked on"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pyramid_group2.jpg" width="210" height="160" alt="Pyramid with values marked on"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pyramid_with_annotation.png" width="230" height="160" alt="Population pyramid with two groups"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pyramid_with_sort.png" width="230" height="160" alt="Population pyramid with values marked on"/>        
 
 ## Box Plot
 ##### [Code](Code/box_class.ipynb)
@@ -120,7 +119,7 @@ A box plot or boxplot is a method for graphically depicting groups of numerical 
 - Multi-item box plot
 - Multi-item box plot with annotation
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/Multi-item_box_plot.png" width="170" height="210" alt="Multi-item box plot"/>     <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/box_plot_with_annotation.png" width="170" height="210" alt="Multi-item box plot with annotation"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/Multi-item_box_plot.png" width="210" height="210" alt="Multi-item box plot"/>     <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/box_plot_with_annotation.png" width="210" height="210" alt="Multi-item box plot with annotation"/>
 
 ## Radar Chart
 ##### [Code](Code/Radar.ipynb)
