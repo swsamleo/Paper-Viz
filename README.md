@@ -7,7 +7,7 @@
 These visualisation codes show visualization modules by Seaborn and Matplotlib of Python. The codes were written by Cruise Group of RMIT University. If you want to run the codes, you need to install some other Python libraries in addition to Seaborn and Matplotlib, which have been marked in the codes section. Please refer to the following contents for details. If you're not into reading lenghty explanations at all, feel free to jump right into the commented code.
 
 ## Area Chart
-##### [Code](Code(Final_Version)/Area class.ipynb)
+##### [Code](Code/Area_class.ipynb)
 By coloring the area between the axis and the line, the area map not only emphasizes the peaks and valleys, but also emphasizes the duration of the high and low points. The longer the high point lasts, the larger the area under the line. The stacked area plot can show the total value and item values, the percentage area chart can show the percentage of each item.
 - Multi-item area chart
 - Stacked area chart
@@ -60,7 +60,7 @@ A scatter plot is a basic chart used to study the relationship between two varia
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map_area%20filled%20colour%20(red%20and%20yellow).png" width="200" height="120" alt="Single item bar chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map_area%20filled%20colour%20(green%20and%20yellow).png" width="200" height="120" alt="Multi-item grouped bar chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/worldmap.png" width="200" height="120" alt="Error bar chart with two groups"/>
 
 ## Histogram
-##### [Code](Code(Final_Version)//histogram class.ipynb)
+##### [Code](Code/histogram_class.ipynb)
 A histogram is a graphical display of data using bars of different heights. In a histogram, each bar groups numbers into ranges. Taller bars show that more data falls in that range. A histogram displays the shape and spread of continuous sample data.
 - Single item histogram with a density curve
 - Multi-item histogram with density curves
@@ -68,7 +68,7 @@ A histogram is a graphical display of data using bars of different heights. In a
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/hist1.jpg" width="210" height="170" alt="Single item histogram with a density curve"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/hist2.jpg" width="210" height="170" alt="Multi-item histogram with density curves"/>
 
 ## Heatmap
-##### [Code](Code(Final_Version)/heatmap class.ipynb)
+##### [Code](Code/heatmap_class.ipynb)
 A heatmap is a graphical representation of data where the individual values contained in a matrix are represented as colors.
 - Heatmap with values in blue to yellow colours
 - Heatmap with values in blue colours
@@ -97,7 +97,7 @@ A line chart or line plot or line graph or curve chart is a type of chart which 
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/line_single.jpg" width="200" height="160" alt="Single line chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/line_multi.jpg" width="200" height="160" alt="Multi-line chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/line_multimarks.jpg" width="200" height="160" alt="Multi-item line chart with categorical colours and marks"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/line_doubleaxis.jpg" width="200" height="160" alt="Double axis line chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/line_insetplot.jpg" width="200" height="160" alt="Insetplot line chart"/>
 
 ## Pie Chart
-##### [Code](Code(Final_Version)/pie class.ipynb)
+##### [Code](Code/pie_class.ipynb)
 A pie chart is the classic way of displaying composition. However, it is generally not recommended now because sometimes the area of the pie would be misleading. Therefore, if you want to use a pie chart, it is highly recommended to explicitly note the percentage or number of each part in the pie chart.
 - Pie chart with percentage marked on
 - Circle chart with percentage marked on
@@ -105,7 +105,7 @@ A pie chart is the classic way of displaying composition. However, it is general
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie1.jpg" width="275" height="160" alt="Pie chart with percentage marked on"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie2.jpg" width="270" height="160" alt="Circle chart with percentage marked on"/>
 
 ## Pyramid Chart
-##### [Code](Code(Final_Version)/pyramid class.ipynb)
+##### [Code](Code/pyramid_class.ipynb)
 The pyramid can be used to show the distribution of groups sorted by number, or it can be used to show the step-by-step filtering of the population.
 - Population pyramid with two groups
 - Population pyramid with values marked on
@@ -114,7 +114,7 @@ The pyramid can be used to show the distribution of groups sorted by number, or 
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pyramid_group.jpg" width="230" height="160" alt="Population pyramid with two groups"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pyramid_groupvalue.jpg" width="230" height="160" alt="Population pyramid with values marked on"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pyramid_group2.jpg" width="210" height="160" alt="Pyramid with values marked on"/>
 
 ## Box Plot
-##### [Code](Code(Final_Version)/box class.ipynb)
+##### [Code](Code/box_class.ipynb)
 A box plot or boxplot is a method for graphically depicting groups of numerical data through their quartiles. Displays the five-number summary of a set of data. The five-number summary is the minimum, first quartile, median, third quartile, and maximum.
 - Multi-item box plot
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/boxplot.jpg" width="170" height="210" alt="Multi-item box plot"/>
@@ -127,7 +127,7 @@ A radar chart is a graphical method of displaying multivariate data in the form 
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/radar.jpg" width="195" height="165" alt="Radar chart with two groups"/>
 
 ## Violin Plot
-##### [Code](Code(Final_Version)/violin class.ipynb)
+##### [Code](Code/violin_class.ipynb)
 A violin plot is a method of plotting numeric data. It is similar to a box plot, with the addition of a rotated kernel density plot on each side.
 - Violin plot
 - Grouped violin plot
