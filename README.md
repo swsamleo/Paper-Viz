@@ -103,7 +103,7 @@ A pie chart is the classic way of displaying composition. However, it is general
 - Pie chart with percentage marked on and changable radius and font size
 - Pie chart with some labels exploration
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie_chart_with_outside_annotation.png" width="275" height="200" alt="pie_chart_with_outside_annotation"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie_chart_with_changeable_radius_and_fontsize.png" width="270" height="200" alt="pie_chart_with_changeable_radius_and_fontsize"/>     <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie_chart_with_label_exploration.png" width="270" height="200" alt="pie_chart_with_label_exploration"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie_chart_with_outside_annotation.png" width="275" height="275" alt="pie_chart_with_outside_annotation"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie_chart_with_changeable_radius_and_fontsize.png" width="270" height="275" alt="pie_chart_with_changeable_radius_and_fontsize"/>     <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie_chart_with_label_exploration.png" width="270" height="275" alt="pie_chart_with_label_exploration"/>
 
 ## Pyramid Chart
 ##### [Code](Code/pyramid_class.ipynb)
