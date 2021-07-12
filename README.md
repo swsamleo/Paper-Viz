@@ -111,7 +111,7 @@ The pyramid can be used to show the distribution of groups sorted by number, or 
 - Pyramid with actual value annotation
 - Pyramid with sort functions
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pyramid_with_annotation.png" width="230" height="160" alt="Population pyramid with two groups"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pyramid_with_sort.png" width="230" height="160" alt="Population pyramid with values marked on"/>        
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pyramid_with_annotation.png" width="230" height="200" alt="Population pyramid with annotation"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pyramid_with_sort.png" width="230" height="200" alt="Population pyramid with sort function"/>        
 
 ## Box Plot
 ##### [Code](Code/box_class.ipynb)
