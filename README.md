@@ -88,7 +88,7 @@ Time series plots are used to show how a given metric changes over time.
 ## Line Chart
 ##### [Code](Code/Line.ipynb)
 A line chart or line plot or line graph or curve chart is a type of chart which displays information as a series of data points called 'markers' connected by straight line segments. It is a basic type of chart common in many fields.
-- Single line chart
+
 - Multi-line chart
 - Multi-item line chart with categorical colours and marks
 - Double axis line chart
