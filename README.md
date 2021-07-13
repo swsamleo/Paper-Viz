@@ -94,7 +94,7 @@ A line chart or line plot or line graph or curve chart is a type of chart which 
 - Double axis line chart
 - Insetplot line chart
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/line_single.jpg" width="200" height="160" alt="Single line chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/line_multi.jpg" width="200" height="160" alt="Multi-line chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/line_multimarks.jpg" width="200" height="160" alt="Multi-item line chart with categorical colours and marks"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/line_doubleaxis.jpg" width="200" height="160" alt="Double axis line chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/line_insetplot.jpg" width="200" height="160" alt="Insetplot line chart"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/single-line.png" width="200" height="160" alt="Single line chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/multi-line.png" width="200" height="160" alt="Multi-line chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/multiline-different-markers.png" width="200" height="160" alt="Multi-item line chart with categorical colours and marks"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/double_axis_line.png" width="200" height="160" alt="Double axis line chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/inset_line_plot.png" width="200" height="160" alt="Insetplot line chart"/>
 
 ## Pie Chart
 ##### [Code](Code/pie_class.ipynb)
