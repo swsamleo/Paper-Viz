@@ -15,14 +15,16 @@ setup(
     url='https://github.com/swsamleo/Paper-Viz',
     author='CRUISE Group',
     author_email='wei.shao@rmit.edu.au',
-    license ='GNU GPLv3',
-    classfiers=[ 
+    license='GNU GPLv3',
+    classfiers=[
+        'Programming Language :: Python :: 3',
+    ],
     keywords=[
         'scientific papers',
         'professional python graphs'
         'thesis template'
         'python'
-        ],
+    ],
     packages=find_packages(),
     include_package_data=True,
-）
+)
