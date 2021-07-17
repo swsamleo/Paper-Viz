@@ -7,7 +7,7 @@ with open(os.path.join(root, 'README.md'), 'r', encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='Paper-Viz-Test',
+    name='Paper-Viz',
     version='1.0.0',
     description='Professional Python Graphs for Scientific Papers',
     long_description=long_description,
@@ -25,6 +25,6 @@ setup(
         'thesis template',
         'python',
     ],
-    packages=find_packages('Codes(Final_Version)'),
+    packages=find_packages(),
     include_package_data=True,
 )
