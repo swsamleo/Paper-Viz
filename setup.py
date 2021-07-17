@@ -7,7 +7,7 @@ with open(os.path.join(root, 'README.md'), 'r', encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='Paper-Viz',
+    name='Paper-Viz-Test',
     version='1.0.0',
     description='Professional Python Graphs for Scientific Papers',
     long_description=long_description,
@@ -16,15 +16,15 @@ setup(
     author='CRUISE Group',
     author_email='wei.shao@rmit.edu.au',
     license='GNU GPLv3',
-    classfiers=[
+    classifiers=[
         'Programming Language :: Python :: 3',
     ],
     keywords=[
         'scientific papers',
-        'professional python graphs'
-        'thesis template'
-        'python'
+        'professional python graphs',
+        'thesis template',
+        'python',
     ],
-    packages=find_packages(),
+    packages=find_packages('Codes(Final_Version)'),
     include_package_data=True,
 )
