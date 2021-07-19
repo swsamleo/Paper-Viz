@@ -7,7 +7,7 @@
 These visualisation codes show visualization modules by Seaborn and Matplotlib of Python. The codes were written by Cruise Group of RMIT University. If you want to run the codes, you need to install some other Python libraries in addition to Seaborn and Matplotlib, which have been marked in the codes section. Please refer to the following contents for details. If you're not into reading lenghty explanations at all, feel free to jump right into the commented code.
 
 ## Area Chart
-##### [Code](Code/Area class.ipynb)
+##### [Code](Code/Area_class.ipynb)
 By coloring the area between the axis and the line, the area map not only emphasizes the peaks and valleys, but also emphasizes the duration of the high and low points. The longer the high point lasts, the larger the area under the line. The stacked area plot can show the total value and item values, the percentage area chart can show the percentage of each item.
 - Multi-item area chart
 - Stacked area chart
@@ -16,7 +16,7 @@ By coloring the area between the axis and the line, the area map not only emphas
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/Simple_area_chart.png" width="200" height="160" alt="Multi-item area chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/Stack_area_plot.png" width="200" height="160" alt="Stacked area chart"/>      <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/Percentage_Stacked_Area_Chart.png" width="200" height="160" alt="Precentage area chart"/>
 
 ## Bar Chart
-##### [Code](Code/Bar.ipynb)
+##### [Code](Code/Bar_class.ipynb)
 A bar chart is a classic way to visualise items based on counting or any given indicator.
 - Single item bar chart
 - Multi-item grouped bar chart
@@ -60,7 +60,7 @@ A scatter plot is a basic chart used to study the relationship between two varia
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map_area%20filled%20colour%20(red%20and%20yellow).png" width="200" height="120" alt="Single item bar chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map_area%20filled%20colour%20(green%20and%20yellow).png" width="200" height="120" alt="Multi-item grouped bar chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/worldmap.png" width="200" height="120" alt="Error bar chart with two groups"/>
 
 ## Histogram
-##### [Code](Code/histogram_class.ipynb)
+##### [Code](Code/Histogram_class.ipynb)
 A histogram is a graphical display of data using bars of different heights. In a histogram, each bar groups numbers into ranges. Taller bars show that more data falls in that range. A histogram displays the shape and spread of continuous sample data. The height can mean density or actual value.
 - Single item histogram with a density curve
 - Multi-item histogram which height means actual value
@@ -69,7 +69,7 @@ A histogram is a graphical display of data using bars of different heights. In a
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/single_column_density_histogram.png" width="210" height="170" alt="Single item histogram with a density curve"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/multiple_columns_simple_histogram.png" width="210" height="170" alt="Multi-item histogram"/>    <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/stacked_histogram.png" width="210" height="170" alt="Stacked histogram"/>
 
 ## Heatmap
-##### [Code](Code/heatmap_class.ipynb)
+##### [Code](Code/Heatmap_class.ipynb)
 A heatmap is a graphical representation of data where the individual values contained in a matrix are represented as colors.
 - Heatmap with values in blue to yellow colours
 
@@ -97,7 +97,7 @@ A line chart or line plot or line graph or curve chart is a type of chart which 
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/multi-line.png" width="200" height="160" alt="Multi-line chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/multiline-different-markers.png" width="200" height="160" alt="Multi-item line chart with categorical colours and marks"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/double_axis_line.png" width="200" height="160" alt="Double axis line chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/inset_line_plot.png" width="200" height="160" alt="Insetplot line chart"/>
 
 ## Pie Chart
-##### [Code](Code/pie_class.ipynb)
+##### [Code](Code/Pie_class.ipynb)
 A pie chart is the classic way of displaying composition. However, it is generally not recommended now because sometimes the area of the pie would be misleading. Therefore, if you want to use a pie chart, it is highly recommended to explicitly note the percentage or number of each part in the pie chart.
 - Pie chart with outside annotation
 - Pie chart with percentage marked on and changable radius and font size
@@ -106,7 +106,7 @@ A pie chart is the classic way of displaying composition. However, it is general
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie_chart_with_outside_annotation.png" width="275" height="250" alt="pie_chart_with_outside_annotation"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie_chart_with_changeable_radius_and_fontsize.png" width="270" height="250" alt="pie_chart_with_changeable_radius_and_fontsize"/>     <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie_chart_with_label_exploration.png" width="270" height="250" alt="pie_chart_with_label_exploration"/>
 
 ## Pyramid Chart
-##### [Code](Code/pyramid_class.ipynb)
+##### [Code](Code/Pyramid_class.ipynb)
 The pyramid can be used to show the distribution of groups sorted by number, or it can be used to show the step-by-step filtering of the population.
 - Pyramid with actual value annotation
 - Pyramid with sort functions
@@ -114,7 +114,7 @@ The pyramid can be used to show the distribution of groups sorted by number, or 
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pyramid_with_annotation.png" width="230" height="200" alt="Population pyramid with annotation"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pyramid_with_sort.png" width="230" height="200" alt="Population pyramid with sort function"/>        
 
 ## Box Plot
-##### [Code](Code/box_class.ipynb)
+##### [Code](Code/Box_class.ipynb)
 A box plot or boxplot is a method for graphically depicting groups of numerical data through their quartiles. Displays the five-number summary of a set of data. The five-number summary is the minimum, first quartile, median, third quartile, and maximum.
 - Multi-item box plot
 - Multi-item box plot with annotation
@@ -129,7 +129,7 @@ A radar chart is a graphical method of displaying multivariate data in the form 
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/radar.jpg" width="195" height="165" alt="Radar chart with two groups"/>
 
 ## Violin Plot
-##### [Code](Code/violin_class.ipynb)
+##### [Code](Code/Violin_class.ipynb)
 A violin plot is a method of plotting numeric data. It is similar to a box plot, with the addition of a rotated kernel density plot on each side.
 - Violin plot
 - category violin plot
