@@ -2,7 +2,7 @@
 
 # Data Visualisation - CRUISE Group
 ## Leader Dr Wei Shao
-### Team Member Nan Gao, Zhiqiu Chen, Ying Guo, Lanzhou Jiang
+### Team Member Nan Gao, Zhiqiu Chen, Ying Guo, Lanzhou Jiang, Junwei Ye, Haoran Ma
 ## Professional Python graphs for Scientific Papers
 These visualisation codes show visualization modules by Seaborn and Matplotlib of Python. The codes were written by Cruise Group of RMIT University. If you want to run the codes, you need to install some other Python libraries in addition to Seaborn and Matplotlib, which have been marked in the codes section. Please refer to the following contents for details. If you're not into reading lenghty explanations at all, feel free to jump right into the commented code.
 
@@ -26,23 +26,23 @@ A bar chart is a classic way to visualise items based on counting or any given i
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bar.jpg" width="210" height="160" alt="Single item bar chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bar_grouped.jpg" width="210" height="160" alt="Multi-item grouped bar chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bar_error.jpg" width="210" height="160" alt="Error bar chart with two groups"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bar_stacked.jpg" width="210" height="160" alt="Stacked bar chart with two groups"/>
 
 ## Bubble Plot
-##### [Code](Code/bubble_class.ipynb)
+##### [Code](Codes(Final_Version)/bubble_class.ipynb)
 A bubble chart is a variation of a scatter chart in which the data points are replaced with bubbles, and an additional dimension of the data is represented in the size of the bubbles. Just like a scatter chart, a bubble chart does not use a category axis — both horizontal and vertical axes are value axes.
 - Bubble chart with each bubble name and sizes
 - Multi-item bubble plot with categorical colors
 - Bubble plot with a color map
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bubble/gdp.jpg" width="230" height="190" alt="Bubble chart with each bubble name and sizes"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bubble/gdp_continent.jpg" width="230" height="190" alt="Multi-item bubble plot with categorical colors"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bubble/gdp_colorbar.jpg" width="230" height="190" alt="Bubble plot with a color map"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bubble/gdp.jpg" width="240" height="190" alt="Bubble chart with each bubble name and sizes"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bubble/gdp_continent.jpg" width="240" height="190" alt="Multi-item bubble plot with categorical colors"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bubble/gdp_colorbar.jpg" width="240" height="190" alt="Bubble plot with a color map"/>
 
 ## Scatter Plot
-##### [Code](Code/scatter_class.ipynb)
+##### [Code](Codes(Final_Version)/scatter_class.ipynb)
 A scatter plot is a basic chart used to study the relationship between two variables. If you have multiple groups in your data, you might want to visualize each group in a different color.
 - Single item scatter plot with trend line
 - Multi-item scatter plot
 - Scatter plot with multi-mark
 
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatter/ice_cream.jpg" width="230" height="190" alt="Single item scatter plot"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatter/smoker.jpg" width="230" height="190" alt="Multi-item scatter plot"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatter/marker.jpg" width="230" height="190" alt="Scatter plot with multi-mark"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatter/ice_cream.jpg" width="240" height="190" alt="Single item scatter plot"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatter/smoker.jpg" width="240" height="190" alt="Multi-item scatter plot"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatter/marker.jpg" width="240" height="190" alt="Scatter plot with multi-mark"/>
 
 
 ## Map
@@ -124,11 +124,13 @@ A box plot or boxplot is a method for graphically depicting groups of numerical 
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/box_plot.jpg" width="210" height="210" alt="Multi-item box plot"/>     <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/box_plot_1.jpg" width="210" height="210" alt="Multi-item box plot with annotation"/>
 
 ## Radar Chart
-##### [Code](Code/Radar.ipynb)
+##### [Code](Codes(Final_Version)/Radar.ipynb)
 A radar chart is a graphical method of displaying multivariate data in the form of a two-dimensional chart of three or more quantitative variables represented on axes starting from the same point. The relative position and angle of the axes is typically uninformative.
-- Radar chart with two groups
+- Radar chart with single groups
+- Radar chart with multiple groups
+- Spider chart with multiple groups
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/radar.jpg" width="195" height="165" alt="Radar chart with two groups"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/radar/football.jpg" width="280" height="180" alt="Radar chart with single groups"/>  <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/radar/car.jpg" width="280" height="180" alt="Radar chart with multiple groups"/>  <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/radar/sick.jpg" width="280" height="180" alt="Spider chart with multiple groups"/>
 
 ## Violin Plot
 ##### [Code](Code/Violin_class.ipynb)
