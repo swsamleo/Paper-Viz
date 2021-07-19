@@ -13,7 +13,7 @@ By coloring the area between the axis and the line, the area map not only emphas
 - Stacked area chart
 - Percentange area chart
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/Simple_area_chart.png" width="200" height="160" alt="Multi-item area chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/Stack_area_plot.png" width="200" height="160" alt="Stacked area chart"/>      <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/Percentage_Stacked_Area_Chart.png" width="200" height="160" alt="Precentage area chart"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/Area_chart_2.jpg" width="200" height="160" alt="Multi-item area chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/Area_chart_1.jpg" width="200" height="160" alt="Stacked area chart"/>      <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/Area_chart.jpg" width="200" height="160" alt="Precentage area chart"/>
 
 ## Bar Chart
 ##### [Code](Code/Bar_class.ipynb)
@@ -66,7 +66,7 @@ A histogram is a graphical display of data using bars of different heights. In a
 - Multi-item histogram which height means actual value
 - Stacked histogram
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/single_column_density_histogram.png" width="210" height="170" alt="Single item histogram with a density curve"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/multiple_columns_simple_histogram.png" width="210" height="170" alt="Multi-item histogram"/>    <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/stacked_histogram.png" width="210" height="170" alt="Stacked histogram"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/histogram.jpg" width="210" height="170" alt="Single item histogram with a density curve"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/histogram_1.jpg" width="210" height="170" alt="Multi-item histogram"/>    <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/histogram_2.png" width="210" height="170" alt="Stacked histogram"/>
 
 ## Heatmap
 ##### [Code](Code/Heatmap_class.ipynb)
