@@ -1,0 +1,406 @@
+id,ident,type,name,latitude_deg,longitude_deg,elevation_ft,continent,iso_country,iso_region,municipality,scheduled_service,gps_code,iata_code,local_code,home_link,wikipedia_link,keywords,score,last_updated
+27188,ZBAA,large_airport,Beijing Capital International Airport,40.08010101,116.5849991,116,AS,CN,CN-11,Beijing,1,ZBAA,PEK,,http://en.bcia.com.cn/,http://en.wikipedia.org/wiki/Beijing_Capital_International_Airport,"BJS, Bejing, Peking, Olympics",1021575,2008-06-13T14:30:04+00:00
+27223,ZSPD,large_airport,Shanghai Pudong International Airport,31.14340019,121.8050003,13,AS,CN,CN-31,Shanghai,1,ZSPD,PVG,,,http://en.wikipedia.org/wiki/Shanghai_Pudong_International_Airport,,51150,2009-01-30T18:17:35+00:00
+27225,ZSSS,large_airport,Shanghai Hongqiao International Airport,31.19790077,121.3359985,10,AS,CN,CN-31,Shanghai,1,ZSSS,SHA,,,http://en.wikipedia.org/wiki/Shanghai_Hongqiao_International_Airport,,1016175,2009-04-17T07:36:16+00:00
+27194,ZGGG,large_airport,Guangzhou Baiyun International Airport,23.39240074,113.2990036,50,AS,CN,CN-44,Guangzhou,1,ZGGG,CAN,,http://www.baiyunairport.com/english/index.jsp,http://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport,,51575,2008-06-13T14:30:04+00:00
+27205,ZLXY,large_airport,Xi'an Xianyang International Airport,34.447102,108.751999,1572,AS,CN,CN-61,Xi'an,1,ZLXY,XIY,,http://www.xxia.com/,http://en.wikipedia.org/wiki/Xi'an_Xianyang_International_Airport,"西安咸阳国际机场, Xian",51200,2017-08-14T22:26:31+00:00
+27198,ZGSZ,large_airport,Shenzhen Bao'an International Airport,22.63929939,113.810997,13,AS,CN,CN-44,Shenzhen,1,ZGSZ,SZX,,http://eng.szairport.com/,http://en.wikipedia.org/wiki/Shenzhen_Bao'an_International_Airport,"Baoan, Huangtian Airport",51200,2009-04-17T07:34:37+00:00
+27230,ZUUU,large_airport,Chengdu Shuangliu International Airport,30.57850075,103.9469986,1625,AS,CN,CN-51,Chengdu,1,ZUUU,CTU,,http://www.cdairport.com/cdairport/en_front/index.jsp,http://en.wikipedia.org/wiki/Chengdu_Shuangliu_International_Airport,成都双流国际机场,51150,2009-01-30T17:48:14+00:00
+27214,ZPPP,large_airport,Kunming Changshui International Airport,25.1019444,102.9291667,6903,AS,CN,CN-53,Kunming,1,ZPPP,KMG,,,https://en.wikipedia.org/wiki/Kunming_Changshui_International_Airport,,51150,2015-07-02T15:02:50+00:00
+27200,ZHHH,large_airport,Wuhan Tianhe International Airport,30.7838,114.208,113,AS,CN,CN-42,Wuhan,1,ZHHH,WUH,,http://www.whairport.com/,http://en.wikipedia.org/wiki/Wuhan_Tianhe_International_Airport,,1050,2017-05-31T21:04:20+00:00
+27215,ZSAM,large_airport,Xiamen Gaoqi International Airport,24.54400063,118.1279984,59,AS,CN,CN-35,Xiamen,1,ZSAM,XMN,,http://www.xiagc.com.cn/enweb/,http://en.wikipedia.org/wiki/Xiamen_Gaoqi_International_Airport,厦门高崎国际机场,51200,2009-01-30T18:22:16+00:00
+27218,ZSHC,large_airport,Hangzhou Xiaoshan International Airport,30.22949982,120.4339981,23,AS,CN,CN-33,Hangzhou,1,ZSHC,HGH,,http://www.hzairport.com/,http://en.wikipedia.org/wiki/Hangzhou_Xiaoshan_International_Airport,"Hang Zhou, 杭州萧山国际机场",1050,2009-04-17T07:32:06+00:00
+27196,ZGKL,large_airport,Guilin Liangjiang International Airport,25.21809959,110.0390015,570,AS,CN,CN-45,Guilin City,1,ZGKL,KWL,,,http://en.wikipedia.org/wiki/Guilin_Liangjiang_International_Airport,,1050,2009-04-16T22:26:33+00:00
+27228,ZUCK,large_airport,Chongqing Jiangbei International Airport,29.71920013,106.6419983,1365,AS,CN,CN-50,Chongqing,1,ZUCK,CKG,,,http://en.wikipedia.org/wiki/Chongqing_Jiangbei_International_Airport,,800,2009-04-17T07:30:21+00:00
+27242,ZYTL,large_airport,Zhoushuizi Airport,38.96569824,121.5390015,107,AS,CN,CN-21,Dalian,1,ZYTL,DLC,,,http://en.wikipedia.org/wiki/Dalian_Zhoushuizi_International_Airport,Dalian Air Base,800,2009-04-16T22:31:19+00:00
+27224,ZSQD,medium_airport,Liuting Airport,36.26610184,120.3740005,33,AS,CN,CN-37,Qingdao,1,ZSQD,TAO,,,http://en.wikipedia.org/wiki/Qingdao_Liuting_International_Airport,,800,2010-08-30T12:41:36+00:00
+27192,ZBTJ,large_airport,Tianjin Binhai International Airport,39.12440109,117.3460007,10,AS,CN,CN-12,Tianjin,1,ZBTJ,TSN,,,http://en.wikipedia.org/wiki/Tianjin_Binhai_International_Airport,,1050,2010-08-29T23:10:48+00:00
+27221,ZSNJ,large_airport,Nanjing Lukou Airport,31.74200058,118.8619995,49,AS,CN,CN-32,Nanjing,1,ZSNJ,NKG,,,http://en.wikipedia.org/wiki/Nanjing_Lukou_International_Airport,,800,2009-04-17T07:25:34+00:00
+27219,ZSJN,large_airport,Yaoqiang Airport,36.85720062,117.2160034,76,AS,CN,CN-37,Jinan,1,ZSJN,TNA,,,http://en.wikipedia.org/wiki/Jinan_Yaoqiang_Airport,,1050,2009-04-16T22:24:56+00:00
+31828,ZPLJ,medium_airport,Lijiang Airport,26.68000031,100.2460022,,AS,CN,CN-53,Lijiang,1,ZPLJ,LJG,,,http://en.wikipedia.org/wiki/Lijiang_Sanyi_Airport,Yunlong Air Base,450,2011-10-12T09:56:54+00:00
+27199,ZHCC,large_airport,Zhengzhou Xinzheng International Airport,34.5196991,113.8410034,495,AS,CN,CN-41,Zhengzhou,1,ZHCC,CGO,,,http://en.wikipedia.org/wiki/Zhengzhou_Xinzheng_International_Airport,Xinzheng Airport,1050,2015-02-17T13:47:05+00:00
+27238,ZYHB,large_airport,Taiping Airport,45.62340164,126.25,457,AS,CN,CN-23,Harbin,1,ZYHB,HRB,,,http://en.wikipedia.org/wiki/Harbin_Taiping_International_Airport,,800,2009-04-16T22:25:41+00:00
+27236,ZWWW,large_airport,Ürümqi Diwopu International Airport,43.90710068,87.47419739,2125,AS,CN,CN-65,Ürümqi,1,ZWWW,URC,,,http://en.wikipedia.org/wiki/%C3%9Cr%C3%BCmqi_Diwopu_International_Airport,,800,2009-04-16T22:29:21+00:00
+27243,ZYTX,large_airport,Taoxian Airport,41.63980103,123.4830017,198,AS,CN,CN-21,Shenyang,1,ZYTX,SHE,,,http://en.wikipedia.org/wiki/Shenyang_Taoxian_International_Airport,,1050,2009-04-16T22:30:05+00:00
+27193,ZBYN,large_airport,Taiyuan Wusu Airport,37.74689865,112.6279984,2575,AS,CN,CN-14,Taiyuan,1,ZBYN,TYN,,,http://en.wikipedia.org/wiki/Taiyuan_Wusu_Airport,,1050,2009-04-16T22:13:39+00:00
+27220,ZSNB,large_airport,Ningbo Lishe International Airport,29.82670021,121.461998,13,AS,CN,CN-33,Ningbo,1,ZSNB,NGB,,,http://en.wikipedia.org/wiki/Ningbo_Lishe_International_Airport,,925,2009-04-16T22:12:27+00:00
+27202,ZJSY,large_airport,Sanya Phoenix International Airport,18.30290031,109.4120026,92,AS,CN,CN-46,Sanya,1,ZJSY,SYX,,,http://en.wikipedia.org/wiki/Sanya_Phoenix_International_Airport,,900,2009-04-16T22:28:13+00:00
+31867,ZULS,medium_airport,Lhasa Gonggar Airport,29.29780006,90.91190338,11713,AS,CN,CN-54,Lhasa,1,ZULS,LXA,,,http://en.wikipedia.org/wiki/Lhasa_Gonggar_Airport,,800,2014-05-07T16:27:35+00:00
+32489,ZSTX,medium_airport,Tunxi International Airport,29.73329926,118.2559967,,AS,CN,CN-34,Huangshan,1,ZSTX,TXN,,,http://en.wikipedia.org/wiki/Huangshan_Tunxi_International_Airport,,800,2008-08-01T09:31:33+00:00
+27204,ZLLL,medium_airport,Lanzhou Zhongchuan Airport,36.51520157,103.6200027,6388,AS,CN,CN-62,Lanzhou,1,ZLLL,LHW,,,http://en.wikipedia.org/wiki/Lanzhou_Airport,"ZGC, Datong Air Base",575,2013-05-22T23:58:55+00:00
+27217,ZSFZ,large_airport,Fuzhou Changle International Airport,25.93510056,119.663002,46,AS,CN,CN-35,Fuzhou,1,ZSFZ,FOC,,http://www.xiafz.com.cn/en/index.asp,http://en.wikipedia.org/wiki/Fuzhou_Changle_International_Airport,,1200,2009-04-16T22:15:46+00:00
+27201,ZJHK,large_airport,Haikou Meilan International Airport,19.93490028,110.4589996,75,AS,CN,CN-46,Haikou,1,ZJHK,HAK,,,http://en.wikipedia.org/wiki/Haikou_Meilan_International_Airport,ZGHK,1050,2009-04-16T22:30:39+00:00
+30593,ZGSD,medium_airport,Zhuhai Jinwan Airport,22.006399,113.375999,23,AS,CN,CN-44,Zhuhai,1,ZGSD,ZUH,,,https://en.wikipedia.org/wiki/Zhuhai_Jinwan_Airport,,800,2016-06-02T08:56:56+00:00
+27237,ZYCC,medium_airport,Longjia Airport,43.99620056,125.6849976,706,AS,CN,CN-22,Changchun,1,ZYCC,CGQ,,,http://en.wikipedia.org/wiki/Changchun_Longjia_International_Airport,,1050,2010-08-30T12:42:07+00:00
+27222,ZSOF,medium_airport,Hefei Luogang International Airport,31.78000069,117.2979965,108,AS,CN,CN-34,Hefei,1,ZSOF,HFE,,,http://en.wikipedia.org/wiki/Hefei_Luogang_International_Airport,,800,2008-06-13T14:30:04+00:00
+27216,ZSCN,medium_airport,Nanchang Changbei International Airport,28.86499977,115.9000015,143,AS,CN,CN-36,Nanchang,1,ZSCN,KHN,,,http://en.wikipedia.org/wiki/Nanchang_Changbei_International_Airport,,1050,2008-06-13T14:30:04+00:00
+27189,ZBHH,large_airport,Baita International Airport,40.851398,111.823997,3556,AS,CN,CN-15,Hohhot,1,ZBHH,HET,,http://www.hhhtbtjc.com/,http://en.wikipedia.org/wiki/Hohhot_Baita_International_Airport,,975,2017-02-22T10:24:16+00:00
+27229,ZUGY,large_airport,Longdongbao Airport,26.53849983,106.8010025,3736,AS,CN,CN-52,Guiyang,1,ZUGY,KWE,,,http://en.wikipedia.org/wiki/Guiyang_Longdongbao_Airport,"Kaiyang Guiyang Air Base, Guiyang Air Base",800,2009-04-16T22:23:52+00:00
+32672,ZSWZ,large_airport,Wenzhou Longwan International Airport,27.912201,120.851997,,AS,CN,CN-33,Wenzhou,1,ZSWZ,WNZ,,,https://en.wikipedia.org/wiki/Wenzhou_Longwan_International_Airport,"温州永强机场, Wenzhou Yongqiang Airport",800,2018-05-03T13:15:09+00:00
+27227,ZSYT,closed,Yantai Laishan Airport,37.401699,121.372002,59,AS,CN,CN-37,Yantai,0,,,,,http://en.wikipedia.org/wiki/Yantai_Laishan_International_Airport,"YNT, ZSYT",800,2019-09-06T14:16:18+00:00
+30871,ZSCG,small_airport,Changzhou Benniu Airport,31.919701,119.778999,,AS,CN,CN-32,Changzhou,1,ZSCG,CZX,,,https://en.wikipedia.org/wiki/Changzhou_Benniu_Airport,,450,2016-05-31T09:13:31+00:00
+31705,ZSQZ,medium_airport,Quanzhou Jinjiang International Airport,24.7964,118.589996,,AS,CN,CN-35,Quanzhou,1,ZSQZ,JJN,,,https://en.wikipedia.org/wiki/Quanzhou_Jinjiang_International_Airport,"Jinjiang Air Base, Chin Chiang, Qingyang",450,2016-05-31T09:15:56+00:00
+32723,ZHYC,medium_airport,Yichang Sanxia Airport,30.55655,111.479988,673,AS,CN,CN-42,Yichang,1,ZHYC,YIH,,http://www.sanxiaairport.com/,https://en.wikipedia.org/wiki/Yichang_Sanxia_Airport,,450,2016-06-02T08:58:54+00:00
+32299,ZLSN,medium_airport,Xi'an Xiguan Airport,34.376701,109.120003,,AS,CN,CN-61,Xi'an,0,ZLSN,SIA,,,https://en.wikipedia.org/wiki/Xi%27an_Xiguan_Airport,Lintong Air Base,50,2016-05-31T09:05:41+00:00
+35146,CN-0001,closed,Old Guangzhou Baiyun International Airport,23.18420029,113.2659988,,AS,CN,CN-44,Guangzhou,0,,,,,http://en.wikipedia.org/wiki/Guangzhou_Baiyun_International_Airport_%28former%29,CAN ZGGG,1,2008-07-14T08:45:08+00:00
+44093,ZBNY,large_airport,Beijing Nanyuan Airport,39.78279877,116.3880005,,AS,CN,CN-11,Beijing,1,ZBNY,NAY,,,http://en.wikipedia.org/wiki/Nanyuan_Airport,,0,2009-08-30T19:53:52+00:00
+300512,ZUJZ,medium_airport,Jiuzhai Huanglong Airport,32.85333333,103.6822222,11327,AS,CN,CN-51,Jiuzhaigou,1,ZUJZ,JZH,,,http://en.wikipedia.org/wiki/Jiuzhai_Huanglong_Airport,,0,2012-01-15T11:25:11+00:00
+30679,ZBOW,medium_airport,Baotou Airport,40.56000137,109.9970016,3321,AS,CN,CN-15,Baotou,1,ZBOW,BAV,,,http://en.wikipedia.org/wiki/Baotou_Airport,,800,2008-06-17T14:19:34+00:00
+32006,ZBBB,medium_airport,Beijing Xijiao Airport,39.9608,116.257004,,AS,CN,CN-11,Beijing,0,ZBBB,,,,https://en.wikipedia.org/wiki/Beijing_Xijiao_Airport,"BJS, Beijing City Airport",800,2016-05-31T08:35:23+00:00
+31658,ZSLQ,medium_airport,Huangyan Luqiao Airport,28.56220055,121.4290009,,AS,CN,CN-33,Huangyan,1,ZSLQ,HYN,,,http://en.wikipedia.org/wiki/Huangyan_Luqiao_Airport,,800,2008-07-14T08:45:12+00:00
+27226,ZSWH,medium_airport,Weihai Airport,37.18709946,122.2289963,145,AS,CN,CN-37,Weihai,1,ZSWH,WEH,,,http://en.wikipedia.org/wiki/Weihai_Airport,"Dashuipo, Yancheng Air Base",800,2009-04-18T17:16:36+00:00
+27231,ZUXC,medium_airport,Xichang Qingshan Airport,27.9890995,102.1839981,5112,AS,CN,CN-51,Xichang,1,ZUXC,XIC,,,http://en.wikipedia.org/wiki/Xichang_Qingshan_Airport,,800,2008-06-17T14:09:06+00:00
+32709,ZLXN,medium_airport,Xining Caojiabu Airport,36.5275,102.042999,7119,AS,CN,CN-63,Xining,1,ZLXN,XNN,,,http://en.wikipedia.org/wiki/Xining_Caojiabu_Airport,,800,2016-06-02T09:02:19+00:00
+30958,ZGDY,small_airport,Dayong Airport,29.1028,110.443001,692,AS,CN,CN-43,Dayong,1,ZGDY,DYG,,,https://en.wikipedia.org/wiki/Zhangjiajie_Hehua_Airport,,450,2016-05-31T08:38:04+00:00
+30925,ZPDL,medium_airport,Dali Airport,25.649401,100.319,7050,AS,CN,CN-53,Xiaguan,1,ZPDL,DLU,,,http://en.wikipedia.org/wiki/Dali_Airport,Dali Air Base,450,2016-06-02T09:05:47+00:00
+35316,ZSYN,small_airport,Yancheng Airport,33.425833,120.203056,,AS,CN,CN-32,Yancheng,1,ZSYN,YNZ,,,http://en.wikipedia.org/wiki/Yancheng_Airport,,450,2011-10-05T17:59:32+00:00
+44159,CN-0081,medium_airport,Jinggangshan Airport,26.85689926,114.7369995,281,AS,CN,CN-36,Ji'an,1,ZSJA,JGS,,,http://en.wikipedia.org/wiki/Jinggangshan_Airport,Tiahe Air Base,0,2014-12-25T19:17:45+00:00
+300455,ZBYC,small_airport,Yuncheng Guangong Airport,35.116391,111.0313889,1242,AS,CN,CN-61,Yuncheng,1,ZBYC,YCU,,,http://en.wikipedia.org/wiki/Yuncheng_Guangong_Airport,Yuncheng Zhangxiao Airport,0,2012-01-15T12:14:54+00:00
+27197,ZGNN,large_airport,Nanning Wuxu Airport,22.60829926,108.1719971,421,AS,CN,CN-45,Nanning,1,ZGNN,NNG,,http://www.nnairport.com/,http://en.wikipedia.org/wiki/Nanning_Wuxu_International_Airport,"南宁吴圩机场, Nanning Wuxu Air Base",1200,2009-04-16T20:31:13+00:00
+27195,ZGHA,large_airport,Changsha Huanghua International Airport,28.18919945,113.2200012,217,AS,CN,CN-43,Changsha,1,ZGHA,CSX,,,http://en.wikipedia.org/wiki/Changsha_Huanghua_International_Airport,长沙黄花国际机场,1050,2013-05-17T01:38:00+00:00
+27191,ZBSJ,medium_airport,Shijiazhuang Daguocun International Airport,38.28070068,114.6969986,233,AS,CN,CN-13,Shijiazhuang,1,ZBSJ,SJW,,,http://en.wikipedia.org/wiki/Shijiazhuang_Daguocun_International_Airport,Zhengding,1050,2008-06-13T14:30:04+00:00
+27213,ZPJH,medium_airport,Xishuangbanna Gasa Airport,21.97389984,100.7600021,1815,AS,CN,CN-53,Jinghong,1,ZPJH,JHG,,,http://en.wikipedia.org/wiki/Xishuangbanna_Gasa_Airport,,925,2008-06-13T14:30:04+00:00
+27235,ZWTN,medium_airport,Hotan Airport,37.03850174,79.86489868,4672,AS,CN,CN-65,Hotan,1,ZWTN,HTN,,,http://en.wikipedia.org/wiki/Hotan_Airport,"Khotan, Heitan Air Base",800,2009-04-17T22:33:32+00:00
+30876,ZBDT,small_airport,Datong Airport,40.060299,113.482002,3442,AS,CN,CN-14,Datong,1,ZBDT,DAT,,,https://en.wikipedia.org/wiki/Datong_Yungang_Airport,,450,2016-05-31T08:36:32+00:00
+35312,ZSLG,small_airport,Lianyungang Airport,34.571667,118.873611,,AS,CN,CN-32,Lianyungang,1,ZSLG,LYG,,,http://en.wikipedia.org/wiki/Lianyungang_Airport,,450,2011-10-05T18:06:27+00:00
+31874,ZGZH,medium_airport,Liuzhou Bailian Airport,24.2075,109.390999,295,AS,CN,CN-45,Liuzhou,1,ZGZH,LZH,,,https://en.wikipedia.org/wiki/Liuzhou_Bailian_Airport,Liujiang-Liuzhou Air Base,450,2016-05-31T08:41:41+00:00
+31870,ZHLY,small_airport,Luoyang Airport,34.74110031,112.3880005,840,AS,CN,CN-41,Luoyang,1,ZHLY,LYA,,,http://en.wikipedia.org/wiki/Luoyang_Beijiao_Airport,,450,2012-01-15T13:56:11+00:00
+35314,ZGMX,small_airport,Meixian Airport,24.35000038,116.1330032,,AS,CN,CN-44,Meixian,1,ZGMX,MXZ,,,http://en.wikipedia.org/wiki/Meixian_Airport,,450,2008-07-14T08:45:12+00:00
+32048,CN-NTG,small_airport,Nantong Airport,32.07080078,120.9759979,16,AS,CN,CN-32,Nantong,1,ZSNT,NTG,,,http://en.wikipedia.org/wiki/Nantong_Xingdong_Airport,,450,2012-01-15T14:02:33+00:00
+30916,ZPDQ,medium_airport,Diqing Airport,27.7936,99.6772,10761,AS,CN,CN-53,Shangri-La,1,ZPDQ,DIG,,,http://en.wikipedia.org/wiki/Diqing_Airport,,450,2016-06-02T09:06:14+00:00
+32400,ZGOW,medium_airport,Jieyang Chaoshan International Airport,23.552,116.5033,,AS,CN,CN-44,Shantou,1,ZGOW,SWA,,,https://en.wikipedia.org/wiki/Jieyang_Chaoshan_International_Airport,,450,2015-08-09T18:15:39+00:00
+32684,ZSWX,medium_airport,Sunan Shuofang International Airport,31.49440002,120.4290009,24,AS,CN,CN-32,Wuxi,1,ZSWX,WUX,,,http://en.wikipedia.org/wiki/Wuxi_Shuofang_Airport,Wuxi Airport,450,2012-03-08T00:43:20+00:00
+32697,ZHXF,small_airport,Xiangyang Liuji Airport,32.1506,112.291,,AS,CN,CN-42,Xiangfan,1,ZHXF,XFN,,,https://en.wikipedia.org/wiki/Xiangyang_Liuji_Airport,,450,2016-05-31T08:58:06+00:00
+32713,ZSXZ,medium_airport,Xuzhou Guanyin Airport,34.059056,117.555278,,AS,CN,CN-32,Xuzhou,1,ZSXZ,XUZ,,,http://en.wikipedia.org/wiki/Xuzhou_Guanyin_Airport,,450,2011-10-08T17:38:53+00:00
+31677,ZLIC,small_airport,Yinchuan/Xincheng Air Base,38.481899,106.009003,3770,AS,CN,CN-64,Yinchuan,1,,,,,,,450,2019-09-06T15:27:30+00:00
+32726,ZSYW,medium_airport,Yiwu Airport,29.34469986,120.0319977,262,AS,CN,CN-33,Yiwu,1,ZSYW,YIW,,,http://en.wikipedia.org/wiki/Yiwu_Airport,,450,2012-10-31T00:20:28+00:00
+30670,ZHAY,small_airport,Anyang Airport,36.1339,114.344002,,AS,CN,CN-41,Anyang,0,ZHAY,AYN,,,https://en.wikipedia.org/wiki/Anyang_Airport,,50,2016-05-31T08:42:19+00:00
+31609,ZWHM,medium_airport,Hami Airport,42.8414,93.669197,2703,AS,CN,CN-65,Hami,1,ZWHM,HMI,,,http://en.wikipedia.org/wiki/Hami_Airport,"Kumul, Qumul",50,2017-07-10T05:57:34+00:00
+31701,ZYJL,small_airport,Jilin Airport,44.002201,126.396004,,AS,CN,CN-22,Jilin,0,ZYJL,JIL,,,https://en.wikipedia.org/wiki/Jilin_Ertaizi_Airport,,50,2016-05-31T08:31:00+00:00
+32685,ZGWZ,small_airport,Wuzhou Changzhoudao Airport,23.456699,111.248001,89,AS,CN,CN-45,Wuzhou,1,ZGWZ,WUZ,,,https://en.wikipedia.org/wiki/Wuzhou_Changzhoudao_Airport,,50,2016-05-31T08:39:44+00:00
+44243,CN-0165,medium_airport,Ningbo Zhangqiao Air Base,29.92280006,121.5739975,,AS,CN,CN-33,,0,,,,,,,0,2009-04-18T14:31:41+00:00
+44225,CN-0147,medium_airport,Feidong Air Base,31.90940094,117.6589966,,AS,CN,CN-34,,0,,,,,,,0,2009-04-17T07:40:09+00:00
+44178,CN-0100,medium_airport,Qingdao-Cangkou Air Base,36.15919876,120.3919983,,AS,CN,CN-37,,0,,,,,,,0,2009-04-18T14:37:41+00:00
+44102,CN-0026,medium_airport,Chengdu Air Base,30.70529938,103.9499969,,AS,CN,CN-51,,0,,,,,,,0,2009-04-16T20:46:46+00:00
+307260,CN-0017,heliport,Lushan Heliport,29.66437586,116.0799551,,AS,CN,CN-U-A,,0,,,,,,Helicopter complex,0,2012-09-24T09:26:02+00:00
+330820,ZBAD,large_airport,Beijing Daxing International Airport,39.509945,116.41092,98,AS,CN,CN-13,Beijing,0,ZBAD,PKX,,,https://en.wikipedia.org/wiki/Beijing_Daxing_International_Airport,,0,2019-03-21T23:20:18+00:00
+44169,CN-0091,medium_airport,Dongying Shengli Airport,37.50859833,118.788002,15,AS,CN,CN-37,Dongying,0,ZSDY,DOY,,,http://en.wikipedia.org/wiki/Dongying_Shengli_Airport,"Dongying Air Base, Dongying Yong'an Airport",0,2012-08-23T16:28:41+00:00
+308240,ZSFY,medium_airport,Fuyang Xiguan Airport,32.882157,115.734364,104,AS,CN,CN-U-A,Fuyang,1,ZSFY,FUG,,,http://en.wikipedia.org/wiki/Fuyang_Xiguan_Airport,,0,2013-02-03T13:55:57+00:00
+300860,ZBHD,medium_airport,Handan Airport,36.52583333,114.4255556,229,AS,CN,CN-42,Handan,1,ZBHD,HDG,,,http://en.wikipedia.org/wiki/Handan_Airport,,0,2012-03-04T13:19:17+00:00
+314908,CN-0032,closed,Kunming Wujiaba International Airport,24.9924,102.7435,6221,AS,CN,CN-53,Kunming,0,,,,,https://en.wikipedia.org/wiki/Kunming_Wujiaba_International_Airport,"KMG, ZPPP",0,2015-07-02T23:15:05+00:00
+44116,CN-0040,medium_airport,Lintsang Airfield,23.73810005,100.0250015,6230,AS,CN,CN-53,Lincang,1,ZPLC,LNJ,,,http://en.wikipedia.org/wiki/Lincang_Airport,Lincang Airport,0,2013-05-25T13:22:24+00:00
+300513,ZBDS,medium_airport,Ordos Ejin Horo Airport,39.49,109.8613889,4557,AS,CN,CN-15,Ordos,1,ZBDS,DSN,,,http://en.wikipedia.org/wiki/Ordos_Ejin_Horo_Airport,,0,2012-01-15T12:02:27+00:00
+318174,ZBDH,medium_airport,Qinhuangdao Beidaihe Airport,39.666389,119.058889,46,AS,CN,CN-13,Qinhuangdao,1,ZBDH,BPE,,,https://en.wikipedia.org/wiki/Qinhuangdao_Beidaihe_Airport,,0,2016-05-30T09:36:23+00:00
+312986,ZLXH,medium_airport,Gannan Xiahe Airport,34.8105,102.6447,10510,AS,CN,CN-62,Xiahe,1,ZLXH,GXH,,,http://en.wikipedia.org/wiki/Gannan_Xiahe_Airport,Hezuo,0,2014-10-03T18:00:02+00:00
+332096,YNT,large_airport,Yantai Penglai International Airport,37.657222,120.987222,154,AS,CN,CN-37,Yantai,1,ZSYT,YNT,,http://www.ytairport.com.cn/,https://en.wikipedia.org/wiki/Yantai_Penglai_International_Airport,,0,2019-09-03T21:59:34+00:00
+315853,ZSYC,medium_airport,Yichun Mingyueshan Airport,27.8025,114.3062,430,AS,CN,CN-36,Yichun,1,ZSYC,YIC,,,https://en.wikipedia.org/wiki/Yichun_Mingyueshan_Airport,,0,2015-10-18T16:03:50+00:00
+298989,CN-0010,medium_airport,Yinchuan Hedong International Airport,38.322758,106.393214,,AS,CN,CN-64,Yinchuan,1,ZLIC,INC,,http://www.ningxiaairport.com/,https://en.wikipedia.org/wiki/Yinchuan_Hedong_International_Airport,,0,2019-05-04T08:57:13+00:00
+300516,ZYLS,medium_airport,Yushu Batang Airport,32.83638889,97.03638889,12816,AS,CN,CN-63,Yushu,0,ZYLS,YUS,,,http://en.wikipedia.org/wiki/Yushu_Batang_Airport,,0,2012-01-15T15:56:42+00:00
+308403,ZUZY,medium_airport,Zunyi Xinzhou Airport,27.5895,107.0007,2920,AS,CN,CN-52,Zunyi,1,ZUZY,ZYI,,,http://en.wikipedia.org/wiki/Zunyi_Xinzhou_Airport,,0,2013-03-30T12:14:29+00:00
+27190,ZBLA,medium_airport,Dongshan Airport,49.20500183,119.8249969,2169,AS,CN,CN-15,Hailar,1,ZBLA,HLD,,,http://en.wikipedia.org/wiki/Hailar_Dongshan_Airport,,975,2010-08-30T12:40:20+00:00
+30635,ZWAK,medium_airport,Aksu Airport,41.262501,80.291702,3816,AS,CN,CN-65,Aksu,1,ZWAK,AKU,,,http://en.wikipedia.org/wiki/Aksu_Airport,"Ak-su, Akshu, Aqsu, Bharuka, Po-lu-chia, Aksu Wensu Air Base",800,2016-06-01T06:18:17+00:00
+30788,ZUBD,medium_airport,Qamdo Bangda Airport,30.55360031,97.10829926,14219,AS,CN,CN-54,Bangda,1,ZUBD,BPX,,,http://en.wikipedia.org/wiki/Bangda_Airport,,800,2008-06-17T13:18:19+00:00
+30829,ZBCF,medium_airport,Chifeng Airport,42.23500061,118.9079971,,AS,CN,CN-15,Chifeng,1,ZBCF,CIF,,,http://en.wikipedia.org/wiki/Chifeng_Airport,,800,2008-07-14T08:45:12+00:00
+30929,ZLDH,medium_airport,Dunhuang Airport,40.16109848,94.80919647,,AS,CN,CN-62,Dunhuang,1,ZLDH,DNH,,,http://en.wikipedia.org/wiki/Dunhuang_Airport,,800,2008-07-14T08:45:12+00:00
+31562,ZUGU,medium_airport,Guangyuan Airport,32.39110184,105.7020035,,AS,CN,CN-51,Guangyuan,1,ZUGU,GYS,,,http://en.wikipedia.org/wiki/Guangyuan_Airport,,800,2008-07-14T08:45:12+00:00
+31576,ZYHE,medium_airport,Heihe Airport,50.17162094,127.3088837,8530,AS,CN,CN-23,Heihe,1,ZYHE,HEK,,,http://en.wikipedia.org/wiki/Heihe_Airport,,800,2011-02-26T10:49:47+00:00
+27239,ZYJM,medium_airport,Jiamusi Airport,46.84339905,130.4649963,262,AS,CN,CN-23,Jiamusi,1,ZYJM,JMU,,,http://en.wikipedia.org/wiki/Jiamusi_Airport,,800,2010-08-30T12:40:53+00:00
+31706,ZYJZ,medium_airport,Jinzhou Airport,41.10139847,121.0619965,,AS,CN,CN-21,Jinzhou,1,ZYJZ,JNZ,,,http://en.wikipedia.org/wiki/Jinzhou_Airport,Xiaolingzi Air Base,800,2009-04-18T08:49:15+00:00
+27234,ZWSH,medium_airport,Kashgar Airport,39.54290009,76.01999664,4529,AS,CN,CN-65,Kashgar,1,ZWSH,KHG,,,http://en.wikipedia.org/wiki/Kashgar_Airport,Kashi Airport,800,2010-09-02T14:53:39+00:00
+31771,ZWKL,medium_airport,Korla Airport,41.69779968,86.12889862,,AS,CN,CN-65,Korla,1,ZWKL,KRL,,,http://en.wikipedia.org/wiki/Korla_Airport,,800,2008-07-14T08:45:12+00:00
+31908,ZUMY,medium_airport,Mianyang Airport,31.42810059,104.7409973,,AS,CN,CN-51,Mianyang,1,ZUMY,MIG,,,http://en.wikipedia.org/wiki/Mianyang_Airport,,800,2008-07-14T08:45:12+00:00
+27240,ZYMD,medium_airport,Mudanjiang Hailang International Airport,44.52410126,129.5690002,883,AS,CN,CN-23,Mudanjiang,1,ZYMD,MDG,,,http://en.wikipedia.org/wiki/Mudanjiang_Airport,Mudanjiang,800,2010-09-02T14:52:32+00:00
+31876,ZUNZ,medium_airport,Nyingchi Airport,29.30330086,94.33529663,9675,AS,CN,CN-54,Nyingchi,1,ZUNZ,LZY,,,http://en.wikipedia.org/wiki/Nyingchi_Airport,"Linzhi, Kang Ko",800,2009-04-18T14:32:48+00:00
+31684,ZWCM,medium_airport,Qiemo Yudu Airport,38.233611,85.465556,,AS,CN,CN-65,Qiemo,1,ZWCM,IQM,,,https://en.wikipedia.org/wiki/Qiemo_Yudu_Airport,"Cherchen, Qarqan",800,2018-04-30T08:25:28+00:00
+27241,ZYQQ,medium_airport,Qiqihar Sanjiazi Airport,47.23960114,123.9179993,477,AS,CN,CN-23,Qiqihar,1,ZYQQ,NDG,,,http://en.wikipedia.org/wiki/Qiqihar_Airport,,800,2008-06-13T14:30:04+00:00
+32440,ZBTL,medium_airport,Tongliao Airport,43.556702,122.199997,2395,AS,CN,CN-15,Tongliao,1,ZBTL,TGO,,,http://en.wikipedia.org/wiki/Tongliao_Airport,,800,2016-06-02T08:54:19+00:00
+32700,ZBXH,medium_airport,Xilinhot Airport,43.91559982,115.9639969,,AS,CN,CN-15,Xilinhot,1,ZBXH,XIL,,,http://en.wikipedia.org/wiki/Xilinhot_Airport,,800,2008-07-14T08:45:12+00:00
+27244,ZYYJ,medium_airport,Yanji Chaoyangchuan Airport,42.88280106,129.451004,624,AS,CN,CN-22,Yanji,1,ZYYJ,YNJ,,,http://en.wikipedia.org/wiki/Yanji_Chaoyangchuan_Airport,,800,2010-08-30T12:43:36+00:00
+32743,ZGZJ,medium_airport,Zhanjiang Airport,21.214399,110.358002,125,AS,CN,CN-44,Zhanjiang,1,ZGZJ,ZHA,,,http://en.wikipedia.org/wiki/Zhanjiang_Airport,,800,2016-06-02T08:57:37+00:00
+30632,ZLAK,small_airport,Ankang Wulipu Airport,32.708099,108.931,860,AS,CN,CN-61,Ankang,1,ZLAK,AKA,,,https://en.wikipedia.org/wiki/Ankang_Wulipu_Airport,,450,2016-05-31T09:00:53+00:00
+30708,ZGBH,small_airport,Beihai Airport,21.5394,109.293999,,AS,CN,CN-45,Beihai,1,ZGBH,BHY,,,https://en.wikipedia.org/wiki/Beihai_Fucheng_Airport,,450,2016-05-31T08:37:20+00:00
+30825,ZGCD,medium_airport,Changde Airport,28.91889954,111.6399994,128,AS,CN,CN-43,Changde,1,ZGCD,CGD,,,http://en.wikipedia.org/wiki/Changde_Taohuayuan_Airport,,450,2012-01-15T14:13:24+00:00
+30830,ZBCZ,small_airport,Changzhi Airport,36.247501,113.125999,,AS,CN,CN-14,Changzhi,1,ZBCZ,CIH,,,https://en.wikipedia.org/wiki/Changzhi_Wangcun_Airport,,450,2016-05-31T08:36:06+00:00
+35307,ZUDX,small_airport,Dachuan Airport,31.1302,107.4295,,AS,CN,CN-51,Dazhou,1,ZUDX,DAX,,,http://en.wikipedia.org/wiki/Daxian_Airport,Daxian,450,2011-10-06T07:46:16+00:00
+31006,ZHES,small_airport,Enshi Airport,30.32029915,109.4850006,1605,AS,CN,CN-42,Enshi,1,ZHES,ENH,,,http://en.wikipedia.org/wiki/Enshi_Xujiaping_Airport,,450,2012-01-15T13:51:34+00:00
+31769,ZSGZ,small_airport,Ganzhou Airport,25.853333,114.778889,387,AS,CN,CN-36,Ganzhou,1,ZSGZ,KOW,,,http://en.wikipedia.org/wiki/Ganzhou_Huangjin_Airport,,450,2015-01-21T12:39:43+00:00
+35308,ZLGM,medium_airport,Golmud Airport,36.4006,94.786102,9334,AS,CN,CN-63,Golmud,1,ZLGM,GOQ,,,http://en.wikipedia.org/wiki/Golmud_Airport,,450,2016-06-02T09:00:31+00:00
+31659,ZLHZ,small_airport,Hanzhong Chenggu Airport,33.134136,107.206014,,AS,CN,CN-61,Hanzhong,1,ZLHZ,HZG,,,https://en.wikipedia.org/wiki/Hanzhong_Chenggu_Airport,,450,2017-06-15T10:23:17+00:00
+31695,ZSJD,medium_airport,Jingdezhen Airport,29.33860016,117.1760025,112,AS,CN,CN-36,Jingdezhen,1,ZSJD,JDZ,,,http://en.wikipedia.org/wiki/Jingdezhen_Luojia_Airport,Fouliang Air Base,450,2012-01-15T13:46:55+00:00
+35309,ZSJJ,small_airport,Jiujiang Lushan Airport,29.476944,115.801111,,AS,CN,CN-36,Jiujiang,1,ZSJJ,JIU,,,http://en.wikipedia.org/wiki/Jiujiang_Lushan_Airport,,450,2011-10-06T07:15:29+00:00
+35310,ZWKM,small_airport,Karamay Airport,45.46655,84.9527,,AS,CN,CN-65,Karamay,1,ZWKM,KRY,,,http://en.wikipedia.org/wiki/Karamay_Airport,,450,2011-10-06T11:49:35+00:00
+31731,ZWKC,small_airport,Kuqa Airport,41.677856,82.872917,3524,AS,CN,CN-65,Kuqa,1,ZWKC,KCA,,,http://en.wikipedia.org/wiki/Kuqa_Airport,Kucha,450,2017-07-10T06:00:10+00:00
+35311,ZLAN,closed,Lanzhou City Airport,36.033333,103.86667,5040,AS,CN,CN-62,Lanzhou,0,ZLAN,,,,,LHW,450,2013-05-23T00:31:48+00:00
+31871,ZSLY,small_airport,Shubuling Airport,35.04610062,118.4120026,,AS,CN,CN-37,Linyi,1,ZSLY,LYI,,,http://en.wikipedia.org/wiki/Linyi_Airport,,450,2008-07-14T08:45:12+00:00
+31862,ZPLX,medium_airport,Mangshi Airport,24.4011,98.5317,2890,AS,CN,CN-53,Luxi,1,ZPMS,LUM,,,,,450,2016-05-27T20:33:07+00:00
+35313,ZULZ,small_airport,Luzhou Airport,28.85219955,105.3929977,,AS,CN,CN-51,Luzhou,1,ZULZ,LZO,,,http://en.wikipedia.org/wiki/Luzhou_Airport,,450,2008-07-14T08:45:12+00:00
+32003,ZUNC,small_airport,Nanchong Airport,30.79545,106.1626,,AS,CN,CN-51,Nanchong,1,ZUNC,NAO,,,http://en.wikipedia.org/wiki/Nanchong_Airport,,450,2011-10-06T07:54:25+00:00
+32041,ZHNY,small_airport,Nanyang Jiangying Airport,32.980801,112.614998,840,AS,CN,CN-41,Nanyang,1,ZHNY,NNY,,,https://en.wikipedia.org/wiki/Nanyang_Jiangying_Airport,,450,2016-05-31T08:44:02+00:00
+32417,ZPSM,small_airport,Pu'er Simao Airport,22.793301,100.959,,AS,CN,CN-53,Pu'er,1,ZPSM,SYM,,,https://en.wikipedia.org/wiki/Pu%27er_Simao_Airport,,450,2016-05-31T09:12:10+00:00
+31685,ZLQY,medium_airport,Qingyang Airport,35.799702,107.602997,,AS,CN,CN-62,Qingyang,1,ZLQY,IQN,,,https://en.wikipedia.org/wiki/Qingyang_Airport,Dingxi Air Base,450,2016-05-31T09:04:09+00:00
+31714,ZSJU,medium_airport,Quzhou Airport,28.965799,118.899002,,AS,CN,CN-33,Quzhou,1,ZSJU,JUZ,,,https://en.wikipedia.org/wiki/Quzhou_Airport,,450,2016-05-31T09:14:58+00:00
+35315,ZBUL,small_airport,Ulanhot Airport,46.195333,122.008333,,AS,CN,CN-15,Ulanhot,1,ZBUL,HLH,,,http://en.wikipedia.org/wiki/Ulanhot_Airport,,450,2011-10-05T18:23:03+00:00
+32688,ZUWX,small_airport,Wanxian Airport,30.8017,108.433,,AS,CN,CN-50,Wanxian,1,ZUWX,WXN,,,http://en.wikipedia.org/wiki/Wanzhou_Airport,,450,2011-10-06T07:38:36+00:00
+32646,ZSWF,medium_airport,Weifang Airport,36.646702,119.119003,,AS,CN,CN-37,Weifang,1,ZSWF,WEF,,,https://en.wikipedia.org/wiki/Weifang_Airport,,450,2016-05-31T09:17:53+00:00
+32683,ZSWY,medium_airport,Nanping Wuyishan Airport,27.7019,118.000999,614,AS,CN,CN-35,Wuyishan,1,ZSWY,WUS,,,https://en.wikipedia.org/wiki/Wuyishan_Airport,,450,2016-05-31T09:18:35+00:00
+31009,ZLYA,small_airport,Yan'an Ershilipu Airport,36.636902,109.554001,3100,AS,CN,CN-61,Yan'an,1,ZLYA,ENY,,,https://en.wikipedia.org/wiki/Yan%27an_Ershilipu_Airport,,450,2016-05-31T09:06:44+00:00
+32725,ZWYN,small_airport,Yining Airport,43.955799,81.330299,,AS,CN,CN-65,Yining,1,ZWYN,YIN,,,https://en.wikipedia.org/wiki/Yining_Airport,,450,2016-05-31T08:27:57+00:00
+32563,ZLYL,small_airport,Yulin Yuyang Airport,38.35971,109.590927,,AS,CN,CN-61,Yulin,1,ZLYL,UYN,,http://www.cwag-yl.com/,https://en.wikipedia.org/wiki/Yulin_Yuyang_Airport,,450,2019-05-04T09:00:44+00:00
+32740,ZPZT,small_airport,Zhaotong Airport,27.32559967,103.7549973,,AS,CN,CN-53,Zhaotong,1,ZPZT,ZAT,,,http://en.wikipedia.org/wiki/Zhaotong_Airport,,450,2008-07-14T08:45:12+00:00
+31624,ZSZS,small_airport,Zhoushan Airport,29.93420029,122.3619995,3,AS,CN,CN-33,Zhoushan,1,ZSZS,HSN,,,http://en.wikipedia.org/wiki/Zhoushan_Putuoshan_Airport,,450,2012-01-15T13:28:21+00:00
+31699,ZLJQ,medium_airport,Jiayuguan Airport,39.856899,98.3414,5112,AS,CN,CN-62,Jiayuguan,1,ZLJQ,JGN,,,http://en.wikipedia.org/wiki/Jiayuguan_Airport,,250,2016-06-02T09:01:07+00:00
+30650,ZSAQ,medium_airport,Anqing Tianzhushan Airport,30.582199,117.050003,,AS,CN,CN-34,Anqing,1,ZSAQ,AQG,,,https://en.wikipedia.org/wiki/Anqing_Tianzhushan_Airport,Anqing Air Base,50,2016-05-31T09:12:51+00:00
+30646,ZYAS,medium_airport,Anshan Air Base,41.105301,122.853996,,AS,CN,CN-21,Anshan,1,ZYAS,AOG,,,https://en.wikipedia.org/wiki/Anshan_Teng%27ao_Airport,,50,2016-05-31T08:28:51+00:00
+30827,ZYCY,medium_airport,Chaoyang Airport,41.538101,120.434998,568,AS,CN,CN-21,Chaoyang,1,ZYCY,CHG,,,https://en.wikipedia.org/wiki/Chaoyang_Airport,,50,2016-05-31T08:29:46+00:00
+31818,ZHGH,medium_airport,Guangzhou MR Air Base,32.38940048,111.6949997,,AS,CN,CN-42,Guanghua,0,ZHGH,LHK,,,,,50,2009-04-17T16:02:44+00:00
+31610,ZGHY,small_airport,Hengyang Nanyue Airport,26.9053,112.627998,,AS,CN,CN-43,Hengyang,1,ZGHY,HNY,,,https://en.wikipedia.org/wiki/Hengyang_Nanyue_Airport,,50,2016-05-31T08:38:29+00:00
+31819,ZULP,small_airport,Liangping Airport,30.679399,107.786003,,AS,CN,CN-50,Liangping,0,ZULP,LIA,,,https://en.wikipedia.org/wiki/Liangping_Airport,,50,2016-05-31T09:19:23+00:00
+42466,CN-0002,medium_airport,Nanjing Air Base,31.99830055,118.8119965,,AS,CN,CN-32,Nanjing,0,,,,,,Dajiaochang,50,2009-04-17T07:27:07+00:00
+32295,ZBSH,closed,Shanhaiguan Airport,39.968102,119.731003,30,AS,CN,CN-13,Qinhuangdao,0,ZBSH,,,,http://en.wikipedia.org/wiki/Qinhuangdao_Shanhaiguan_Airport,,50,2016-05-30T09:34:32+00:00
+32235,ZSRG,medium_airport,Rugao Air Base,32.25788498,120.5016556,,AS,CN,CN-32,Rugao,0,ZSRG,RUG,,,,,50,2009-04-18T14:40:28+00:00
+32406,ZWSS,medium_airport,Shanshan Airport,42.9117012,90.24749756,,AS,CN,CN-65,Shanshan,0,ZWSS,SXJ,,,,,50,2009-04-18T15:05:30+00:00
+32296,ZHSS,small_airport,Shashi Airport,30.324289,112.279861,112,AS,CN,CN-42,Shashi,0,ZHSS,SHS,,,https://en.wikipedia.org/wiki/Shashi_Airport,,50,2016-06-02T08:58:18+00:00
+32753,ZYYY,medium_airport,Shenyang Dongta Airport,41.78440094,123.4960022,,AS,CN,CN-21,Shenyang,0,ZYYY,,,,,,50,2009-04-18T17:10:29+00:00
+32420,ZSSZ,medium_airport,Suzhou Guangfu Airport,31.2631,120.401001,,AS,CN,CN-32,Suzhou,0,ZSSZ,SZV,,,https://en.wikipedia.org/wiki/Suzhou_Guangfu_Airport,,50,2016-05-31T09:17:29+00:00
+28144,ZWTC,small_airport,Tacheng Airport,46.67250061,83.34079742,,AS,CN,CN-65,Tacheng,0,ZWTC,TCG,,,http://en.wikipedia.org/wiki/Tacheng_Airport,,50,2008-07-14T08:45:12+00:00
+32745,ZJYX,small_airport,Woody Island Airport,16.83279991,112.3440018,,AS,CN,CN-46,Woody Island,0,ZJYX,,,,http://en.wikipedia.org/wiki/Woody_Island%2C_South_China_Sea,"VH84, Yongxing Dao Airport",50,2009-08-07T09:45:25+00:00
+32649,ZSWU,medium_airport,Wuhu Air Base,31.3906,118.408997,,AS,CN,CN-34,Wuhu,0,ZSWU,WHU,,,https://en.wikipedia.org/wiki/Wuhu_Airport,,50,2016-05-31T09:18:16+00:00
+32701,ZGXN,small_airport,Xingning Airport,24.1492,115.758003,,AS,CN,CN-44,Xingning,0,ZGXN,XIN,,,https://en.wikipedia.org/wiki/Xingning_Air_Base,,50,2016-05-31T08:41:15+00:00
+44094,CN-0018,medium_airport,Tangguantun Air Base,38.78110123,117.0680008,,AS,CN,CN-12,,0,,,,,,,0,2009-04-18T15:18:12+00:00
+44097,CN-0021,medium_airport,Yangcun Air Base,39.37329865,117.0950012,,AS,CN,CN-12,,0,,,,,,Meichong,0,2009-04-18T15:19:19+00:00
+44089,CN-0013,medium_airport,Fengning Air Base,41.26079941,116.6179962,,AS,CN,CN-13,,0,,,,,,,0,2009-04-17T07:42:00+00:00
+44095,CN-0019,closed,Tangshan Air Base,39.65639877,118.1360016,,AS,CN,CN-13,,0,,,,,,,0,2009-04-18T09:10:25+00:00
+44101,CN-0025,medium_airport,Zunhua Air Base,40.10250092,117.887001,,AS,CN,CN-13,,0,,,,,,,0,2009-04-18T09:09:22+00:00
+44168,CN-0090,medium_airport,Cangxian Air Base,38.40250015,116.9290009,,AS,CN,CN-13,,0,,,,,,,0,2009-04-18T09:07:54+00:00
+44172,CN-0094,medium_airport,Jiugucheng Air Base,37.49000168,116.1179962,,AS,CN,CN-13,,0,,,,,,,0,2009-04-18T09:07:27+00:00
+44279,CN-0201,medium_airport,Pingquan Air Base,40.9007988,118.6809998,,AS,CN,CN-13,,0,,,,,,,0,2009-04-18T09:08:52+00:00
+44096,CN-0020,medium_airport,Wenshui Air Base,37.40779877,111.9660034,,AS,CN,CN-14,,0,,,,,,,0,2009-04-18T15:25:22+00:00
+44090,CN-0014,medium_airport,Hohhot Air Base,40.73720169,111.2289963,,AS,CN,CN-15,,0,,,,,,,0,2009-04-17T22:34:09+00:00
+44265,CN-0187,medium_airport,Chifeng Air Base,42.15890121,118.8420029,,AS,CN,CN-15,,0,,,,,,,0,2009-04-16T20:47:33+00:00
+322165,ZBMZ,medium_airport,Manzhouli Xijiao Airport,49.566667,117.33,2231,AS,CN,CN-15,,1,ZBMZ,NZH,,,https://en.wikipedia.org/wiki/Manzhouli_Xijiao_Airport,,0,2017-02-15T03:26:50+00:00
+43972,CN-0003,medium_airport,Laohutun Air Base,39.66999817,121.7659988,,AS,CN,CN-21,,0,,,,,,,0,2009-04-16T19:45:13+00:00
+43973,CN-0004,medium_airport,Pulandian Air Base,39.45090103,122.0179977,,AS,CN,CN-21,,0,,,,,,,0,2009-04-16T19:44:52+00:00
+44182,CN-0104,medium_airport,Xingcheng Air Base,40.58029938,120.697998,30,AS,CN,CN-21,,0,ZYXC,XEN,,,,,0,2012-09-03T12:17:02+00:00
+44269,CN-0191,medium_airport,Fuxin Air Base,42.07889938,121.6620026,,AS,CN,CN-21,,0,,,,,,,0,2009-04-17T07:46:00+00:00
+44275,CN-0197,medium_airport,Kaiyuan Air Base,42.5257988,123.9820023,,AS,CN,CN-21,,0,,,,,,,0,2009-04-18T08:53:19+00:00
+44287,CN-0209,medium_airport,Suizhong Air Base,40.2989006,120.3590012,,AS,CN,CN-21,,0,,,,,,,0,2009-04-18T17:13:32+00:00
+44288,CN-0210,medium_airport,Tuchengzi Air Base,38.91220093,121.2389984,,AS,CN,CN-21,,0,,,,,,,0,2009-04-18T17:14:30+00:00
+44290,CN-0212,closed,Yingchenzi/Xinzhaizi-Dalian Air Base,39.010601,121.389999,,AS,CN,CN-21,,0,,,,,,,0,2016-06-03T03:50:05+00:00
+44263,CN-0185,medium_airport,Changchun Air Base,43.90530014,125.197998,,AS,CN,CN-22,,0,,,,,,,0,2009-04-16T20:42:27+00:00
+44270,CN-0192,medium_airport,Gongzhuling Air Base,43.52420044,124.7860031,,AS,CN,CN-22,,0,,,,,,,0,2009-04-17T15:58:36+00:00
+44286,CN-0208,medium_airport,Siping Air Base,43.1568985,124.2919998,,AS,CN,CN-22,,0,,,,,,,0,2009-04-18T17:12:39+00:00
+44271,CN-0193,medium_airport,Harbin Air Base,45.59749985,126.6589966,,AS,CN,CN-23,,0,,,,,,Ping Fang Tien Air Base,0,2009-09-26T20:45:23+00:00
+44276,CN-0198,medium_airport,Lalin Air Base,45.25939941,126.8949966,,AS,CN,CN-23,,0,,,,,,,0,2009-04-18T09:15:18+00:00
+44285,CN-0207,small_airport,Shuangcheng Air Base,45.40779877,126.3190002,,AS,CN,CN-23,,0,,,,,,,0,2009-04-18T09:16:13+00:00
+44167,CN-0089,medium_airport,Baitabu Air Base,34.57139969,118.875,,AS,CN,CN-32,,0,,,,,,,0,2009-04-16T20:32:00+00:00
+44183,CN-0105,medium_airport,Xuzhou Daguozhang Air Base,34.05889893,117.5579987,,AS,CN,CN-32,,0,,,,,,,0,2009-04-18T09:27:49+00:00
+44184,CN-0106,medium_airport,Xuzhou Jiulishan Air Base,34.23059845,117.2460022,,AS,CN,CN-32,,0,,,,,,,0,2009-04-18T09:26:51+00:00
+322166,YTY,medium_airport,Yangzhou Taizhou Airport,32.560184,119.717141,16,AS,CN,CN-32,,1,ZSYA,YTY,,,https://en.wikipedia.org/wiki/Yangzhou_Taizhou_Airport,,0,2017-02-15T03:31:00+00:00
+44223,CN-0145,medium_airport,Changzing Air Base,30.96859932,119.7310028,,AS,CN,CN-33,,0,,,,,,,0,2009-04-16T20:45:25+00:00
+44224,CN-0146,medium_airport,Daishan Air Base,30.28779984,122.1449966,,AS,CN,CN-33,,0,,,,,,,0,2009-04-16T21:54:57+00:00
+44232,CN-0154,medium_airport,Jiaxing Air Base,30.70664024,120.6806107,,AS,CN,CN-33,,0,,,,,,,0,2009-04-18T08:37:09+00:00
+44237,CN-0159,medium_airport,Longyou Air Base,29.11310005,119.177002,,AS,CN,CN-33,,0,,,,,,,0,2009-04-18T13:25:54+00:00
+44230,CN-0152,medium_airport,Huian Air Base,25.02610016,118.8069992,,AS,CN,CN-35,,0,,,,,,,0,2009-04-17T22:40:50+00:00
+44236,CN-0158,medium_airport,Longtian/Lung-T'ien Air Base,25.57279968,119.4599991,,AS,CN,CN-35,,0,,,,,,,0,2009-04-18T13:22:37+00:00
+44261,CN-0183,small_airport,Zhangzhou/Chang-Chou Airfield,24.5625,117.6539993,,AS,CN,CN-35,,0,,,,,,,0,2009-04-18T08:59:53+00:00
+44216,CN-0138,medium_airport,Xincheng Air Base,25.54829979,114.6190033,,AS,CN,CN-36,,0,,,,,,,0,2009-04-18T09:32:01+00:00
+44239,CN-0161,medium_airport,Mahuiling Air Base,29.47719955,115.802002,,AS,CN,CN-36,,0,,,,,,,0,2009-04-18T09:35:38+00:00
+44260,CN-0182,medium_airport,Zhangshu Air Base,28.02169991,115.5510025,,AS,CN,CN-36,,0,,,,,,,0,2009-04-18T09:33:39+00:00
+44170,CN-0092,medium_airport,Jiaozhou/Jiaocheng Air Base,36.33060074,120.0240021,,AS,CN,CN-37,,0,,,,,,,0,2009-04-18T08:35:11+00:00
+44171,CN-0093,medium_airport,Jinan Air Base,36.67919922,116.9209976,,AS,CN,CN-37,,0,,,,,,,0,2009-04-18T08:41:12+00:00
+44174,CN-0096,medium_airport,Laiyang Air Base,36.96360016,120.5910034,,AS,CN,CN-37,,0,,,,,,,0,2009-04-18T13:13:47+00:00
+44179,CN-0101,seaplane_base,Qingdao Naval Base,36.0469017,120.2839966,,AS,CN,CN-37,,0,,,,,,,0,2009-04-18T14:36:52+00:00
+44181,CN-0103,medium_airport,Wendeng Air Base,37.26470184,122.0230026,,AS,CN,CN-37,,0,,,,,,,0,2009-04-18T17:15:45+00:00
+44187,CN-0109,medium_airport,Yidu Air Base,36.59140015,118.5270004,,AS,CN,CN-37,,0,,,,,,,0,2009-04-18T17:21:42+00:00
+44189,CN-0111,medium_airport,Zhucheng Air Base,36.02750015,119.439003,,AS,CN,CN-37,,0,,,,,,,0,2009-04-18T17:23:09+00:00
+44175,CN-0097,medium_airport,Luyang Air Base,33.68470001,112.8909988,,AS,CN,CN-41,,0,,,,,,,0,2009-04-18T09:20:31+00:00
+323907,CN-0067,small_airport,Queshan Air Base,32.540819,114.079141,,AS,CN,CN-41,,0,,,,,,,0,2017-06-16T07:27:19+00:00
+324768,CN-0076,medium_airport,Zhengzhou Air Base,34.86125,113.729631,,AS,CN,CN-41,,0,,,,,,,0,2017-08-22T01:28:04+00:00
+44134,CN-0056,medium_airport,Dangyang Air Base,30.79859924,111.8099976,,AS,CN,CN-42,,0,,,,,,,0,2009-04-16T22:00:59+00:00
+44163,CN-0085,medium_airport,Xiaogan Air Base,30.95439911,113.9110031,,AS,CN,CN-42,,0,,,,,,,0,2009-04-18T09:23:00+00:00
+44149,CN-0071,medium_airport,Leiyang Air Base,26.58720016,112.8919983,,AS,CN,CN-43,,0,,,,,,,0,2009-04-18T13:15:21+00:00
+44137,CN-0059,small_airport,Guangzhou East Airfield,23.16469955,113.3690033,,AS,CN,CN-44,,0,,,,,,,0,2009-04-17T16:01:13+00:00
+44153,CN-0075,small_airport,Meixian Air Base,24.26499939,116.0999985,,AS,CN,CN-44,,0,,,,,,,0,2009-04-18T14:28:20+00:00
+44158,CN-0080,medium_airport,Suixi Air Base,21.39579964,110.1999969,,AS,CN,CN-44,,0,,,,,,,0,2009-04-18T15:46:24+00:00
+44131,CN-0053,medium_airport,Baihe Ning Ming Air Base,22.12059975,107.125,,AS,CN,CN-45,,0,,,,,,,0,2009-04-16T20:30:20+00:00
+44141,CN-0063,medium_airport,Guiping Mengshu Air Base,23.3307991,110.0090027,,AS,CN,CN-45,,0,,,,,,,0,2009-04-17T16:04:09+00:00
+44135,CN-0057,medium_airport,Foluo Northeast Air Base,18.69219971,109.1610031,,AS,CN,CN-46,,0,,,,,,,0,2009-04-17T07:43:02+00:00
+44142,CN-0064,small_airport,Haikou City Airfield,20.01889992,110.3470001,,AS,CN,CN-46,,0,,,,,,,0,2009-04-17T22:30:04+00:00
+44147,CN-0069,medium_airport,Jialaishi Air Base,19.69720078,109.7259979,,AS,CN,CN-46,,0,,,,,,,0,2009-04-18T08:30:46+00:00
+44150,CN-0072,medium_airport,Lingshui Air Base,18.49440002,109.987999,,AS,CN,CN-46,,0,,,,,,,0,2009-04-18T09:03:04+00:00
+314643,CN-0028,heliport,Fiery Cross Reef Helipad,9.539168,112.880071,,AS,CN,CN-46,,0,,,,,,,0,2015-05-30T11:38:50+00:00
+314644,CN-0029,small_airport,Fiery Cross Reef Airfield,9.552789,112.889554,,AS,CN,CN-46,,0,,,,,,,0,2015-05-30T11:41:28+00:00
+44121,CN-0045,medium_airport,Qionglai Air Base,30.48999977,103.4649963,,AS,CN,CN-51,,0,,,,,,,0,2009-04-18T14:38:30+00:00
+302314,ZUTR,small_airport,Tongren Fenghuang Airport,27.883333,109.308889,,AS,CN,CN-52,,0,ZUTR,TEN,,,http://en.wikipedia.org/wiki/Tongren_Fenghuang_Airport,,0,2012-08-04T23:46:48+00:00
+44103,CN-0027,medium_airport,Baoshan Yunduan Airport,25.053301,99.168297,5453,AS,CN,CN-53,,1,ZPBS,BSD,,,http://en.wikipedia.org/wiki/Baoshan_Yunduan_Airport,,0,2016-06-01T06:34:59+00:00
+44117,CN-0041,medium_airport,Luliang Air Base,24.98830032,103.6419983,,AS,CN,CN-53,,0,,,,,,,0,2009-04-18T14:25:12+00:00
+44119,CN-0043,medium_airport,Mengzi Air Base,23.39529991,103.3339996,,AS,CN,CN-53,,0,,,,,,,0,2009-04-18T14:29:30+00:00
+44124,CN-0048,medium_airport,Wenshan Air Base,23.71559906,103.8270035,,AS,CN,CN-53,,0,,,,,,,0,2009-04-18T15:40:50+00:00
+44125,CN-0049,medium_airport,Xiangyun Midu Air Base,25.44529915,100.7350006,,AS,CN,CN-53,,0,,,,,,,0,2009-04-18T15:38:23+00:00
+44128,CN-0035,small_airport,Zhanyi Airport,25.59219933,103.8290024,,AS,CN,CN-53,,0,,,,,,,0,2009-04-18T15:40:15+00:00
+44109,CN-0033,small_airport,Dangxiong Air Base,30.48500061,91.06580353,,AS,CN,CN-54,,0,,,,,,,0,2009-04-16T22:00:10+00:00
+44192,CN-0114,medium_airport,Baoji Air Base,34.53170013,107.4720001,,AS,CN,CN-61,,0,,,,,,,0,2009-04-16T20:34:50+00:00
+44212,CN-0134,medium_airport,Wugong Air Base,34.27420044,108.2659988,,AS,CN,CN-61,,0,,,,,,,0,2009-04-18T15:29:48+00:00
+44215,CN-0137,medium_airport,Xian Air Base,34.15390015,108.598999,,AS,CN,CN-61,,0,,,,,,,0,2009-04-18T15:30:22+00:00
+44218,CN-0140,medium_airport,Yanliang Air Base,34.64390182,109.2429962,,AS,CN,CN-61,,0,,,,,,,0,2009-04-18T15:29:09+00:00
+44203,CN-0125,medium_airport,Ljtao Air Base,35.30830002,103.8359985,,AS,CN,CN-62,,0,,,,,,,0,2009-04-18T13:21:52+00:00
+44205,CN-0127,medium_airport,Qingshui Air Base,39.55469894,98.88420105,,AS,CN,CN-62,,0,,,,,,,0,2009-04-17T22:44:06+00:00
+44214,CN-0136,medium_airport,Wuwei Air Base,37.98830032,102.5670013,,AS,CN,CN-62,,0,,,,,,,0,2009-04-17T22:45:21+00:00
+44268,CN-0190,medium_airport,Dingxin/Shuangchengzi Air Base,40.40140152,99.78939819,,AS,CN,CN-62,,0,,,,,,,0,2009-04-16T22:04:48+00:00
+44195,CN-0117,medium_airport,Gonghe Air Base,36.33670044,100.4800034,,AS,CN,CN-63,,0,,,,,,,0,2009-04-17T15:57:53+00:00
+44207,CN-0129,small_airport,Shihezi Airfield,44.33280182,86.11669922,,AS,CN,CN-65,,0,,,,,,,0,2009-04-18T15:35:02+00:00
+44210,CN-0132,medium_airport,Urumqi South Air Base,43.46580124,87.53220367,,AS,CN,CN-65,,0,,,,,,,0,2009-04-18T15:34:21+00:00
+44211,CN-0133,medium_airport,Uxxaktal Air Base,42.1814003,87.18810272,,AS,CN,CN-65,,0,,,,,,,0,2009-04-18T15:32:35+00:00
+44213,CN-0135,medium_airport,Wulumuqi Air Base,43.95029831,87.07859802,2425,AS,CN,CN-65,,0,,,,,,,0,2013-10-22T17:21:38+00:00
+44217,CN-0139,medium_airport,Yaerbashi Test Range,43.07720184,92.80809784,,AS,CN,CN-65,,0,,,,,,,0,2009-04-18T15:33:10+00:00
+314648,CN-0031,heliport,Subi Reef Helipad,10.913002,114.061933,,AS,CN,CN-U-A,,0,,,,,,,0,2015-05-30T12:26:42+00:00
+329362,CN-0077,heliport,PLA Khunjerab Post Helipad,36.930618,75.553407,13525,AS,CN,CN-U-A,,0,,,,,,,0,2018-09-29T18:13:31+00:00
+329666,CN-0083,large_airport,Guodu air base,36.001741,117.63201,,AS,CN,CN-U-A,,0,,,,,,,0,2018-11-13T04:15:42+00:00
+312371,AHJ,medium_airport,Hongyuan Airport,32.53154,102.35224,11600,AS,CN,CN-51,Aba,0,ZUHY,AHJ,,,http://en.wikipedia.org/wiki/Hongyuan_Airport,,0,2016-03-17T07:43:11+00:00
+44191,CN-0113,medium_airport,Altay Air Base,47.74988556,88.0858078,2460,AS,CN,CN-65,Altay,1,ZWAT,AAT,,,http://en.wikipedia.org/wiki/Altay_Airport,,0,2011-09-03T02:09:14+00:00
+300785,ZUAS,medium_airport,Anshun Huangguoshu Airport,26.26055556,105.8733333,4812,AS,CN,CN-U-A,Anshun,0,ZUAS,AVA,,,http://en.wikipedia.org/wiki/Anshun_Huangguoshu_Airport,,0,2012-02-17T18:28:26+00:00
+315854,ZBES,medium_airport,Arxan Yi'ershi Airport,47.3106,119.9117,2925,AS,CN,CN-15,Arxan,1,ZBES,YIE,,,https://en.wikipedia.org/wiki/Arxan_Yi%27ershi_Airport,,0,2015-10-18T16:02:44+00:00
+314557,RHT,small_airport,Alxa Right Banner Badanjilin Airport,39.225,101.546,4659,AS,CN,CN-15,Badanjilin,1,ZBAR,RHT,,,http://en.wikipedia.org/wiki/Alxa_Right_Banner_Badanjilin_Airport,,0,2018-04-26T07:10:52+00:00
+316519,DBC,medium_airport,Baicheng Chang'an Airport,45.505278,123.019722,480,AS,CN,CN-22,Baicheng,0,ZYBA,DBC,,,https://en.wikipedia.org/wiki/Baicheng_Chang%27an_Airport,,0,2018-04-26T05:51:26+00:00
+44160,CN-0082,medium_airport,Baise Youjiang Airport,23.72060013,106.9599991,490,AS,CN,CN-45,Baise,1,ZGBS,AEB,,,http://en.wikipedia.org/wiki/Baise_Youjiang_Airport,"Tian Yang Air Base, Bose airport, 百色右江机场",0,2013-05-17T00:18:49+00:00
+300544,NBS,medium_airport,Changbaishan Airport,42.066944,127.602222,2874,AS,CN,CN-22,Baishan,1,ZYBS,NBS,,,http://en.wikipedia.org/wiki/Changbaishan_Airport,,0,2016-06-09T11:08:10+00:00
+318172,CN-0054,small_airport,Baoding Army Heliport,38.83359,115.521626,,AS,CN,CN-13,Baoding,0,,,,,,,0,2016-05-30T08:29:33+00:00
+314499,ZBYZ,medium_airport,Bayannur Tianjitai Airport,40.926,107.7428,3400,AS,CN,CN-15,Bavannur,1,ZBYZ,RLK,,,http://en.wikipedia.org/wiki/Bayannur_Tianjitai_Airport,,0,2015-05-07T11:27:38+00:00
+314558,AXF,medium_airport,Alxa Left Banner Bayanhot Airport,38.74831,105.58858,4560,AS,CN,CN-15,Bayanhot,1,ZBAL,AXF,,,http://en.wikipedia.org/wiki/Alxa_Left_Banner_Bayanhot_Airport,,0,2018-04-26T06:17:59+00:00
+323881,CN-0062,small_airport,Bazhong Enyang Airport,31.73842,106.644872,1804,AS,CN,CN-51,Bazhong,1,,BZX,,,https://en.wikipedia.org/wiki/Bazhong_Enyang_Airport,,0,2019-02-08T11:02:11+00:00
+44082,CN-0006,medium_airport,Beijing Shahezhen Air Base,40.14916611,116.3213882,,AS,CN,CN-11,Beijing,0,,,,,,,0,2009-04-16T19:48:46+00:00
+44083,CN-0007,medium_airport,Beijing Tongxian Air Base,39.81111145,116.7083359,,AS,CN,CN-11,Beijing,0,,,,,,,0,2009-04-16T19:50:31+00:00
+44092,CN-0016,medium_airport,Liangxiangzhen Air Base,39.75780106,116.1259995,,AS,CN,CN-11,Beijing,0,,,,,,,0,2009-08-30T20:07:05+00:00
+301883,ZSBB,medium_airport,Bengbu Airport,32.84773333,117.3202444,100,AS,CN,CN-34,Bengbu,0,ZSBB,BFU,,,http://en.wikipedia.org/wiki/Bengbu_Airport,,0,2012-06-29T19:10:20+00:00
+318169,ZUBJ,medium_airport,Bijie Feixiong Airport,27.267066,105.472097,4751,AS,CN,CN-52,Bijie,1,ZUBJ,BFJ,,,https://en.wikipedia.org/wiki/Bijie_Feixiong_Airport,,0,2016-05-30T08:01:49+00:00
+46650,ZWAX,medium_airport,Alashankou Bole (Bortala) airport,44.895,82.3,1253,AS,CN,CN-65,Bole,0,ZWBL,BPL,,,http://en.wikipedia.org/wiki/Bole_Alashankou_Airport,,0,2012-02-19T10:44:13+00:00
+313426,ZWKN,medium_airport,Kanas Airport,48.2223,86.9959,3921,AS,CN,CN-65,Burqin,1,ZWKN,KJI,,,http://en.wikipedia.org/wiki/Kanas_Airport,,0,2014-12-20T16:18:52+00:00
+327447,ZPCW,medium_airport,Cangyuan Washan Airport,23.273889,99.373611,,AS,CN,CN-53,Cangyuan Va Autonomous County,1,ZPCW,CWJ,,,https://en.wikipedia.org/wiki/Cangyuan_Washan_Airport,,0,2018-04-30T08:05:31+00:00
+324335,CN-0070,closed,Changchun East Airport,43.888157,125.405307,660,AS,CN,CN-22,Changchun,0,,,,,,,0,2017-07-04T19:28:06+00:00
+300858,ZYCH,medium_airport,Changhai Airport,39.26666667,122.6669444,80,AS,CN,CN-21,Changhai,0,ZYCH,CNI,,,http://en.wikipedia.org/wiki/Changhai_Airport,,0,2012-03-03T14:07:16+00:00
+44133,CN-0055,medium_airport,Changsha Datuopu Airport/AFB,28.06889915,112.9580002,170,AS,CN,CN-43,Changsha,0,ZGCS,,,,,Changsha City Airport,0,2013-05-17T01:36:29+00:00
+327347,ZBCD,medium_airport,Chengde Puning Airport,41.1225,118.073889,,AS,CN,CN-13,Chengde,1,ZBCD,CDE,,,https://en.wikipedia.org/wiki/Chengde_Puning_Airport,,0,2018-04-26T05:30:51+00:00
+330359,AEQ,small_airport,Ar Horqin Airport,43.87042,120.15958,1335,AS,CN,CN-15,Chifeng,0,,AEQ,,,https://en.wikipedia.org/wiki/Ar_Horqin_Airport,,0,2019-02-07T23:22:27+00:00
+308641,JUH,small_airport,Jiuhuashan Airport,30.7403,117.6856,60,AS,CN,CN-34,Chizhou,1,ZSJH,JUH,,,http://en.wikipedia.org/wiki/Chizhou_Jiuhuashan_Airport,,0,2014-12-06T12:46:56+00:00
+44106,CN-0030,medium_airport,Chongqing Air Base,29.49530029,106.3590012,,AS,CN,CN-50,Chongqing,0,,,,,,,0,2009-04-16T20:48:18+00:00
+308739,ZUGH,small_airport,Guanghan Airport,30.9485,104.3296,1531,AS,CN,CN-51,Civil Aviation Flight University of China,0,ZUGH,GHN,,,https://en.wikipedia.org/wiki/Guanghan_Airport,,0,2016-05-31T09:18:57+00:00
+43974,CN-JNZ,medium_airport,Sanshilipu Air Base,39.28950119,121.7610016,,AS,CN,CN-21,Dalian,0,,,,,,Shilipu,0,2009-04-16T19:41:33+00:00
+44267,CN-0189,medium_airport,Dandong Airport,40.0247,124.286003,30,AS,CN,CN-21,Dandong,1,ZYDD,DDG,,http://www.ddcei.gov.cn/english/index.html,http://en.wikipedia.org/wiki/Dandong_Airport,,0,2016-06-02T08:12:45+00:00
+318233,CN-0058,closed,Donggang Airport,39.948964,124.145162,,AS,CN,CN-21,Dandong,0,,,,,,,0,2016-06-03T03:37:23+00:00
+324348,CN-0073,small_airport,Danfeng Airport,33.708533,110.249284,,AS,CN,CN-61,Danfeng,0,,,,,,,0,2017-07-06T03:17:27+00:00
+317986,CN-0042,closed,Old Dangyang Airport,30.823,111.8121,200,AS,CN,CN-42,Dangyang,0,,,,,,,0,2016-05-21T15:18:39+00:00
+327348,ZUDC,medium_airport,Daocheng Yading Airport,29.323056,100.053333,14472,AS,CN,CN-51,Daocheng County,1,ZUDC,DCY,,,https://en.wikipedia.org/wiki/Daocheng_Yading_Airport,,0,2018-04-26T09:37:01+00:00
+300323,DQA,small_airport,Saertu Airport,46.74638889,125.1405556,496,AS,CN,CN-23,Daqing Shi,1,ZYDQ,DQA,,,http://en.wikipedia.org/wiki/Daqing_Sartu_Airport,,0,2012-01-15T13:19:36+00:00
+44091,CN-0015,medium_airport,Huairen Air Base,39.71749878,113.1429977,3260,AS,CN,CN-14,Datong,0,,,,,http://en.wikipedia.org/wiki/Huairen_Air_Base,Datong Huairen Airport,0,2013-05-18T08:19:19+00:00
+44110,CN-0034,small_airport,Dazu Air Base,29.636227,105.773621,1220,AS,CN,CN-50,Dazu,0,ZUDZ,DZU,,,,,0,2013-05-18T22:19:16+00:00
+318171,ZLDL,small_airport,Delingha Airport,37.125286,97.268658,9843,AS,CN,CN-63,Delingha,1,ZLDL,HXD,,,https://en.wikipedia.org/wiki/Delingha_Airport,,0,2016-05-30T08:18:44+00:00
+317868,CN-0038,heliport,BFA International Convention Center Heliport,19.140251,110.5632,0,AS,CN,CN-46,Dongyu Island,0,,,,,,,0,2016-05-14T11:41:39+00:00
+314559,EJN,small_airport,Ejin Banner-Taolai Airport,42.0155,101.0005,3077,AS,CN,CN-15,Ejin Banner,1,ZBEN,EJN,,,http://en.wikipedia.org/wiki/Ejin_Banner_Taolai_Airport,,0,2016-05-14T21:31:27+00:00
+300671,ZBER,medium_airport,Erenhot Saiwusu International Airport,43.4225,112.096667,3301,AS,CN,CN-15,Erenhot,1,ZBER,ERL,,,http://en.wikipedia.org/wiki/Erenhot_Saiwusu_International_Airport,Saiwusu Airport,0,2016-10-05T13:25:24+00:00
+44139,CN-0061,medium_airport,Foshan Shadi Airport,23.08329964,113.0699997,6,AS,CN,CN-44,Foshan,1,ZGFS,FUO,,,http://en.wikipedia.org/wiki/Foshan_Shadi_Airport,Guangzhou Shadi Air Base,0,2012-03-08T01:04:02+00:00
+324338,ZYFX,small_airport,Fuxin Airport,42.069014,121.718122,548,AS,CN,CN-21,Fuxin,0,ZYFX,,,,,,0,2017-07-04T20:37:35+00:00
+313994,ZYFY,medium_airport,Dongji Aiport,48.199494,134.366447,,AS,CN,CN-23,Fuyuan,1,ZYFY,FYJ,,,https://en.wikipedia.org/wiki/Fuyuan_Dongji_Airport,,0,2015-03-09T04:42:36+00:00
+323219,ZWFY,medium_airport,Fuyun Koktokay Airport,46.804169,89.512006,3081,AS,CN,CN-65,Fuyun,1,ZWFY,FYN,,,https://en.wikipedia.org/wiki/Fuyun_Koktokay_Airport,,0,2017-05-14T04:23:58+00:00
+44227,CN-0149,medium_airport,Fuzhou Air Base,26.00440025,119.3119965,,AS,CN,CN-35,Fuzhou,0,,,,,,,0,2009-04-17T07:47:13+00:00
+319715,GMQ,medium_airport,Golog Maqin Airport,34.418066,100.301144,12426,AS,CN,CN-63,Golog,1,ZLGL,GMQ,,,https://en.wikipedia.org/wiki/Golog_Maqin_Airport,,0,2018-04-26T06:11:48+00:00
+323884,CN-0066,small_airport,Guiyang Air Base,26.40994,106.532264,,AS,CN,CN-52,Guiyang,0,,,,,,,0,2017-06-15T22:35:12+00:00
+300741,ZLGY,medium_airport,Guyuan Liupanshan Airport,36.07888889,106.2169444,5696,AS,CN,CN-64,Guyuan,0,ZLGY,GYU,,,http://en.wikipedia.org/wiki/Guyuan_Liupanshan_Airport,,0,2012-02-12T14:25:27+00:00
+318340,CN-0060,small_airport,Haibei Airport,36.990726,100.857505,,AS,CN,CN-63,Haibei,0,,,,,,,0,2016-06-07T08:38:42+00:00
+44231,CN-0153,medium_airport,Jianqiao/Hangzhou Airfield,30.33530045,120.2409973,,AS,CN,CN-33,Hangzhou,0,,,,,,,0,2009-04-18T08:32:57+00:00
+323882,CN-0065,closed,Hanzhong Xiguan Airport,33.063599,107.008003,,AS,CN,CN-61,Hanzhong,0,,,,,https://en.wikipedia.org/wiki/Hanzhong_Xiguan_Airport,,0,2017-06-15T10:23:21+00:00
+45045,CN-0008,small_airport,Wang Kang Airfield,45.666,126.5275,,AS,CN,CN-23,Harbin,0,,,,,,,0,2009-09-26T21:12:07+00:00
+45046,CN-0009,small_airport,Shuang Yu Shu Airfield,45.66,126.7,,AS,CN,CN-23,Harbin,0,,,,,,,0,2009-09-26T21:19:40+00:00
+318152,ZGHC,medium_airport,Hechi Jinchengjiang Airport,24.805,107.6997,2221,AS,CN,CN-45,Hechi,1,ZGHC,HCJ,,,https://en.wikipedia.org/wiki/Hechi_Jinchengjiang_Airport,,0,2016-05-29T14:41:19+00:00
+327443,ZBHZ,medium_airport,Holingol Huolinhe Airport,45.487222,119.407222,,AS,CN,CN-15,Holingol,1,ZBHZ,HUO,,,https://en.wikipedia.org/wiki/Holingol_Huolinhe_Airport,,0,2018-04-30T07:33:12+00:00
+300863,HIA,medium_airport,Lianshui Airport,33.79083333,119.125,28,AS,CN,CN-32,Huai'an,0,ZSSH,HIA,,,http://en.wikipedia.org/wiki/Huai'an_Lianshui_Airport,,0,2012-03-04T16:06:45+00:00
+300890,ZGCJ,medium_airport,Zhijiang Airport,27.44111111,109.7,882,AS,CN,CN-43,Huaihua,1,ZGCJ,HJJ,,,http://en.wikipedia.org/wiki/Zhijiang_Airport,Chihkiang Airfield,0,2012-03-08T11:58:47+00:00
+313427,ZUKJ,medium_airport,Kaili Airport,26.972,107.988,3115,AS,CN,CN-52,Huangping,1,ZUKJ,KJH,,,http://en.wikipedia.org/wiki/Kaili_Huangping_Airport,,0,2014-12-20T16:53:36+00:00
+44146,CN-0068,medium_airport,Huizhou Airport,23.04999924,114.5999985,50,AS,CN,CN-44,Huizhou,1,ZGHZ,HUZ,,,http://en.wikipedia.org/wiki/Huizhou_Airport,"Huiyang Air Base, Pingtan Airport",0,2012-03-08T01:25:59+00:00
+301009,JGD,medium_airport,Jiagedaqi Airport,50.371389,124.1175,1205,AS,CN,CN-23,Jiagedaqi,0,ZYJD,JGD,,,http://en.wikipedia.org/wiki/Jiagedaqi_Airport,,0,2018-04-26T05:56:16+00:00
+327450,ZYJS,medium_airport,Jiansanjiang Airport,47.11,132.660278,,AS,CN,CN-23,Jiansanjiang,1,ZYJS,JSJ,,,https://en.wikipedia.org/wiki/Jiansanjiang_Airport,,0,2018-04-30T08:30:08+00:00
+301010,JIC,small_airport,Jinchuan Airport,38.54222222,102.3483333,4740,AS,CN,CN-62,Jinchang,1,ZLJC,JIC,,,http://en.wikipedia.org/wiki/Jinchang_Jinchuan_Airport,,0,2013-02-03T14:37:32+00:00
+300515,ZLJN,medium_airport,Jining Qufu Airport,35.292778,116.346667,134,AS,CN,CN-37,Jining,1,ZSJG,JNG,,,http://en.wikipedia.org/wiki/Jining_Qufu_Airport,,0,2016-08-07T11:59:31+00:00
+44272,CN-0194,small_airport,Jinxi Air Base,40.74919891,120.8789978,,AS,CN,CN-21,Jinxi,0,,,,,,,0,2009-04-18T08:47:14+00:00
+44273,CN-0195,small_airport,Jinzhou North Airfield,41.18690109,121.1729965,,AS,CN,CN-21,Jinzhou,0,,,,,,,0,2009-04-18T08:48:18+00:00
+313337,ZYJX,medium_airport,Jixi Xingkaihu Airport,45.293,131.193,760,AS,CN,CN-23,Jixi,1,ZYJX,JXA,,,http://en.wikipedia.org/wiki/Jixi_Xingkaihu_Airport,,0,2014-12-06T22:35:00+00:00
+44173,CN-0095,medium_airport,Kaifeng Air Base,34.75389862,114.3389969,,AS,CN,CN-41,Kaifeng,0,,,,,,,0,2009-04-18T09:18:06+00:00
+327350,ZUKD,medium_airport,Kangding Airport,30.1575,101.734722,14042,AS,CN,CN-51,Kangding,1,ZUKD,KGT,,,https://en.wikipedia.org/wiki/Kangding_Airport,,0,2018-04-26T07:30:00+00:00
+327448,ZPJM,medium_airport,Lancang Jingmai Airport,22.415833,99.786389,,AS,CN,CN-53,Lancang Lahu Autonomous County,1,ZPJM,JMJ,,,https://en.wikipedia.org/wiki/Lancang_Jingmai_Airport,,0,2018-04-30T08:08:53+00:00
+44201,CN-0123,medium_airport,Lanzhou Air Base,35.9178009,104.2180023,,AS,CN,CN-62,Lanzhou,0,,,,,,,0,2009-04-18T13:14:38+00:00
+318170,CN-0052,small_airport,Leshan Airport,29.733396,103.612168,,AS,CN,CN-51,Leshan,0,,,,,,,0,2016-05-30T08:10:19+00:00
+327351,ZULB,small_airport,Libo Airport,25.4525,107.961667,,AS,CN,CN-52,Libo County,0,ZULB,LLB,,,https://en.wikipedia.org/wiki/Libo_Airport,,0,2018-04-26T09:29:50+00:00
+318175,LFQ,small_airport,Linfen Yaomiao Airport,36.043056,111.496667,,AS,CN,CN-14,Linfen,0,,,,,,,0,2017-05-14T04:08:24+00:00
+323216,ZBLF,medium_airport,Linfen Qiaoli Airport,36.132629,111.641236,1483,AS,CN,CN-14,Linfen,1,ZBLF,LFQ,,,https://en.wikipedia.org/wiki/Linfen_Qiaoli_Airport,,0,2017-05-14T04:11:06+00:00
+308782,ZUNP,medium_airport,Liping Airport,26.32217,109.1499,1620,AS,CN,CN-52,Liping,1,ZUNP,HZH,,,http://en.wikipedia.org/wiki/Liping_Airport,,0,2013-05-30T00:29:06+00:00
+327352,ZUPS,medium_airport,Liupanshui Yuezhao Airport,26.609417,104.979,,AS,CN,CN-52,Liupanshui,1,ZUPS,LPF,,,https://en.wikipedia.org/wiki/Liupanshui_Yuezhao_Airport,,0,2018-04-26T09:35:29+00:00
+327544,ZLLN,medium_airport,Longnan Chengzhou Airport,33.788,105.797,3707,AS,CN,CN-62,Longnan,1,ZLLN,LNL,,,https://en.wikipedia.org/wiki/Longnan_Chengzhou_Airport,,0,2018-05-02T14:08:08+00:00
+44234,ZSLD,medium_airport,Longyan Guanzhishan Airport,25.67469978,116.7470016,1225,AS,CN,CN-35,Longyan,1,ZSLD,LCX,,,http://en.wikipedia.org/wiki/Longyan_Guanzhishan_Airport,"ZBSZ, Liancheng Air Base",0,2015-02-15T14:08:38+00:00
+308237,ZGLD,small_airport,Luoding Sulong Airport.,22.711169,111.60134,190,AS,CN,CN-44,Louding City,0,ZGLD,,,,http://www.wiki86.com/view/4147987.htm,,0,2013-02-02T02:42:22+00:00
+327444,ZBLL,medium_airport,Lüliang Airport,37.683333,111.142778,,AS,CN,CN-61,Lüliang,1,ZBLL,LLV,,,https://en.wikipedia.org/wiki/L%C3%BCliang_Airport,,0,2018-04-30T07:40:53+00:00
+319417,ZLHX,medium_airport,Huatugou Airport,38.201984,90.841495,2945,AS,CN,CN-63,Mengnai,1,ZLHX,HTT,,,http://en.wikipedia.org/wiki/Huatugou_Airport,,0,2016-07-10T12:14:48+00:00
+301193,ZYMH,medium_airport,Gu-Lian Airport,52.91277778,122.43,1836,AS,CN,CN-23,Mohe,1,ZYMH,OHE,,,http://en.wikipedia.org/wiki/Mohe_Gulian_Airport,,0,2012-04-11T00:12:39+00:00
+44240,CN-0162,medium_airport,Nanchang New Airfield,28.63559914,115.9300003,,AS,CN,CN-36,Nanchang,0,,,,,,,0,2009-04-18T09:34:58+00:00
+44241,CN-0163,medium_airport,Nanchang Xiangtang Air Base,28.42079926,115.9240036,,AS,CN,CN-36,Nanchang,0,,,,,,,0,2009-04-18T09:34:19+00:00
+316547,NLH,medium_airport,Ninglang Luguhu Airport,27.5403,100.7593,10804,AS,CN,CN-53,Ninglang,0,ZPNL,NLH,,,https://en.wikipedia.org/wiki/Ninglang_Luguhu_Airport,,0,2018-04-26T06:03:46+00:00
+44126,CN-0050,medium_airport,Bao'anying Airport,26.54,101.79852,1620,AS,CN,CN-51,Panzhihua,1,ZUZH,PZI,,,http://en.wikipedia.org/wiki/Panzhihua_Bao'anying_Airport,"Xining Air Base, 攀枝花保安营机场",0,2013-05-30T01:00:32+00:00
+323883,ZLPC,small_airport,Pucheng Neifu Airport,34.833345,109.544267,,AS,CN,CN-61,Pucheng,0,ZLPC,,,,,,0,2017-06-15T10:27:21+00:00
+327451,ZYSQ,medium_airport,Songyuan Chaganhu Airport,44.938114,124.550178,459,AS,CN,CN-22,Qian Gorlos Mongol Autonomous County,1,ZYSQ,YSQ,,,https://en.wikipedia.org/wiki/Songyuan_Chaganhu_Airport,,0,2018-04-30T08:33:29+00:00
+300865,JIQ,medium_airport,Qianjiang Wulingshan Airport,29.51333333,108.8311111,2075,AS,CN,CN-50,Qianjiang,1,ZUQJ,JIQ,,,http://en.wikipedia.org/wiki/Qianjiang_Wulingshan_Airport,Zhoubai,0,2014-12-04T19:48:58+00:00
+323220,ZJQH,medium_airport,Qionghai Bo'ao Airport,19.13824,110.454775,30,AS,CN,CN-46,Qionghai,1,ZJQH,BAR,,,https://en.wikipedia.org/wiki/Qionghai_Bo%27ao_Airport,,0,2017-05-14T04:44:38+00:00
+323218,ZSRZ,medium_airport,Rizhao Shanzihe Airport,35.405033,119.324403,121,AS,CN,CN-37,Rizhao,1,ZSRZ,RIZ,,http://www.rzairport.com.cn/,https://en.wikipedia.org/wiki/Rizhao_Shanzihe_Airport,,0,2017-05-14T04:19:05+00:00
+316774,SQJ,medium_airport,Shaxian Airport,26.4263,117.8336,830,AS,CN,CN-35,Sanming,1,ZSSM,SQJ,,,https://en.wikipedia.org/wiki/Sanming_Shaxian_Airport,,0,2016-05-30T09:30:27+00:00
+326731,ZWSC,medium_airport,Yeerqiang Airport,38.281055,77.075192,4232,AS,CN,CN-65,Shache,1,ZWSC,QSZ,,,https://en.wikipedia.org/wiki/Shache_Airport,,0,2018-03-18T10:58:08+00:00
+44247,CN-0169,medium_airport,Shanghai Dachang Air Base,31.32360077,121.4110031,,AS,CN,CN-31,Shanghai,0,,,,,,,0,2009-04-18T15:07:29+00:00
+44249,CN-0171,closed,Shanghai Longhua Airport,31.166901,121.454002,,AS,CN,CN-31,Shanghai,0,ZSSL,,,,http://en.wikipedia.org/wiki/Shanghai_Longhua_Airport,,0,2016-06-02T08:11:58+00:00
+44251,CN-0173,closed,Shanghai Jiangwan Airfield,31.33300018,121.5,,AS,CN,CN-31,Shanghai,0,,,,,,,0,2011-07-28T11:21:43+00:00
+329665,CN-0078,heliport,Aurora Plaza Helipad,31.234386,121.499617,607,AS,CN,CN-33,Shanghai,0,,,,,,,0,2018-11-13T03:41:45+00:00
+324349,CN-0074,medium_airport,Shangqiu Air Base,34.449507,115.459261,,AS,CN,CN-41,Shangqiu,0,,,,,https://en.wikipedia.org/wiki/Shangqiu_Airport,,0,2017-07-06T03:49:32+00:00
+316767,SQD,medium_airport,Shangrao Sanqingshan Airport,28.3797,117.9643,340,AS,CN,CN-36,Shangrao,1,ZSSR,SQD,,,https://en.wikipedia.org/wiki/Shangrao_Sanqingshan_Airport,,0,2018-04-30T08:15:01+00:00
+315143,CN-0036,small_airport,Shantou Waisha Airport,23.42690086,116.762001,29,AS,CN,CN-44,Shantou,0,,,,,https://en.wikipedia.org/wiki/Shantou_Waisha_Airport,,0,2015-08-09T19:06:34+00:00
+44157,CN-0079,medium_airport,Shaoguan Guitou Airport,24.97859955,113.4209976,280,AS,CN,CN-44,Shaoguan,0,,HSC,,,http://en.wikipedia.org/wiki/Shaoguan_Guitou_Airport,Shaoguan Air Base,0,2013-05-10T06:32:45+00:00
+327446,ZGSY,medium_airport,Shaoyang Wugang Airport,26.802,110.642,1444,AS,CN,CN-43,Shaoyang,1,ZGSY,WGN,,,https://en.wikipedia.org/wiki/Shaoyang_Wugang_Airport,,0,2018-04-30T07:51:13+00:00
+319811,ZHSN,medium_airport,Shennongjia Hongping Airport,31.626,110.34,8365,AS,CN,CN-42,Shennongjia,1,ZHSN,HPG,,,https://en.wikipedia.org/wiki/Shennongjia_Hongping_Airport,,0,2016-08-06T19:20:13+00:00
+44282,CN-0204,medium_airport,Shenyang Beiling Air Base,41.87080002,123.439003,,AS,CN,CN-21,Shenyang,0,,,,,,,0,2009-04-18T17:09:03+00:00
+44284,CN-0206,medium_airport,Shenyang Yu Hung Tun Air Base,41.82249832,123.2990036,,AS,CN,CN-21,Shenyang,0,,,,,,,0,2009-04-18T17:11:15+00:00
+316764,ZGHU,small_airport,Huayuan Airport,44.2421,85.8905,1700,AS,CN,CN-65,Shihezi,1,ZWHZ,SHF,,,https://en.wikipedia.org/wiki/Shihezi_Huayuan_Airport,,0,2017-05-14T04:41:23+00:00
+300545,ZUAL,medium_airport,Ngari Gunsa Airport,32.1,80.05305556,14022,AS,CN,CN-54,Shiquanhe,0,ZUAL,NGQ,,,http://en.wikipedia.org/wiki/Ngari_Gunsa_Airport,Ali Airport,0,2012-01-20T05:02:36+00:00
+318173,ZHSY,medium_airport,Shiyan Wudangshan Airport,32.591667,110.907778,,AS,CN,CN-42,Shiyan,1,ZHSY,WDS,,,https://en.wikipedia.org/wiki/Shiyan_Wudangshan_Airport,,0,2016-05-30T09:28:41+00:00
+323880,ZUSN,small_airport,Suining Airport,30.471295,105.610925,,AS,CN,CN-51,Suining,0,ZUSN,,,,,,0,2017-06-15T05:09:16+00:00
+307017,ZYTH,small_airport,Tahe Airport,52.22444444,124.7202222,1240,AS,CN,CN-23,Tahe,0,ZYTH,,,,,,0,2012-09-03T14:18:11+00:00
+43975,CN-0005,small_airport,Tangshan Sannühe Airport,39.71780014,118.0026245,50,AS,CN,CN-13,Tangshan,1,ZBTS,TVS,,,http://en.wikipedia.org/wiki/Tangshan_Air_Base,"Tangshan Air Base, 唐山三女河机场",0,2013-05-18T09:20:06+00:00
+300514,ZUTC,medium_airport,Tengchong Tuofeng Airport,24.93805556,98.48583333,6250,AS,CN,CN-53,Tengchong,1,ZUTC,TCZ,,,http://en.wikipedia.org/wiki/Tengchong_Tuofeng_Airport,,0,2012-01-15T12:49:36+00:00
+44208,CN-0130,medium_airport,Tianshui Maijishan Airport,34.55939865,105.8600006,3590,AS,CN,CN-62,Tianshui,1,ZLTS,THQ,,,http://en.wikipedia.org/wiki/Tianshui_Maijishan_Airport,"Tianshui Air Base, 天水麦积山机场",0,2013-02-03T14:57:57+00:00
+307013,ZYTN,medium_airport,Tonghua Sanyuanpu Airport,42.25388889,125.7033333,1200,AS,CN,CN-22,Tonghua,1,ZYTN,TNH,,,http://en.wikipedia.org/wiki/Tonghua_Sanyuanpu_Airport,Tonghua Liuhe Airport,0,2012-09-03T12:42:10+00:00
+314799,ZWTP,medium_airport,Turpan Jiaohe Airport,43.0308,89.0987,934,AS,CN,CN-65,Turpan,0,ZWTP,TLQ,,,https://en.wikipedia.org/wiki/Turpan_Jiaohe_Airport,,0,2015-06-16T00:58:29+00:00
+327445,ZBUC,medium_airport,Ulanqab Jining Airport,41.129722,113.108056,,AS,CN,CN-15,Ulanqab,1,ZBUC,UCB,,,https://en.wikipedia.org/wiki/Ulanqab_Jining_Airport,,0,2018-04-30T07:44:42+00:00
+328940,WZQ,small_airport,Urad Middle Banner,41.45958,108.53454,3996,AS,CN,CN-15,Urad Middle Banner,1,,WZQ,,,,,0,2018-08-04T22:19:47+00:00
+318119,ZPWS,small_airport,Wenshan Puzhehei Airport,23.5583,104.3255,5217,AS,CN,CN-53,Wenshan,1,ZPWS,WNH,,,https://en.wikipedia.org/wiki/Wenshan_Puzhehei_Airport,,0,2016-05-28T10:48:58+00:00
+327349,ZYDU,medium_airport,Wudalianchi Dedu Airport,48.445,126.133,984,AS,CN,CN-23,Wudalianchi,1,ZYDU,DTU,,,https://en.wikipedia.org/wiki/Wudalianchi_Dedu_Airport,,0,2018-04-26T05:37:39+00:00
+308728,ZBUH,small_airport,Wuhai Airport,39.7934,106.7993,3650,AS,CN,CN-15,Wuhai,1,ZBUH,WUA,,,http://en.wikipedia.org/wiki/Wuhai_Airport,乌海机场,0,2013-05-18T14:04:58+00:00
+44162,CN-0084,closed,Wuhan Air Base,30.59860039,114.2419968,80,AS,CN,CN-42,Wuhan,0,ZHWT,,,,,"Wangjiadun Airport,",0,2013-05-20T01:39:58+00:00
+44122,CN-0046,medium_airport,Shigatse Air Base,29.3519,89.311401,3782,AS,CN,CN-54,Xigazê,1,ZURK,RKZ,,,http://en.wikipedia.org/wiki/Shigatse_Peace_Airport,,0,2016-06-02T08:08:49+00:00
+308722,ZBXT,small_airport,Xingtai Dalian Airport,36.8831,114.4293,280,AS,CN,CN-13,Xingtai,0,ZBXT,XNT,,,http://en.wikipedia.org/wiki/Xingtai_Dalian_Airport,邢台褡裢机场,0,2013-05-16T23:06:40+00:00
+301647,ZUYI,medium_airport,Xingyi Airport,25.08638889,104.9594444,4150,AS,CN,CN-52,Xingyi,1,ZUYI,ACX,,,http://en.wikipedia.org/wiki/Xingyi_Airport,,0,2012-06-10T04:25:43+00:00
+316548,ZWNL,medium_airport,Xinyuan Nalati Airport,43.4318,83.3786,3050,AS,CN,CN-65,Xinyuan County,0,ZWNL,NLT,,,https://en.wikipedia.org/wiki/Xinyuan_Nalati_Airport,,0,2015-12-13T21:17:15+00:00
+323217,ZBXZ,small_airport,Xinzhou Wutaishan Airport,38.597456,112.969173,2527,AS,CN,CN-14,Xinzhou,1,ZBXZ,WUT,,,https://en.wikipedia.org/wiki/Xinzhou_Wutaishan_Airport,,0,2018-09-13T13:21:58+00:00
+317774,ZSYA,medium_airport,Yangzhou Taizhou Airport,32.5634,119.7198,7,AS,CN,CN-32,Yangzhou and Taizhou,1,ZSYA,YTY,,http://www.yztzairport.net/,https://en.wikipedia.org/wiki/Yangzhou_Taizhou_Airport,Yangtai Airport,0,2016-04-30T13:01:13+00:00
+312491,CN-0023,small_airport,Badaling or YanQing Airport,40.37861111,115.9375,1750,AS,CN,CN-13,Yanqing,0,,,,,,,0,2014-07-17T22:07:58+00:00
+332178,CN-0011,medium_airport,Duplicate --Yantai Penglai International Airport,37.65722,120.9872,154,AS,CN,CN-U-A,Yantai,1,ZSYT,YNT,,,https://en.wikipedia.org/wiki/Yantai_Penglai_International_Airport,,0,2019-09-10T09:57:10+00:00
+317990,CN-0047,closed,Old Yueyang Airport,29.424,113.0416,90,AS,CN,CN-43,Yeuyang,0,,,,,,,0,2016-05-21T16:40:28+00:00
+300456,ZUYB,small_airport,Yibin Caiba Airport,28.80055556,104.545,924,AS,CN,CN-51,Yibin,0,ZUYB,YBP,,,http://en.wikipedia.org/wiki/Yibin_Caiba_Airport,,0,2012-01-14T00:26:26+00:00
+317988,CN-0044,closed,Yichang Tu Men Wu Airport,30.671,111.4404,235,AS,CN,CN-42,Yichang,0,,,,,,,0,2016-05-21T15:54:08+00:00
+307012,ZYLD,medium_airport,Lindu Airport,47.75205556,129.019125,791,AS,CN,CN-23,Yichun,1,ZYLD,LDS,,,http://en.wikipedia.org/wiki/Yichun_Lindu_Airport,Yichun Shi Airport,0,2012-09-03T11:47:10+00:00
+317861,ZYYK,medium_airport,Yingkou Lanqi Airport,40.542524,122.3586,0,AS,CN,CN-21,Yingkou,1,ZYYK,YKH,,,https://en.wikipedia.org/wiki/Yingkou_Lanqi_Airport,,0,2016-05-13T19:13:09+00:00
+315169,CN-0037,small_airport,Yongji Airport,34.8723,110.361,1236,AS,CN,CN-14,Yongji,0,,,,,,Yongyi Air Base,0,2015-08-14T10:25:20+00:00
+44098,CN-0022,medium_airport,Yongning Air Base,40.50310135,116.1080017,,AS,CN,CN-11,Yongning,0,,,,,,,0,2009-08-30T20:09:10+00:00
+308238,ZGLG,medium_airport,Lingling Airport,26.338661,111.610043,340,AS,CN,CN-43,Yongzhou,1,ZGLG,LLF,,,http://en.wikipedia.org/wiki/Yongzhou_Lingling_Airport,,0,2013-09-14T16:36:39+00:00
+44115,CN-0039,small_airport,Lijiang Airport,23.5847,102.010003,,AS,CN,CN-53,Yuanjiang,0,,,,,,,0,2011-10-12T09:50:50+00:00
+44127,CN-0012,medium_airport,Yuanmou Air Base,25.73749924,101.8820038,3810,AS,CN,CN-53,Yuanmou,0,ZPYM,YUA,,,,,0,2015-08-14T00:18:49+00:00
+325171,YYA,medium_airport,Sanhe Airport,29.314,113.278,230,AS,CN,CN-43,Yueyang,0,,YYA,,,https://en.wikipedia.org/wiki/Yueyang_Sanhe_Airport,,0,2017-10-13T15:13:15+00:00
+323666,ZBZL,medium_airport,Chengjisihan Airport,47.865833,122.767503,928,AS,CN,CN-15,Zhalantun,1,ZBZL,NZL,,,https://en.wikipedia.org/wiki/Zhalantun_Chengjisihan_Airport,,0,2017-06-07T23:34:20+00:00
+44100,CN-0024,medium_airport,Zhangjiakou Ningyuan Airport,40.73860168,114.9300003,2347,AS,CN,CN-13,Zhangjiakou,1,ZBZJ,ZQZ,,,http://en.wikipedia.org/wiki/Zhangjiakou_Ningyuan_Airport,"Zhangjiakou Air Base, 张家口宁远机场",0,2014-06-21T15:04:14+00:00
+44221,CN-0143,medium_airport,Zhangye Ganzhou Airport,38.80189896,100.6750031,5280,AS,CN,CN-62,Zhangye,1,ZLZY,YZY,,,http://en.wikipedia.org/wiki/Zhangye_Ganzhou_Airport,"Zhangye Southeast Air Base, 张掖甘州机场",0,2015-05-07T23:36:18+00:00
+319812,HSJ,small_airport,Shangjie Airport,34.842153,113.273983,450,AS,CN,CN-41,Zhengzhou,0,,HSJ,,,,,0,2016-08-06T20:22:46+00:00
+308462,ZLZW,medium_airport,Zhongwei Shapotou Airport,37.573125,105.154454,8202,AS,CN,CN-64,Zhongwei,1,ZLZW,ZHY,,,http://en.wikipedia.org/wiki/Zhongwei_Shapotou_Airport,,0,2013-04-10T00:28:33+00:00
+323879,CN-0051,small_airport,Zigong Airport,29.376484,104.625789,1133,AS,CN,CN-51,Zigong,0,,ZKL,,,,Fengming General Airport,0,2017-06-15T09:36:39+00:00
+327355,ZUMT,medium_airport,Zunyi Maotai Airport,27.81638,106.33268,4068,AS,CN,CN-52,Zunyi,1,ZUMT,WMT,,,https://en.wikipedia.org/wiki/Zunyi_Maotai_Airport,,0,2018-04-26T10:22:37+00:00
