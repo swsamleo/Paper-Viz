@@ -66,14 +66,14 @@ A histogram is a graphical display of data using bars of different heights. In a
 - Multi-item histogram which height means actual value
 - Stacked histogram
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/histogram.jpg" width="210" height="170" alt="Single item histogram with a density curve"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/histogram_1.jpg" width="210" height="170" alt="Multi-item histogram"/>    <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/histogram_2.png" width="210" height="170" alt="Stacked histogram"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/histogram.jpg" width="210" height="170" alt="Single item histogram with a density curve"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/histogram_1.jpg" width="210" height="170" alt="Multi-item histogram"/>    <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/histogram_2.jpg" width="210" height="170" alt="Stacked histogram"/>
 
 ## Heatmap
 ##### [Code](Code/Heatmap_class.ipynb)
 A heatmap is a graphical representation of data where the individual values contained in a matrix are represented as colors.
 - Heatmap with values in blue to yellow colours
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/heatmap.png" width="210" height="170" alt="Heatmap with values in blue to yellow colours"/>        
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/heatmap.jpg" width="210" height="170" alt="Heatmap with values in blue to yellow colours"/>        
 
 ## Time Series Plot
 ##### [Code](Code/Time_Series_Plot.ipynb)
@@ -102,8 +102,10 @@ A pie chart is the classic way of displaying composition. However, it is general
 - Pie chart with outside annotation
 - Pie chart with percentage marked on and changable radius and font size
 - Pie chart with some labels exploration
+- Multi-layer pie chart
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie_chart_with_outside_annotation.png" width="275" height="250" alt="pie_chart_with_outside_annotation"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie_chart_with_changeable_radius_and_fontsize.png" width="270" height="250" alt="pie_chart_with_changeable_radius_and_fontsize"/>     <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie_chart_with_label_exploration.png" width="270" height="250" alt="pie_chart_with_label_exploration"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie_chart.jpg" width="275" height="250" alt="pie_chart_with_outside_annotation"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie_chart_1.jpg" width="270" height="250" alt="pie_chart_with_changeable_radius_and_fontsize"/>     <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie_chart_2.jpg" width="270" height="250" alt="pie_chart_with_label_exploration"/>     <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie_chart_3.jpg" width="270" height="250" alt="multi layer pie chart"/>
+
 
 ## Pyramid Chart
 ##### [Code](Code/Pyramid_class.ipynb)
@@ -111,7 +113,7 @@ The pyramid can be used to show the distribution of groups sorted by number, or 
 - Pyramid with actual value annotation
 - Pyramid with sort functions
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pyramid_with_annotation.png" width="230" height="200" alt="Population pyramid with annotation"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pyramid_with_sort.png" width="230" height="200" alt="Population pyramid with sort function"/>        
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pyramid.jpg" width="230" height="200" alt="Population pyramid with annotation"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pyramid_1.jpg" width="230" height="200" alt="Population pyramid with sort function"/>        
 
 ## Box Plot
 ##### [Code](Code/Box_class.ipynb)
@@ -119,7 +121,7 @@ A box plot or boxplot is a method for graphically depicting groups of numerical 
 - Multi-item box plot
 - Multi-item box plot with annotation
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/Multi-item_box_plot.png" width="210" height="210" alt="Multi-item box plot"/>     <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/box_plot_with_annotation.png" width="210" height="210" alt="Multi-item box plot with annotation"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/box_plot.jpg" width="210" height="210" alt="Multi-item box plot"/>     <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/box_plot_1.jpg" width="210" height="210" alt="Multi-item box plot with annotation"/>
 
 ## Radar Chart
 ##### [Code](Code/Radar.ipynb)
@@ -134,4 +136,4 @@ A violin plot is a method of plotting numeric data. It is similar to a box plot,
 - Violin plot
 - category violin plot
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/simple_violin_plot.png" width="210" height="170" alt="Violin plot"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/category_violin_plot.png" width="210" height="170" alt="category violin plot"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/violin_plot.jpg" width="210" height="170" alt="Violin plot"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/violin_plot_1.jpg" width="210" height="170" alt="category violin plot"/>
