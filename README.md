@@ -104,7 +104,7 @@ A pie chart is the classic way of displaying composition. However, it is general
 - Pie chart with some labels exploration
 - Multi-layer pie chart
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie_chart.jpg" width="275" height="250" alt="pie_chart_with_outside_annotation"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie_chart_1.jpg" width="270" height="250" alt="pie_chart_with_changeable_radius_and_fontsize"/>     <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie_chart_2.jpg" width="270" height="250" alt="pie_chart_with_label_exploration"/>     <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie_chart_3.jpg" width="270" height="250" alt="multi layer pie chart"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie_chart.jpg" width="275" height="270" alt="pie_chart_with_outside_annotation"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie_chart_1.jpg" width="270" height="270" alt="pie_chart_with_changeable_radius_and_fontsize"/>     <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie_chart_2.jpg" width="270" height="270" alt="pie_chart_with_label_exploration"/>     <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie_chart_3.jpg" width="270" height="270" alt="multi layer pie chart"/>
 
 
 ## Pyramid Chart
