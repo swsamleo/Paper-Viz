@@ -121,8 +121,7 @@ Patch properties for the chart drawn have been pre-set according to type of pape
 |plotheight         |int                                                                     |
 |backgrid           |bool. If True, show the backgrid of chart                               |
 |isframe            |bool. If True, show the frame of chart                                  |   
-|my_font            |the typeface of x, y labels,default:'DejaVu Sans'                       |  
-                                       |
+|my_font            |the typeface of x, y labels,default:'DejaVu Sans'                       |
 |**Title Setting**                                                                           |
 |plot_title         |False or 'title_name', if not False, add title for the plot             |
 |title_pad          |if the title is not False, modify pad size of title                     |
@@ -130,7 +129,7 @@ Patch properties for the chart drawn have been pre-set according to type of pape
 |title_loc          |if the title is not False, modify location of title                     |
 |**XY Ticks setting**                                                                        |   
 |xtrick_fontsize    |int. The fontsize of xtrick                                             |
-|ytrick_fontsize    |int. The fontsize of xtrick                  | 
+|ytrick_fontsize    |int. The fontsize of xtrick                                             | 
 |**Y-lim setting**                                                                           |
 |ylim_setting       |bool. If True, can adjust the y-lim                                     |
 |ylim_buttom        |if y-lim_setting is True, It can adjust the Ylim bottom value           |
