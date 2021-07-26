@@ -1,4 +1,4 @@
-# **[Paper-Viz (Line Chart)](https://github.com/swsamleo/Paper-Viz)**  
+# **[Paper-Viz (Scatter Chart)](https://github.com/swsamleo/Paper-Viz)**  
 
 ### *Hi there, this is CRUISE Group👋*
 
@@ -33,7 +33,7 @@ pip install paperviz
 
 ### **Basic Scatter Chart**
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatter/ice_cream.jpg" width="500"  alt="Basic Line Chart"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatter/ice_cream.jpg" width="500"  alt="Basic Scatter Chart"/>
 
 Once you have paperviz installed, you're ready to start an unforgettable plotting journey. You could load and plot your first basic line chart as instructed below:
 
@@ -41,8 +41,8 @@ Once you have paperviz installed, you're ready to start an unforgettable plottin
 # Import paperviz
 from paperviz import scatter
 
-# Create a line chart
-Scatter.scatter_plot(
+# Create a scatter chart
+scatter.scatter_plot(
     file='',
     x_col_name='',
     y_col_name='',
@@ -67,7 +67,7 @@ Paper-Viz (Scatter) provides a convenient way to show multiple groups by differe
 
 ~~~ python
 # Multi-item scatter plot
-s2.scatter_category(
+scatter.scatter_category(
     file='',
     x_col_name='',
     y_col_name='',
@@ -85,7 +85,7 @@ s2.scatter_category(
 
 ~~~ python
 # Scatter plot with multi-marker
-Scatter.scatter_marker(file='',
+scatter.scatter_marker(file='',
                   x_col_name='',
                   y_col_name='',
                   x_label='',
@@ -97,7 +97,7 @@ Scatter.scatter_marker(file='',
 
 ## **👯Parameters**
 
->Scatter.scatter_plot(file, x_col_name, y_col_name, x_label, y_label, output_name,**kwargs) [[source]](https://github.com/swsamleo/Paper-Viz)
+>scatter.scatter_plot(file, x_col_name, y_col_name, x_label, y_label, output_name,**kwargs) [[source]](https://github.com/swsamleo/Paper-Viz)
 
 ### **Basic Parameters**
 
