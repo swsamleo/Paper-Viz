@@ -8,7 +8,7 @@ with open(os.path.join(root, 'README.md'), 'r', encoding='utf-8') as f:
 
 setup(
     name='Paper-Viz',
-    version='1.0.0',
+    version='1.0.10',
     description='Professional Python Graphs for Scientific Papers',
     long_description=long_description,
     long_description_content_type='text/markdown',
@@ -25,6 +25,12 @@ setup(
         'thesis template',
         'python',
     ],
+	install_requires=[
+		'numpy',
+		'pandas',
+		'matplotlib',
+		'seaborn',
+	],
     packages=find_packages(),
     include_package_data=True,
 )

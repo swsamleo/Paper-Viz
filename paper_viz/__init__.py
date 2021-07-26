@@ -1,9 +1,12 @@
-from . import area
-from . import bar
-from . import box
-from . import heatmap
-from . import historgram
-from . import line
-from . import pie
-from . import pyramid
-from . import violin
+__all__ = [
+	"area",
+	"bar",
+	"box",
+	"heatmap",
+	"histogram",
+	"line",
+	"pie",
+	"pyramid",
+	"violin",
+	"time_series",
+]
