@@ -79,7 +79,7 @@ bubble.bubble_category(
 
 - *Bubble plot with colormap*
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bubble/gdp_colormap.jpg" width="560"  alt="Bubble plot with colormap"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/bubble/gdp_colorbar.jpg" width="560"  alt="Bubble plot with colormap"/>
 
 ~~~ python
 # Bubble plot with colormap
