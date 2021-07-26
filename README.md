@@ -47,6 +47,8 @@ A scatter plot is a basic chart used to study the relationship between two varia
 
 ## Map
 ##### [Code](Codes(Final_Version)/map_class.ipynb)
+Maps have been used for a long time to help people navigate on road journeys or comprehend the closeness of one site to another. The material on maps, as well as the maps themselves, have become digitized, interactive, and more attractive as they have been integrated into data analysis and reporting. Seeing location data mapped and integrated in visualizations has increased comprehension and provided a useful, fresh context for more people.
+
 - Point Map
 - KDE(Kernel density estimation) Map
 - Point and KDE(Kernel density estimation) Map
@@ -54,8 +56,8 @@ A scatter plot is a basic chart used to study the relationship between two varia
 - Choropleth Map
 - Route Map
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map/point.jpg" width="280" height="160" alt="Point Map"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map/kde.jpg" width="280" height="160" alt="KDE(Kernel density estimation) Map"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map/point+kde.jpg" width="280" height="160" alt="Point and KDE(Kernel density estimation) Map"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map/sankey.jpg" width="280" height="160" alt="Sankey Map"/>
-        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map/choropleth.jpg" width="280" height="160" alt="Choropleth Map"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map/multiple_path.jpg" width="280" height="160" alt="Route Map"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map/point.jpg" width="260" height="160" alt="Point Map"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map/kde.jpg" width="260" height="160" alt="KDE(Kernel density estimation) Map"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map/point+kde.jpg" width="260" height="160" alt="Point and KDE(Kernel density estimation) Map"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map/sankey.jpg" width="260" height="160" alt="Sankey Map"/>
+        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map/choropleth.jpg" width="260" height="160" alt="Choropleth Map"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map/multiple_path.jpg" width="260" height="160" alt="Route Map"/>
 
 ## Histogram
 ##### [Code](Code/Histogram_class.ipynb)
@@ -128,7 +130,7 @@ A radar chart is a graphical method of displaying multivariate data in the form 
 - Radar chart with multiple groups
 - Spider chart with multiple groups
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/radar/football.jpg" width="270" height="180" alt="Radar chart with single groups"/>  <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/radar/car.jpg" width="270" height="180" alt="Radar chart with multiple groups"/>  <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/radar/sick.jpg" width="270" height="180" alt="Spider chart with multiple groups"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/radar/football.jpg" width="260" height="180" alt="Radar chart with single groups"/>  <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/radar/car.jpg" width="260" height="180" alt="Radar chart with multiple groups"/>  <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/radar/sick.jpg" width="260" height="180" alt="Spider chart with multiple groups"/>
 
 ## Violin Plot
 ##### [Code](Code/Violin_class.ipynb)
