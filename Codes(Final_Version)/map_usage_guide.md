@@ -98,7 +98,7 @@ map.map_plot(base_file='',
 
 - *multiple-path map*
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map/multiple-path.png" width="560"  alt="multiple-path map"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map/multiple-path.jpg" width="560"  alt="multiple-path map"/>
 
 ~~~ python
 # map plot with multi-marker
