@@ -57,7 +57,7 @@ Paper-Viz (Map) provides overlay file of the map plot: point(scatter) style is t
 
 Paper-Viz (Map) provides a convenient way to show the combine of the kde and point plot:
 
-- *Multi-item map plot*
+- *kde and point plot*
 
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map/point+kde.jpg" width="500" alt="combine of the kde and point plot"/>
 
@@ -98,7 +98,7 @@ map.map_plot(base_file='',
 
 - *multiple-path map*
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map/multiple-path.jpg" width="560"  alt="multiple-path map"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map/multiple_path.jpg" width="560"  alt="multiple-path map"/>
 
 ~~~ python
 # map plot with multi-marker
@@ -137,7 +137,7 @@ Patch properties for the chart drawn have been pre-set according to type of pape
 |polyplot_linewidth |int. The line width of the base map                                     |
 |polyploy_facecolor |color. The color of the base map                                        |
 |polyplot_figsize   |tuple. The size of the base map                                         |
-|**KDE(Kernel density estimatio) map setting**                                               |   
+|**KDE(Kernel density estimation) map setting**                                               |   
 |kde_cmap           |color. The color of the kde overlap                                     |
 |kde_shade          |bool. The kde shadow                                                    | 
 |kde_shade_lowest   |bool. The kde shadow to lowest                                          |
