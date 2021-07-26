@@ -55,7 +55,7 @@ radar.radar_plot(file='',
 
 Paper-Viz (radar) provides a convenient way to show multiple groups by different color and labels. The category column allow to shows the different group of the radar plot.
 The user only need to add the column in catgory_col list,y_col_list and it will work.
-
+- *Radar chart with selected overlay*
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/radar/car.jpg" width="500" alt="Radar chart with selected overlay"/>
 
 Paper-Viz (Radar) provides overlay of the radar plot: No overlay of the plot is the default style. If you are willing to use overlay, just  simply adjust the code:
@@ -63,7 +63,7 @@ Paper-Viz (Radar) provides overlay of the radar plot: No overlay of the plot is 
 ~~~ python
  overlay= True
 ~~~
-- *Radar chart with selected overlay*
+
   
 
 - *Spider chart with selected overlay*
