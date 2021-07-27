@@ -76,6 +76,16 @@ Area_plot.area(
 
 ~~~
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/Area_chart.jpg" width="500" alt="Stack area plot"/>
+~~~ python
+# category violin plot
+Area_plot.area(
+    file='',
+    x_col_name='',
+    category='percentage'
+    paper_type='',
+)
+
+~~~
 
 ## **👯Parameters**
 
