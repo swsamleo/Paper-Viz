@@ -102,24 +102,37 @@ Patch properties for the chart drawn have been pre-set according to type of pape
 |backgrid           |bool. If True, show the backgrid of chart                               |
 |isframe            |bool. If True, show the frame of chart                                  |   
 |my_font            |the typeface of x, y labels,default:'DejaVu Sans'                       |
+|gridlinewidth      |grid line width
 |**Title Setting**                                                                           |
-|plot_title         |False or 'title_name', if not False, add title for the plot             |
-|title_pad          |if the title is not False, modify pad size of title                     |
-|title_size         |if the title is not False, modify size of title                         |
-|title_loc          |if the title is not False, modify location of title                     |
-|**XY Ticks setting**                                                                        |   
-|xtrick_fontsize    |int. The fontsize of xtrick                                             |
-|ytrick_fontsize    |int. The fontsize of xtrick                                             | 
-|**Y-lim setting**                                                                           |
-|ylim_setting       |bool. If True, can adjust the y-lim                                     |
-|ylim_buttom        |if y-lim_setting is True, It can adjust the Ylim bottom value           |
-|xin_end            |if the inset is True, the inset plot x axis ends from xin_end           |
-|yin_start          |if the inset is True, the inset plot y axis starts from yin_start       |
-|yin_end            |if the inset is True, the inset plot y axis starts from yin_end         |
-|**Scatter Setting**                                                                         |
-|ticks              |bool. If True, add ticks of x and y axis.                               |
-|scatter_size       |int. The initial scatter size is 100                                                                     |
-|alpha              |int. The initial scatter alpha is 0.8                                   |
+|title              |None or 'title_name', if not None, add title for the plot               |
+|title_pad          |if the title is not None, modify pad size of title                      |
+|title_size         |if the title is not None, modify size of title                          |
+|title_loc          |if the title is not None, modify location of title                      |
+|**XY Labels setting**                                                                       |   
+|labeltext_size    |int. The fontsize of x y label                                           |
+|x_label           |content of xlabel                                                        | 
+|y_label           |content of ylabel                                                        | 
+|tick_size         |int. the size of x y ticks
+|**Boxes setting**                                                                           |
+|width              |the width of each box                                                   |
+|palette            |the color palette of box plot                                           |
+|notch              |True or false, if true, add notch to each box                           |
+|vert               |True or False, If True , makes the boxes vertical.                      |
+|showfliers         |True or False, if true, show the outliers beyond the caps               |
+|showcaps           |True or False, if true, show the caps on the ends of whiskers           |
+|patch_artist       |True or False, if true, boxes and drawn with Patch artists              |
+|box_linestyle      |The style of box outline                                                |
+|box_linewidth      |The line width of box outlines                                          |
+|medianline_color   |The color or median line color                                          |
+|showmeans          |True or False, if true, show the median line                            |
+|meanline_color     |The color or mean line color                                            |
+|meanline_style     |The line style of mean line                                             |
+|markers_shape      |The shape of outliers                                                   |
+|actual_value       |True or False, if true show the actual value of mean or meadian         |
+|**Saving Setting**                                                                          |
+|save_image         |bool. If it is True, save chart                                         |
+|savefig_bbox_inches|Bounding box in inches                                                  |
+|file_name          |the file name in saving image                                           |
 
 
   
