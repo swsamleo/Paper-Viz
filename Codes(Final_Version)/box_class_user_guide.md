@@ -52,7 +52,8 @@ Box_plot.box(
 Paper-Viz (Box_plot) provides Multi-item box plot: No annotation or mean line of the plot is the default style. If you are willing to use annotation or mean line , just simply adjust the code:
 
 ~~~ python
- actual_value= True, showmeans=True
+ actual_value= True
+ showmeans=True
 ~~~
 
 ### **Advanced Scatter Chart**
