@@ -34,7 +34,7 @@ pip install paperviz
 
 ### **Basic Box Plot**
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatter/ice_cream.jpg" width="500"  alt="Basic Scatter Chart"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/box_plot.jpg" width="500"  alt="Basic box plot"/>
 
 Once you have paperviz installed, you're ready to start an unforgettable plotting journey. You could load and plot your first basic line chart as instructed below:
 
@@ -56,47 +56,30 @@ Paper-Viz (Box_plot) provides Multi-item box plot: No annotation or mean line of
  showmeans=True
 ~~~
 
-### **Advanced Scatter Chart**
+### **Advanced box plot**
 
-Paper-Viz (Scatter) provides a convenient way to show multiple groups by different color and labels. The category column allow to shows the different group of the scatter plot.
+Paper-Viz (Box_plot) provides a convenient way to show mean value and median value. 
 
-- *Multi-item scatter plot*
+- *Multi-item box plot with annotation*
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatter/smoker.jpg" width="500" alt="Multi-item scatter plot"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/box_plot_1.jpg" width="500" alt="Multi-item scatter plot"/>
 
 ~~~ python
 # Multi-item scatter plot
-scatter.scatter_category(
+Box_plot.box(
     file='',
     x_col_name='',
-    y_col_name='',
-    x_label='',
-    y_label='',
-    category_col='',
-    output_name='',
+    showmeans=True,
+    actual_value=True,
+    paper_type='',
 )
 
-~~~
-
-- *Scatter plot with multi-marker*
-
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatter/marker.jpg" width="560"  alt="Scatter plot with multi-marker"/>
-
-~~~ python
-# Scatter plot with multi-marker
-scatter.scatter_marker(file='',
-                  x_col_name='',
-                  y_col_name='',
-                  x_label='',
-                  y_label='',
-                  category_col='',
-                  output_name='')
 ~~~
 
 
 ## **👯Parameters**
 
->scatter.scatter_plot(file, x_col_name, y_col_name, x_label, y_label, output_name,**kwargs) [[source]](https://github.com/swsamleo/Paper-Viz)
+>Box_plot.box(self, file, x_col_name, paper_type, **kwargs) [[source]](https://github.com/swsamleo/Paper-Viz)
 
 ### **Basic Parameters**
 
@@ -104,10 +87,8 @@ scatter.scatter_marker(file='',
 |:------------------|:--------------------------------------------------------------------|
 |file               |'file_name.file_type'. file type:txt/xlsx/csv, such as 'paperviz.txt'|
 |x_col_name         |['x column name']                                                    |
-|y_col_name         |['y column name']                                                    |
-|x_label            |'x label name'                                                       |
-|y_label            |'x label name'                                                       |
-|output_name        |the output file name.                                                |
+|paper_type         |'single' or 'double'                                                 |
+
 
 ### ****kwargs**
 
