@@ -46,18 +46,18 @@ A scatter plot is a basic chart used to study the relationship between two varia
 
 
 ## Map
-##### [Code](Code/MapVizSummary.ipynb)
-- Heatmap with colour bar
-- Heatmap with colour bar
-- Map with path
-- Map with path and point marked
-- Map with area filled colour (red and yellow)
-- Map with area filled colour (green and yellow)
-- World map with area marked and colour bar
+##### [Code](Codes(Final_Version)/map_class.ipynb)
+Maps have been used for a long time to help people navigate on road journeys or comprehend the closeness of one site to another. The material on maps, as well as the maps themselves, have become digitized, interactive, and more attractive as they have been integrated into data analysis and reporting. Seeing location data mapped and integrated in visualizations has increased comprehension and provided a useful, fresh context for more people.
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map_heatmap.png" width="200" height="120" alt="Single item bar chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map_heatmap1.png" width="200" height="120" alt="Multi-item grouped bar chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map_pathmap.png" width="200" height="120" alt="Error bar chart with two groups"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map_pathandpointmap.png" width="200" height="120" alt="Stacked bar chart with two groups"/>
+- Point Map
+- KDE(Kernel density estimation) Map
+- Point and KDE(Kernel density estimation) Map
+- Sankey Map
+- Choropleth Map
+- Route Map
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map_area%20filled%20colour%20(red%20and%20yellow).png" width="200" height="120" alt="Single item bar chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map_area%20filled%20colour%20(green%20and%20yellow).png" width="200" height="120" alt="Multi-item grouped bar chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/worldmap.png" width="200" height="120" alt="Error bar chart with two groups"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map/point.jpg" width="260" height="160" alt="Point Map"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map/kde.jpg" width="260" height="160" alt="KDE(Kernel density estimation) Map"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map/point+kde.jpg" width="260" height="160" alt="Point and KDE(Kernel density estimation) Map"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map/sankey.jpg" width="260" height="160" alt="Sankey Map"/>
+        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map/choropleth.jpg" width="260" height="160" alt="Choropleth Map"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/map/multiple_path.jpg" width="260" height="160" alt="Route Map"/>
 
 ## Histogram
 ##### [Code](Code/Histogram_class.ipynb)
@@ -131,7 +131,7 @@ A radar chart is a graphical method of displaying multivariate data in the form 
 - Radar chart with multiple groups
 - Spider chart with multiple groups
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/radar/football.jpg" width="280" height="180" alt="Radar chart with single groups"/>  <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/radar/car.jpg" width="280" height="180" alt="Radar chart with multiple groups"/>  <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/radar/sick.jpg" width="280" height="180" alt="Spider chart with multiple groups"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/radar/football.jpg" width="260" height="180" alt="Radar chart with single groups"/>  <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/radar/car.jpg" width="260" height="180" alt="Radar chart with multiple groups"/>  <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/radar/sick.jpg" width="260" height="180" alt="Spider chart with multiple groups"/>
 
 ## Violin Plot
 ##### [Code](Code/Violin_class.ipynb)

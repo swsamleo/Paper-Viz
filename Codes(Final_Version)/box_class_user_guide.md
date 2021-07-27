@@ -2,9 +2,9 @@
 
 ### *Hi there, this is CRUISE Group👋*
 
-## **🔭Introduction to Paper-Viz (Scatter)**
+## **🔭Introduction to Paper-Viz (Box plot)**
 
-Paper-Viz (Scatter) is a library for making scientific scatter graphics in Python. It is built based on matplotlib and pandas libraries and its plotting function operate on dataframes. 
+Paper-Viz (Box_plot) is a library for making scientific scatter graphics in Python. It is built based on matplotlib and pandas libraries and its plotting function operate on dataframes. 
 
 Paper-Viz (Scatter) helps you plot elegant and professional scatter chart in an accurate and efficient manner to meet the publications requirements. Additionally,  it provides an easy way to add/delete elements and adjust chart, such as trend lines. 
 
@@ -27,77 +27,59 @@ pip install paperviz
 - numpy
 - matplotlib
 - pandas
+- seaborn
 
 
 ## **💪Usage Guide**
 
-### **Basic Scatter Chart**
+### **Basic Box Plot**
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatter/ice_cream.jpg" width="500"  alt="Basic Scatter Chart"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/box_plot.jpg" width="500"  alt="Basic box plot"/>
 
 Once you have paperviz installed, you're ready to start an unforgettable plotting journey. You could load and plot your first basic line chart as instructed below:
 
 ~~~ python
 # Import paperviz
-from paperviz import scatter
+from paperviz import Box_plot
 
 # Create a scatter chart
-scatter.scatter_plot(
+Box_plot.box(
     file='',
-    x_col_name='',
-    y_col_name='',
-    x_label='',
-    y_label='',
-    output_name='')
+    x_col_name='',    
+    paper_type='')
 ~~~
 
-Paper-Viz (Scatter) provides trend line of the scatter plot: No trend line of the plot is the default style. If you are willing to use trend line, just  simply adjust the code:
+Paper-Viz (Box_plot) provides Multi-item box plot: No annotation or mean line of the plot is the default style. If you are willing to use annotation or mean line , just simply adjust the code:
 
 ~~~ python
- trend_line= True
+ actual_value= True
+ showmeans=True
 ~~~
 
-### **Advanced Scatter Chart**
+### **Advanced box plot**
 
-Paper-Viz (Scatter) provides a convenient way to show multiple groups by different color and labels. The category column allow to shows the different group of the scatter plot.
+Paper-Viz (Box_plot) provides a convenient way to show mean value and median value. 
 
-- *Multi-item scatter plot*
+- *Multi-item box plot with annotation*
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatter/smoker.jpg" width="500" alt="Multi-item scatter plot"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/box_plot_1.jpg" width="500" alt="Multi-item scatter plot"/>
 
 ~~~ python
 # Multi-item scatter plot
-scatter.scatter_category(
+Box_plot.box(
     file='',
     x_col_name='',
-    y_col_name='',
-    x_label='',
-    y_label='',
-    category_col='',
-    output_name='',
+    showmeans=True,
+    actual_value=True,
+    paper_type='',
 )
 
-~~~
-
-- *Scatter plot with multi-marker*
-
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatter/marker.jpg" width="560"  alt="Scatter plot with multi-marker"/>
-
-~~~ python
-# Scatter plot with multi-marker
-scatter.scatter_marker(file='',
-                  x_col_name='',
-                  y_col_name='',
-                  x_label='',
-                  y_label='',
-                  category_col='',
-                  output_name='')
 ~~~
 
 
 ## **👯Parameters**
 
->scatter.scatter_plot(file, x_col_name, y_col_name, x_label, y_label, output_name,**kwargs) [[source]](https://github.com/swsamleo/Paper-Viz)
+>Box_plot.box(self, file, x_col_name, paper_type, **kwargs) [[source]](https://github.com/swsamleo/Paper-Viz)
 
 ### **Basic Parameters**
 
@@ -105,10 +87,8 @@ scatter.scatter_marker(file='',
 |:------------------|:--------------------------------------------------------------------|
 |file               |'file_name.file_type'. file type:txt/xlsx/csv, such as 'paperviz.txt'|
 |x_col_name         |['x column name']                                                    |
-|y_col_name         |['y column name']                                                    |
-|x_label            |'x label name'                                                       |
-|y_label            |'x label name'                                                       |
-|output_name        |the output file name.                                                |
+|paper_type         |'single' or 'double'                                                 |
+
 
 ### ****kwargs**
 
