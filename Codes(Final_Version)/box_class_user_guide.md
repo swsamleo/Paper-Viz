@@ -1,4 +1,4 @@
-# **[Paper-Viz (Scatter Chart)](https://github.com/swsamleo/Paper-Viz)**  
+# **[Paper-Viz (Box plot)](https://github.com/swsamleo/Paper-Viz)**  
 
 ### *Hi there, this is CRUISE Group👋*
 
