@@ -109,7 +109,10 @@ Patch properties for the chart drawn have been pre-set according to type of pape
 |labeltext_size    |int. The fontsize of x y label                                           |
 |x_label           |content of xlabel                                                        | 
 |y_label           |content of ylabel                                                        | 
-|tick_size         |int. the size of x y ticks
+|tick_size         |int. the size of x y ticks                                               |
+|**Legend setting**                                                                          |
+|legend_siz        |size of legend                                                           |
+|legend_loc        |location of legend                                                       |
 |**Boxes setting**                                                                           |
 |width              |the width of each box                                                   |
 |palette            |the color palette of box plot                                           |
