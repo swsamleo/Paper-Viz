@@ -134,7 +134,7 @@ Patch properties for the chart drawn have been pre-set according to type of pape
 |**Area setting**                                                                            |
 |Stack_colour_set  |stack area chart color palette (the number of y columns <7)              |
 |Area_colour_set   |simple area chart color palette (the number of y columns <7)             |
-|palette           |if the number of y columns >7 in all kinds of area chart, use this color palette   |
+|palette           |if the number of y columns >7, use this color palette                    |
 |y_scale           |the extra blank in y axis                                                |
 |alpha             |transparency of each area                                                |
 |arealinewidth     |in the simple area chart, the boundary width                             |
