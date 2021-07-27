@@ -4,9 +4,9 @@
 
 ## **🔭Introduction to Paper-Viz (Box plot)**
 
-Paper-Viz (Box_plot) is a library for making scientific scatter graphics in Python. It is built based on matplotlib and pandas libraries and its plotting function operate on dataframes. 
+Paper-Viz (Box_plot) is a library for making scientific box plot graphics in Python. It is built based on matplotlib and pandas libraries and its plotting function operate on dataframes. 
 
-Paper-Viz (Scatter) helps you plot elegant and professional scatter chart in an accurate and efficient manner to meet the publications requirements. Additionally,  it provides an easy way to add/delete elements and adjust chart, such as trend lines. 
+Paper-Viz (Box_plot) helps you plot elegant and professional box plot in an accurate and efficient manner to meet the publications requirements. Additionally,  it provides an easy way to add/delete elements and adjust chart.
 
 ## **📕Installation**
 
@@ -36,7 +36,7 @@ pip install paperviz
 
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/box_plot.jpg" width="500"  alt="Basic box plot"/>
 
-Once you have paperviz installed, you're ready to start an unforgettable plotting journey. You could load and plot your first basic line chart as instructed below:
+Once you have paperviz installed, you're ready to start an unforgettable plotting journey. You could load and plot your first basic chart as instructed below:
 
 ~~~ python
 # Import paperviz
