@@ -4,10 +4,9 @@
 
 ## **🔭Introduction to Paper-Viz (Violin plot)**
 
-Paper-Viz (Violin_plot) is a library for making scientific scatter graphics in Python. It is built based on matplotlib and pandas libraries and its plotting function operate on dataframes. 
+Paper-Viz (Violin_plot) is a library for making scientific violin graphics in Python. It is built based on matplotlib and pandas libraries and its plotting function operate on dataframes. 
 
-Paper-Viz (Violin_plot) helps you plot elegant and professional scatter chart in an accurate and efficient manner to meet the publications requirements. Additionally,  it provides an easy way to add/delete elements and adjust chart, such as trend lines. 
-
+Paper-Viz (Violin_plot) helps you plot elegant and professional violin plot in an accurate and efficient manner to meet the publications requirements. Additionally,  it provides an easy way to add/delete elements and adjust chart.
 ## **📕Installation**
 
 Paper-Viz official releases can be installed from `` PyPI ``
@@ -32,45 +31,43 @@ pip install paperviz
 
 ## **💪Usage Guide**
 
-### **Basic Box Plot**
+### **Basic Violin Plot**
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/box_plot.jpg" width="500"  alt="Basic box plot"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/violin_plot_1.jpg" width="500"  alt="Basic violin plot"/>
 
 Once you have paperviz installed, you're ready to start an unforgettable plotting journey. You could load and plot your first basic line chart as instructed below:
 
 ~~~ python
 # Import paperviz
-from paperviz import Box_plot
+from paperviz import Violin_plot
 
-# Create a scatter chart
-Box_plot.box(
+# Create a Box chart
+Violin_plot.Violin(
     file='',
     x_col_name='',    
     paper_type='')
 ~~~
 
-Paper-Viz (Box_plot) provides Multi-item box plot: No annotation or mean line of the plot is the default style. If you are willing to use annotation or mean line , just simply adjust the code:
+Paper-Viz (Violin_plot) provides Multi-item violin plot: No annotation or mean line of the plot is the default style. If you are willing to use annotation or mean line , just simply adjust the code:
 
 ~~~ python
- actual_value= True
- showmeans=True
+ category=''
 ~~~
 
 ### **Advanced box plot**
 
-Paper-Viz (Box_plot) provides a convenient way to show mean value and median value. 
+Paper-Viz (Violin_plot) provides a convenient way to show category violin plot. 
 
 - *Multi-item box plot with annotation*
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/box_plot_1.jpg" width="500" alt="Multi-item scatter plot"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/violin_plot.jpg" width="500" alt="category violin plot"/>
 
 ~~~ python
-# Multi-item scatter plot
-Box_plot.box(
+# category violin plot
+Violin_plot.Violin(
     file='',
     x_col_name='',
-    showmeans=True,
-    actual_value=True,
+    category=''
     paper_type='',
 )
 
@@ -79,7 +76,7 @@ Box_plot.box(
 
 ## **👯Parameters**
 
->Box_plot.box(self, file, x_col_name, paper_type, **kwargs) [[source]](https://github.com/swsamleo/Paper-Viz)
+>Violin_plot.Violin(self, file, x_col_name, paper_type, **kwargs) [[source]](https://github.com/swsamleo/Paper-Viz)
 
 ### **Basic Parameters**
 
