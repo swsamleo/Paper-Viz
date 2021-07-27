@@ -62,9 +62,6 @@ Paper-Viz (Area_plot) provides stacked area plot and percentage area plot.
 Paper-Viz (Violin_plot) provides a convenient way to show category violin plot. 
 
 - *Multi-item box plot with annotation*
-
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/Area_chart_1.jpg" width="500" alt="Stack area plot"/>
-
 ~~~ python
 # category violin plot
 Area_plot.area(
@@ -75,7 +72,9 @@ Area_plot.area(
 )
 
 ~~~
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/Area_chart.jpg" width="500" alt="Stack area plot"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/Area_chart_1.jpg" width="500" alt="Stack area plot"/>
+
+
 ~~~ python
 # category violin plot
 Area_plot.area(
@@ -86,6 +85,8 @@ Area_plot.area(
 )
 
 ~~~
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/Area_chart.jpg" width="500" alt="Stack area plot"/>
+
 
 ## **👯Parameters**
 
