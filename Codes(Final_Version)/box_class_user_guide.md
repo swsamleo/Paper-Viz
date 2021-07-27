@@ -42,7 +42,7 @@ Once you have paperviz installed, you're ready to start an unforgettable plottin
 # Import paperviz
 from paperviz import Box_plot
 
-# Create a scatter chart
+# Create a box chart
 Box_plot.box(
     file='',
     x_col_name='',    
@@ -65,7 +65,7 @@ Paper-Viz (Box_plot) provides a convenient way to show mean value and median val
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/box_plot_1.jpg" width="500" alt="Multi-item scatter plot"/>
 
 ~~~ python
-# Multi-item scatter plot
+# annotation box plot
 Box_plot.box(
     file='',
     x_col_name='',
