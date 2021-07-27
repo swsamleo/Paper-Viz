@@ -7,8 +7,8 @@ with open(os.path.join(root, 'README.md'), 'r', encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='Paper-Viz',
-    version='1.0.2',
+    name='paper_viz',
+    version='1.0.0',
     description='Professional Python Graphs for Scientific Papers',
     long_description=long_description,
     long_description_content_type='text/markdown',
