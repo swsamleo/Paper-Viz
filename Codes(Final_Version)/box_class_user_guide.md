@@ -2,9 +2,9 @@
 
 ### *Hi there, this is CRUISE Group👋*
 
-## **🔭Introduction to Paper-Viz (Scatter)**
+## **🔭Introduction to Paper-Viz (Box plot)**
 
-Paper-Viz (Scatter) is a library for making scientific scatter graphics in Python. It is built based on matplotlib and pandas libraries and its plotting function operate on dataframes. 
+Paper-Viz (Box_plot) is a library for making scientific scatter graphics in Python. It is built based on matplotlib and pandas libraries and its plotting function operate on dataframes. 
 
 Paper-Viz (Scatter) helps you plot elegant and professional scatter chart in an accurate and efficient manner to meet the publications requirements. Additionally,  it provides an easy way to add/delete elements and adjust chart, such as trend lines. 
 
@@ -27,11 +27,12 @@ pip install paperviz
 - numpy
 - matplotlib
 - pandas
+- seaborn
 
 
 ## **💪Usage Guide**
 
-### **Basic Scatter Chart**
+### **Basic Box Plot**
 
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/scatter/ice_cream.jpg" width="500"  alt="Basic Scatter Chart"/>
 
@@ -39,22 +40,19 @@ Once you have paperviz installed, you're ready to start an unforgettable plottin
 
 ~~~ python
 # Import paperviz
-from paperviz import scatter
+from paperviz import Box_plot
 
 # Create a scatter chart
-scatter.scatter_plot(
+Box_plot.box(
     file='',
-    x_col_name='',
-    y_col_name='',
-    x_label='',
-    y_label='',
-    output_name='')
+    x_col_name='',    
+    paper_type='')
 ~~~
 
-Paper-Viz (Scatter) provides trend line of the scatter plot: No trend line of the plot is the default style. If you are willing to use trend line, just  simply adjust the code:
+Paper-Viz (Box_plot) provides Multi-item box plot: No annotation or mean line of the plot is the default style. If you are willing to use annotation or mean line , just simply adjust the code:
 
 ~~~ python
- trend_line= True
+ actual_value= True, showmeans=True
 ~~~
 
 ### **Advanced Scatter Chart**
