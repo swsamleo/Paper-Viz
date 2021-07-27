@@ -67,7 +67,7 @@ Paper-Viz (Violin_plot) provides a convenient way to show category violin plot.
 
 ~~~ python
 # category violin plot
-Violin_plot.Violin(
+Area_plot.area(
     file='',
     x_col_name='',
     category='Stack'
@@ -76,16 +76,7 @@ Violin_plot.Violin(
 
 ~~~
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/Area_chart.jpg" width="500" alt="Stack area plot"/>
-~~~ python
-# category violin plot
-Violin_plot.Violin(
-    file='',
-    x_col_name='',
-    category='percentage'
-    paper_type='',
-)
 
-~~~
 ## **👯Parameters**
 
 >Area_plot.area(self, file,  x_col_name,  y_col_name, plot_type,paper_type,**kwargs) [[source]](https://github.com/swsamleo/Paper-Viz)
