@@ -2,7 +2,7 @@
 
 # Data Visualisation - CRUISE Group
 ## Leader Dr Wei Shao
-### Team Member Nan Gao, Zhiqiu Chen, Ying Guo, Lanzhou Jiang, Junwei Ye, Haoran Ma
+### Team Member Nan Gao, Zhiqiu Chen, Ying Guo, Lanzhou Jiang, Junwei Ye, Haoran Ma, Zhengyuan Xu
 ## Professional Python graphs for Scientific Papers
 These visualisation codes show visualization modules by Seaborn and Matplotlib of Python. The codes were written by Cruise Group of RMIT University. If you want to run the codes, you need to install some other Python libraries in addition to Seaborn and Matplotlib, which have been marked in the codes section. Please refer to the following contents for details. If you're not into reading lenghty explanations at all, feel free to jump right into the commented code.
 
@@ -78,12 +78,13 @@ A heatmap is a graphical representation of data where the individual values cont
 ## Time Series Plot
 ##### [Code](Code/Time_Series_Plot.ipynb)
 Time series plots are used to show how a given metric changes over time.
-- Time series plot with maximum, minimum values and event bar
+- Time series plot with maximum, minimum values
 - Time series plot with peaks and troughs
-- Time series plot with legend marked on lines
-- Time series decomposition plot
+- Time series plot with multivariables
+- Time series plot with multiple plots
+- Time series plot with regional zoom-in
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/timeseries.jpg" width="200" height="160" alt="Time series plot with maximum, minimum values and event bar"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/timeseries_peaks.jpg" width="200" height="160" alt="Time series plot with peaks and troughs"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/timeseries_multiple.jpg" width="200" height="160" alt="Time series plot with legend marked on lines"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/timeseries_decomposition.jpg" width="160" height="200" alt="Time series decomposition plot"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/Time_series/ts_max.pdf" width="200" height="160" alt="Time series plot with maximum, minimum values"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/Time_series/ts_peaks" width="200" height="160" alt="Time series plot with peaks and troughs"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/Time_series/ts_multivariable" width="200" height="160" alt="Time series plot with multivariables"/>        <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/Time_series/ts_multiple_plot" width="160" height="200" alt="Time series with multiple plots"/> <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/Time_series/ts_zoomin.pdf" width="300" height="200" alt="Time series plot with regional zoom-in"/>
 
 ## Line Chart
 ##### [Code](Code/Line.ipynb)
