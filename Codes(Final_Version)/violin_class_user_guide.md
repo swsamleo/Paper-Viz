@@ -1,12 +1,12 @@
-# **[Paper-Viz (Box plot)](https://github.com/swsamleo/Paper-Viz)**  
+# **[Paper-Viz (Violin plot)](https://github.com/swsamleo/Paper-Viz)**  
 
 ### *Hi there, this is CRUISE Group👋*
 
-## **🔭Introduction to Paper-Viz (Box plot)**
+## **🔭Introduction to Paper-Viz (Violin plot)**
 
-Paper-Viz (Box_plot) is a library for making scientific scatter graphics in Python. It is built based on matplotlib and pandas libraries and its plotting function operate on dataframes. 
+Paper-Viz (Violin_plot) is a library for making scientific scatter graphics in Python. It is built based on matplotlib and pandas libraries and its plotting function operate on dataframes. 
 
-Paper-Viz (Scatter) helps you plot elegant and professional scatter chart in an accurate and efficient manner to meet the publications requirements. Additionally,  it provides an easy way to add/delete elements and adjust chart, such as trend lines. 
+Paper-Viz (Violin_plot) helps you plot elegant and professional scatter chart in an accurate and efficient manner to meet the publications requirements. Additionally,  it provides an easy way to add/delete elements and adjust chart, such as trend lines. 
 
 ## **📕Installation**
 
