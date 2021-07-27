@@ -113,22 +113,16 @@ Patch properties for the chart drawn have been pre-set according to type of pape
 |**Legend setting**                                                                          |
 |legend_siz        |size of legend                                                           |
 |legend_loc        |location of legend                                                       |
-|**Boxes setting**                                                                           |
+|**Violin setting**                                                                          |
 |width              |the width of each box                                                   |
 |palette            |the color palette of box plot                                           |
-|notch              |True or false, if true, add notch to each box                           |
 |vert               |True or False, If True , makes the boxes vertical.                      |
-|showfliers         |True or False, if true, show the outliers beyond the caps               |
-|showcaps           |True or False, if true, show the caps on the ends of whiskers           |
-|patch_artist       |True or False, if true, boxes and drawn with Patch artists              |
-|box_linestyle      |The style of box outline                                                |
-|box_linewidth      |The line width of box outlines                                          |
+|showextra          |True or False, if true, show the extra line                             |
+|quantiles          |Show the quantiles line                                                 |
 |medianline_color   |The color or median line color                                          |
 |showmeans          |True or False, if true, show the median line                            |
-|meanline_color     |The color or mean line color                                            |
-|meanline_style     |The line style of mean line                                             |
-|markers_shape      |The shape of outliers                                                   |
-|actual_value       |True or False, if true show the actual value of mean or meadian         |
+|category           |Category columns of violin plot                                         |
+|x_scale            |Extra blank in x axis                                                   |
 |**Saving Setting**                                                                          |
 |save_image         |bool. If it is True, save chart                                         |
 |savefig_bbox_inches|Bounding box in inches                                                  |
