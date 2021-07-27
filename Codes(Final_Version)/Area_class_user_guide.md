@@ -41,7 +41,7 @@ Once you have paperviz installed, you're ready to start an unforgettable plottin
 # Import paperviz
 from paperviz import Area_plot
 
-# Create a Box chart
+# Create a area chart
 Area_plot.area(
     file='',
     x_col_name='', 
@@ -63,7 +63,7 @@ Paper-Viz (Violin_plot) provides a convenient way to show category violin plot.
 
 - *Multi-item box plot with annotation*
 ~~~ python
-# category violin plot
+# stack area chart
 Area_plot.area(
     file='',
     x_col_name='',
@@ -76,7 +76,7 @@ Area_plot.area(
 
 
 ~~~ python
-# category violin plot
+# percentage area chart
 Area_plot.area(
     file='',
     x_col_name='',
