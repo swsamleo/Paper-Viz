@@ -97,7 +97,7 @@ Violin_plot.Violin(
 |file               |'file_name.file_type'. file type:txt/xlsx/csv, such as 'paperviz.txt'|
 |x_col_name         |['x column name']                                                    |
 |y_col_name         |['y column name']                                                    |
-|plot_type          |type of plot: Stack ,percentage or simple
+|plot_type          |type of plot: Stack ,percentage or simple                            |
 |paper_type         |'single' or 'double'                                                 |
 
 
@@ -113,7 +113,7 @@ Patch properties for the chart drawn have been pre-set according to type of pape
 |backgrid           |bool. If True, show the backgrid of chart                               |
 |isframe            |bool. If True, show the frame of chart                                  |   
 |my_font            |the typeface of x, y labels,default:'DejaVu Sans'                       |
-|gridlinewidth      |grid line width
+|gridlinewidth      |grid line width                                                         |
 |**Title Setting**                                                                           |
 |title              |None or 'title_name', if not None, add title for the plot               |
 |title_pad          |if the title is not None, modify pad size of title                      |
