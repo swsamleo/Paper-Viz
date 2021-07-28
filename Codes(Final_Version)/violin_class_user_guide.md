@@ -111,7 +111,7 @@ Patch properties for the chart drawn have been pre-set according to type of pape
 |y_label           |content of ylabel                                                        | 
 |tick_size         |int. the size of x y ticks                                               |
 |**Legend setting**                                                                          |
-|legend_siz        |size of legend                                                           |
+|legend_size       |size of legend                                                           |
 |legend_loc        |location of legend                                                       |
 |**Violin setting**                                                                          |
 |width              |the width of each box                                                   |
