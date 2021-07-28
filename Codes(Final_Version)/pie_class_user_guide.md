@@ -31,7 +31,7 @@ pip install paperviz
 
 ## **💪Usage Guide**
 
-### **Basic heatmap Plot**
+### **Basic pie Plot**
 
 <img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie_chart_4.jpg" width="500"  alt="Basic pie plot"/>
 
@@ -49,6 +49,68 @@ Pie_plot.Pie(
     paper_type='')
 ~~~
 
+### **Advanced box plot**
+
+Paper-Viz (Violin_plot) provides a convenient way to show category violin plot. 
+
+- *pie_chart_with_outside_annotation*
+
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie_chart.jpg" width="500" alt="pie_chart_with_outside_annotation"/>
+
+~~~ python
+# category violin plot
+Pie_plot.Pie(
+    file='',
+    value='', 
+    label='',
+    info_style='Outside_box',
+    donut=True
+    paper_type='')
+
+~~~
+- *pie_chart_with_changeable_radius_and_fontsize*
+
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie_chart_1.jpg" width="500" alt="pie_chart_with_changeable_radius_and_fontsize"/>
+
+~~~ python
+# category violin plot
+Pie_plot.Pie(
+    file='',
+    value='', 
+    label='',
+    info_style='Change_both',
+    paper_type='')
+
+~~~
+
+- *pie_chart_with_label_exploration*
+
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie_chart_2.jpg" width="500" alt="pie_chart_with_label_exploration"/>
+
+~~~ python
+# category violin plot
+Pie_plot.Pie(
+    file='',
+    value='', 
+    label='',
+    info_style='Change_both',
+    paper_type='')
+
+~~~
+
+- *multi layer pie chart*
+
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/pie_chart_3.jpg" width="500" alt="multi layer pie chart"/>
+
+~~~ python
+# category violin plot
+Pie_plot.Pie(
+    file='',
+    value=[], 
+    label='',
+    paper_type='')
+
+~~~
 
 ## **👯Parameters**
 
