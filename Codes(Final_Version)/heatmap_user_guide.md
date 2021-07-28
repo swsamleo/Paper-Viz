@@ -33,7 +33,7 @@ pip install paperviz
 
 ### **Basic heatmap Plot**
 
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/violin_plot_1.jpg" width="500"  alt="Basic violin plot"/>
+<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/heatmap.jpg" width="500"  alt="Basic heatmap plot"/>
 
 Once you have paperviz installed, you're ready to start an unforgettable plotting journey. You could load and plot your first basic line chart as instructed below:
 
@@ -42,48 +42,25 @@ Once you have paperviz installed, you're ready to start an unforgettable plottin
 from paperviz import Violin_plot
 
 # Create a Box chart
-Violin_plot.Violin(
+heatmap.heat(
     file='',
-    x_col_name='',    
+    row_labels='',
+    col_labels='',    
     paper_type='')
-~~~
-
-Paper-Viz (Violin_plot) provides Multi-item violin plot: No annotation or mean line of the plot is the default style. If you are willing to use annotation or mean line , just simply adjust the code:
-
-~~~ python
- category=''
-~~~
-
-### **Advanced box plot**
-
-Paper-Viz (Violin_plot) provides a convenient way to show category violin plot. 
-
-- *Multi-item box plot with annotation*
-
-<img src="https://github.com/swsamleo/Paper-Viz/blob/master/Images/violin_plot.jpg" width="500" alt="category violin plot"/>
-
-~~~ python
-# category violin plot
-Violin_plot.Violin(
-    file='',
-    x_col_name='',
-    category=''
-    paper_type='',
-)
-
 ~~~
 
 
 ## **👯Parameters**
 
->Violin_plot.Violin(self, file, x_col_name, paper_type, **kwargs) [[source]](https://github.com/swsamleo/Paper-Viz)
+>heatmap.heat(self, file, row_labels, col_labels, paper_type, **kwargs) [[source]](https://github.com/swsamleo/Paper-Viz)
 
 ### **Basic Parameters**
 
 | Parameter         | Description                                                         |
 |:------------------|:--------------------------------------------------------------------|
 |file               |'file_name.file_type'. file type:txt/xlsx/csv, such as 'paperviz.txt'|
-|x_col_name         |['x column name']                                                    |
+|row_labels         |['row column name']                                                  |
+|col_labels         |['col column name']                                                  |
 |paper_type         |'single' or 'double'                                                 |
 
 
@@ -96,10 +73,7 @@ Patch properties for the chart drawn have been pre-set according to type of pape
 |**Plot Setting**                                                                            |
 |plotwidth          |int                                                                     | 
 |plotheight         |int                                                                     |
-|backgrid           |bool. If True, show the backgrid of chart                               |
-|isframe            |bool. If True, show the frame of chart                                  |   
 |my_font            |the typeface of x, y labels,default:'DejaVu Sans'                       |
-|gridlinewidth      |grid line width
 |**Title Setting**                                                                           |
 |title              |None or 'title_name', if not None, add title for the plot               |
 |title_pad          |if the title is not None, modify pad size of title                      |
@@ -110,19 +84,15 @@ Patch properties for the chart drawn have been pre-set according to type of pape
 |x_label           |content of xlabel                                                        | 
 |y_label           |content of ylabel                                                        | 
 |tick_size         |int. the size of x y ticks                                               |
-|**Legend setting**                                                                          |
-|legend_size       |size of legend                                                           |
-|legend_loc        |location of legend                                                       |
-|**Violin setting**                                                                          |
-|width              |the width of each box                                                   |
-|palette            |the color palette of box plot                                           |
-|vert               |True or False, If True , makes the boxes vertical.                      |
-|showextra          |True or False, if true, show the extra line                             |
-|quantiles          |Show the quantiles line                                                 |
-|medianline_color   |The color or median line color                                          |
-|showmeans          |True or False, if true, show the median line                            |
-|category           |Category columns of violin plot                                         |
-|x_scale            |Extra blank in x axis                                                   |
+|xlabel_rotate     |the rotation of x axis labels                                            |
+|ylabel_rotate     |the rotation of y axis labels                                            |
+|barlabel          |the label of color bar                                                   |
+|barlabel_rotate   |the rotation of colorbar labels                                          |
+|**heatmap setting**                                                                         |
+|cmap              |the color of heatmap                                                     |
+|annotate          |True or False, if true, the value will show in the heatmap               |
+|colorbar          |True or False, if true, the color bar of heatmap will show               |
+|annotate_textsize |the font size of annotation                                              |
 |**Saving Setting**                                                                          |
 |save_image         |bool. If it is True, save chart                                         |
 |savefig_bbox_inches|Bounding box in inches                                                  |
