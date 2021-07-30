@@ -6,9 +6,10 @@ root = os.path.abspath(os.path.dirname(__file__))
 with open(os.path.join(root, 'README.md'), 'r', encoding='utf-8') as f:
     long_description = f.read()
 
+
 setup(
-    name='paper_viz',
-    version='1.0.0',
+    name='paperviz',
+    version='1.0.4',
     description='Professional Python Graphs for Scientific Papers',
     long_description=long_description,
     long_description_content_type='text/markdown',
