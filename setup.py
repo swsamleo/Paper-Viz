@@ -9,7 +9,7 @@ with open(os.path.join(root, 'README.md'), 'r', encoding='utf-8') as f:
 
 setup(
     name='paperviz',
-    version='1.0.4',
+    version='0.0.5',
     description='Professional Python Graphs for Scientific Papers',
     long_description=long_description,
     long_description_content_type='text/markdown',

@@ -18,7 +18,6 @@ import os
 # if you use other editor, do not need to import google.colab here
 #from google.colab import drive
 #drive.mount('/content/drive', force_remount = True)
-
 ## setting path
 # get current path
 path_current = os.getcwd()
@@ -26,7 +25,6 @@ path_current = os.getcwd()
 path = path_current + '/drive/My Drive/RMIT/Visualization/Data/Bar/' 
 # the "path_img" is the position where final image will be saved
 path_img = path_current + '/drive/My Drive/RMIT/Visualization/Images/'
-
 class bar_chart:
     def __init__(self, y_series = '',  label_list = '', 
                x_series = ''):

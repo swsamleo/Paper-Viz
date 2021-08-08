@@ -73,13 +73,13 @@ class Area_plot:
   def get_available_name(self,filename):
     n=[1]
     def check_meta(file_name):
-        file_name_new=file_name
-        if file_name in [os.path.splitext(i)[0] for i in os.listdir(path_img)]:   
-            file_name_new=file_name+'_'+str(n[0])
-            n[0]+=1
-        if file_name_new in [os.path.splitext(i)[0] for i in os.listdir(path_img)]:   
-            file_name_new=check_meta(file_name)
-        return file_name_new
+      file_name_new=file_name
+      if file_name in [os.path.splitext(i)[0] for i in os.listdir(path_img)]:   
+          file_name_new=file_name+'_'+str(n[0])
+          n[0]+=1
+      if file_name_new in [os.path.splitext(i)[0] for i in os.listdir(path_img)]:   
+          file_name_new=check_meta(file_name)
+      return file_name_new
     available_name=check_meta(filename)
     return available_name
 
@@ -90,7 +90,7 @@ class Area_plot:
   # paper_type : 'single' or 'double'
   def area(self, file,  x_col_name,  y_col_name, plot_type,paper_type,**kwargs):
     
-    #Configuration of the line chart
+    # Configuration of the line chart
     # plotwidth: width of the plot
     # plotheight: height of the plot
     # backgrid: backgrid of the plot
@@ -124,8 +124,43 @@ class Area_plot:
     # savefig_bbox_inches: Bounding box in inches
     # file_name: the file name in saving image
 
-    double_column_conf={ 'plotwidth':10,#weight
-                        'plotheight':8, #height
+    single_column_conf={ 'plotwidth':8,#weight
+                        'plotheight':6, #height
+                        'my_font':'DejaVu Sans',
+                        'backgrid':True,
+                        'isframe':True,
+                        'linewidth':2,
+                        'gridlinewidth':0.5,
+                        'labeltext_size':15,
+                        'x_label':None,
+                        'y_label':None,
+                        'labelpad':10,
+                        'legend_size':10,
+                        'legend_loc':'upper right', 
+                        'legend_ncol':2,
+                        'title':False,
+                        'title_pad':8,
+                        'title_size':14,
+                        'title_loc':'center',     
+                        'Stack_colour_set':['006D77','8AA8A1','A1683A','E8998D','D1B490','EE7B30','FFCB77'],
+                        'Area_colour_set':[(255/255, 173/255, 173/255),(255/255, 214/255, 165/255),(253/255, 255/255, 182/255),(202/255, 255/255, 191/255),
+                                           (155/255, 246/255, 255/255),(160/255, 196/255, 255/255),(255/255, 198/255, 255/255)],
+                        'palette':sns.color_palette('Set2'),
+                        'ticks':True,
+                        'tick_size':14,
+                        'tick_direction':'out',
+                        'save_image':False,
+                        'y_scale':1.20,
+                        'alpha':0.7,
+                        'arealinewidth':1,
+                        'y_col_num':7,
+                        'sort':True,
+                        'file_name':'area_chart',
+                        'savefig_bbox_inches':'tight',
+                        'file_name':'area_chart',
+                        }  
+    double_column_conf={ 'plotwidth':8,#weight
+                        'plotheight':6, #height
                         'my_font':'DejaVu Sans',
                         'backgrid':True,
                         'isframe':True,
@@ -159,44 +194,7 @@ class Area_plot:
                         'file_name':'area_chart',
                        
                         }
-    
-
-    single_column_conf={ 'plotwidth':10,#weight
-                        'plotheight':8, #height
-                        'my_font':'DejaVu Sans',
-                        'backgrid':True,
-                        'isframe':True,
-                        'linewidth':2,
-                        'gridlinewidth':0.5,
-                        'labeltext_size':15,
-                        'x_label':None,
-                        'y_label':None,
-                        'labelpad':10,
-                        'legend_size':10,
-                        'legend_loc':'upper right', 
-                        'legend_ncol':2,
-                        'title':False,
-                        'title_pad':8,
-                        'title_size':14,
-                        'title_loc':'center',     
-                        'Stack_colour_set':['006D77','8AA8A1','A1683A','E8998D','D1B490','EE7B30','FFCB77'],
-                        'Area_colour_set':[(255/255, 173/255, 173/255),(255/255, 214/255, 165/255),(253/255, 255/255, 182/255),(202/255, 255/255, 191/255),
-                                           (155/255, 246/255, 255/255),(160/255, 196/255, 255/255),(255/255, 198/255, 255/255)],
-                        'palette':sns.color_palette('Set2'),
-                        'ticks':True,
-                        'tick_size':14,
-                        'tick_direction':'out',
-                        'save_image':False,
-                        'savefig_bbox_inches':'tight',
-                        'y_scale':1.20,
-                        'alpha':0.7,
-                        'arealinewidth':1,
-                        'y_col_num':7,
-                        'sort':True,
-                        'file_name':'area_chart',
-                        
-                        }              
-                        
+                         
     if paper_type == 'single':
       conf = single_column_conf
     elif paper_type == 'double':
@@ -205,17 +203,13 @@ class Area_plot:
     # when new configuraton is set, update the original one
     conf.update(kwargs) 
 
-    ## create figure and set figure size  
+    # create figure and set figure size  
     fig, ax_left = plt.subplots(figsize = (conf['plotwidth'], conf['plotheight']))
 
-    ## background grid setting
+    # background grid setting
     if conf['backgrid'] == True:
       ax_left.grid(linestyle="--", linewidth=conf['gridlinewidth'], color='gray', alpha=0.5)
-    
-    ## x, y axis setting
-    ax_left.set_xlabel(conf['x_label'], fontproperties=conf['my_font'], fontsize=conf['labeltext_size'], labelpad=conf['labelpad'])
-    ax_left.set_ylabel(conf['y_label'], fontproperties=conf['my_font'], fontsize=conf['labeltext_size'], labelpad=conf['labelpad'])
-        
+            
     # read file 
     try:
       data = self.read_file(file)
@@ -350,6 +344,10 @@ class Area_plot:
     if conf['isframe'] == False:
         ax.spines['top'].set_visible(False)
         ax.spines['right'].set_visible(False)
+        
+    # x, y axis setting
+    ax_left.set_xlabel(conf['x_label'], fontproperties=conf['my_font'], fontsize=conf['labeltext_size'], labelpad=conf['labelpad'])
+    ax_left.set_ylabel(conf['y_label'], fontproperties=conf['my_font'], fontsize=conf['labeltext_size'], labelpad=conf['labelpad'])
 
     # set x, y tick's direction, default:out, can be set to in,out,inout
     if conf['tick_direction'] == 'in':
@@ -375,7 +373,7 @@ class Area_plot:
       file_name=conf['file_name']
       # use function to get available file name
       file_newname = self.get_available_name(file_name)
-      plt.savefig(path_img+file_newname, bbox_inches=conf['savefig_bbox_inches']) 
+      plt.savefig(path_img+file_newname, bbox_inches=conf['savefig_bbox_inches'],dpi=600,format='jpg') 
      
     # showing the image
     plt.show()

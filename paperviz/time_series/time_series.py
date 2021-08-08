@@ -299,7 +299,7 @@ class TimeSeries:
                 mark_inset(axs[i], axins, loc1=2, loc2=4, fc="0.7", ec="0.7")
         
         if self.conf['save_fig']:
-            fig_path = ("ts_plot.pdf" if self.conf['fig_path'] is None
+            fig_path = ("ts_plot.png" if self.conf['fig_path'] is None
                         else self.conf['fig_path'])
-            plt.savefig(fig_path)
+            plt.savefig(fig_path, dpi=500)
         plt.show()

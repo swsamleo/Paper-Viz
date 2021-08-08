@@ -263,7 +263,7 @@ class hist_plot:
     if conf['save_image'] == True:
       file_name=conf['file_name']
       file_newname = self.get_available_name(file_name)
-      plt.savefig(path_img+file_newname, bbox_inches=conf['savefig_bbox_inches']) 
+      plt.savefig(path_img+file_newname, bbox_inches=conf['savefig_bbox_inches'],dpi=600,format='jpg') 
      
     # showing the image
-    plt.show()
+    plt.show() 

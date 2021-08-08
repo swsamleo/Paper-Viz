@@ -144,7 +144,7 @@ class Pie_plot:
                   'donut_circle': [(0,0), 0.3,'white'],
                   'save_image':False,
                   'savefig_bbox_inches':'tight',
-                  'file_name':'area_chart'            
+                  'file_name':'pie_chart'            
                   } 
 
     double_column_conf={ 'plotwidth':8,
@@ -182,7 +182,7 @@ class Pie_plot:
                   'donut_circle': [(0,0), 0.3,'white'],
                   'save_image':False,
                   'savefig_bbox_inches':'tight',
-                  'file_name':'area_chart'                                   
+                  'file_name':'pie_chart'                                   
                   } 
 
     if paper_type == 'single':
@@ -494,7 +494,7 @@ class Pie_plot:
         circle=plt.Circle( conf['donut_circle'][0],conf['donut_circle'][1], color=conf['donut_circle'][2])
         p=plt.gcf()
         p.gca().add_artist(circle) 
-
+    
     if conf['title'] == False:
       pass
     else:
@@ -504,7 +504,7 @@ class Pie_plot:
     if conf['save_image'] == True:
       file_name=conf['file_name']
       file_newname = self.get_available_name(file_name)
-      plt.savefig(path_img+file_newname, bbox_inches=conf['savefig_bbox_inches']) 
+      plt.savefig(path_img+file_newname, bbox_inches=conf['savefig_bbox_inches'],dpi=600,format='jpg') 
      
     # showing the image
     plt.show()  

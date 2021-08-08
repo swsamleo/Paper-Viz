@@ -24,9 +24,9 @@ import os
 # get current path
 path_current = os.getcwd()
 # the path is where the dataset saved
-path = path_current + '/drive/My Drive/RMIT/Visualization/Data/' 
+path = path_current + '\\Example_Data\\' 
 # the "path_img" is the position where final image will be saved
-path_img = path_current + '/drive/My Drive/RMIT/Visualization/Images/'
+path_img = path_current + '\\Images\\'
 
 class line:  
 
@@ -35,11 +35,12 @@ class line:
   # file: str, filename (e.g.'Vertical_Bar.txt')
   def read_file(self,file):
     file_url = urllib.request.pathname2url(file)
-    ftype = mimetypes.guess_type(file_url, strict=True)[0]
+    (ftype,_) = mimetypes.guess_type(file_url, strict=True)
 
     ## read data file according to its formate, default includes three types of files: csv/excel/text
     # read csv format data from the parking dataset
-    if 'csv' in ftype:
+    print(ftype)
+    if 'application/vnd.ms-excel' in ftype:
       # usecols: return a subset of the columns, here choose one column to use in the line chart
       data = pd.read_csv(path+file)
     # read excel format data from the parking dataset
@@ -234,12 +235,12 @@ class line:
         # line with markers
         if conf['markers'] == True:
           for i in range(0, len(y_col_name)):
-            ax_1eft.plot(data.index, data[y_col_name[i]], marker=conf['markers_shape'][i], markersize=conf['markersize'], 
+            ax_1eft.plot(file.index, file[y_col_name[i]], marker=conf['markers_shape'][i], markersize=conf['markersize'], 
                       linestyle=conf['linestyle'][0], linewidth=conf['linewidth'], label=legend_label[i], color=conf['sa_linecolor'][i])    
         # line without markers    
         else:
           for i in range(0, len(y_col_name)):
-            ax_1eft.plot(data.index, data[y_col_name[i]], linestyle=conf['linestyle'][0], 
+            ax_1eft.plot(file.index, file[y_col_name[i]], linestyle=conf['linestyle'][0], 
                     linewidth=conf['linewidth'], label=legend_label[i], color=conf['sa_linecolor'][i])
 
       # x column is not index
@@ -248,19 +249,19 @@ class line:
         if conf['markers'] == True:
           for i in range(0, len(y_col_name)):
             if len(x_col_name)==1:
-              ax_1eft.plot(data[x_col_name[0]], data[y_col_name[i]], marker=conf['markers_shape'][i], markersize=conf['markersize'], 
+              ax_1eft.plot(file[x_col_name[0]], file[y_col_name[i]], marker=conf['markers_shape'][i], markersize=conf['markersize'], 
                       linestyle=conf['linestyle'][0], linewidth=conf['linewidth'], label=legend_label[i], color=conf['sa_linecolor'][i])
             else: 
-              ax_1eft.plot(data[x_col_name[i]], data[y_col_name[i]], marker=conf['markers_shape'][i], markersize=conf['markersize'], 
+              ax_1eft.plot(file[x_col_name[i]], file[y_col_name[i]], marker=conf['markers_shape'][i], markersize=conf['markersize'], 
                       linestyle=conf['linestyle'][0], linewidth=conf['linewidth'], label=legend_label[i], color=conf['sa_linecolor'][i])
         # line without markers    
         else:
           for i in range(0, len(y_col_name)):
             if len(x_col_name)==1:
-              ax_1eft.plot(data[x_col_name[0]], data[y_col_name[i]], linestyle=conf['linestyle'][0], linewidth=conf['linewidth'], 
+              ax_1eft.plot(file[x_col_name[0]], file[y_col_name[i]], linestyle=conf['linestyle'][0], linewidth=conf['linewidth'], 
                       label=legend_label[i], color=conf['sa_linecolor'][i])
             else:
-              ax_1eft.plot(data[x_col_name[i]], data[y_col_name[i]], linestyle=conf['linestyle'][0], linewidth=conf['linewidth'], 
+              ax_1eft.plot(file[x_col_name[i]], file[y_col_name[i]], linestyle=conf['linestyle'][0], linewidth=conf['linewidth'], 
                       label=legend_label[i], color=conf['sa_linecolor'][i])             
 
     
@@ -277,12 +278,12 @@ class line:
           # line with markers
           if conf['markers'] == True:
             for i in range(0, len(y_col_name)):
-              axins.plot(data.index, data[y_col_name[i]], marker=conf['markers_shape'][i], markersize=conf['markersize'], 
+              axins.plot(file.index, file[y_col_name[i]], marker=conf['markers_shape'][i], markersize=conf['markersize'], 
                       linestyle=conf['linestyle'][0], linewidth=conf['linewidth'], label=legend_label[i], color=conf['sa_linecolor'][i])    
           # line without markers    
           else:
             for i in range(0, len(y_col_name)):
-              axins.plot(data.index, data[y_col_name[i]], linestyle=conf['linestyle'][0], linewidth=conf['linewidth'], 
+              axins.plot(file.index, file[y_col_name[i]], linestyle=conf['linestyle'][0], linewidth=conf['linewidth'], 
                       label=legend_label[i], color=conf['sa_linecolor'][i])
         # x column is not index
         else:
@@ -290,19 +291,19 @@ class line:
           if conf['markers'] == True:
             for i in range(0, len(y_col_name)):
               if len(x_col_name)==1: 
-                axins.plot(data[x_col_name[0]],data[y_col_name[i]], marker=conf['markers_shape'][i], markersize=conf['markersize'], 
+                axins.plot(file[x_col_name[0]],file[y_col_name[i]], marker=conf['markers_shape'][i], markersize=conf['markersize'], 
                       linestyle=conf['linestyle'][0], linewidth=conf['linewidth'], label=legend_label_l[i], color=conf['sa_linecolor'][i]) 
               else:
-                axins.plot(data[x_col_name[i]],data[y_col_name[i]], marker=conf['markers_shape'][i], markersize=conf['markersize'], 
+                axins.plot(file[x_col_name[i]],file[y_col_name[i]], marker=conf['markers_shape'][i], markersize=conf['markersize'], 
                       linestyle=conf['linestyle'][0], linewidth=conf['linewidth'], label=legend_label_l[i], color=conf['sa_linecolor'][i])   
           # line without markers    
           else:
             for i in range(0, len(y_col_name)):
               if len(x_col_name)==1: 
-                axins.plot(data[x_col_name[0]],data[y_col_name[i]], linestyle=conf['linestyle'][0], linewidth=conf['linewidth'], 
+                axins.plot(file[x_col_name[0]],file[y_col_name[i]], linestyle=conf['linestyle'][0], linewidth=conf['linewidth'], 
                       label=legend_label[i], color=conf['sa_linecolor'][i])
               else:
-                axins.plot(data[x_col_name[i]],data[y_col_name[i]], linestyle=conf['linestyle'][0], linewidth=conf['linewidth'], 
+                axins.plot(file[x_col_name[i]],file[y_col_name[i]], linestyle=conf['linestyle'][0], linewidth=conf['linewidth'], 
                       label=legend_label[i], color=conf['sa_linecolor'][i])
 
         ## inset plot x,y axis range limit
@@ -332,12 +333,12 @@ class line:
         
         if conf['markers'] == True:
           for i in range(0, len(y_col_name_l)):
-            ax_1eft.plot(data.index, data[y_col_name_l[i]], marker=conf['markers_shape'][i], markersize=conf['markersize'], 
+            ax_1eft.plot(file.index, file[y_col_name_l[i]], marker=conf['markers_shape'][i], markersize=conf['markersize'], 
                       linestyle=conf['linestyle'][0], linewidth=conf['linewidth'], label=legend_label_l[i], color=conf['da_linecolor']['left'][i])    
         # line without markers    
         else:
           for i in range(0, len(y_col_name_l)):
-            ax_1eft.plot(data.index, data[y_col_name_l[i]], linestyle=conf['linestyle'][0], 
+            ax_1eft.plot(file.index, file[y_col_name_l[i]], linestyle=conf['linestyle'][0], 
                     linewidth=conf['linewidth'], label=legend_label_l[i], color=conf['da_linecolor']['left'][i])
 
       # x column is not index
@@ -346,19 +347,19 @@ class line:
         if conf['markers'] == True:
           for i in range(0, len(y_col_name_l)):
             if len(x_col_name_l)==1:
-              ax_1eft.plot(data[x_col_name_l[0]], data[y_col_name_l[i]], marker=conf['markers_shape'][i], markersize=conf['markersize'], 
+              ax_1eft.plot(file[x_col_name_l[0]], file[y_col_name_l[i]], marker=conf['markers_shape'][i], markersize=conf['markersize'], 
                       linestyle=conf['linestyle'][0], linewidth=conf['linewidth'], label=legend_label_l[i], color=conf['da_linecolor']['left'][i])
             else: 
-              ax_1eft.plot(data[x_col_name_l[i]], data[y_col_name_l[i]], marker=conf['markers_shape'][i], markersize=conf['markersize'], 
+              ax_1eft.plot(file[x_col_name_l[i]], file[y_col_name_l[i]], marker=conf['markers_shape'][i], markersize=conf['markersize'], 
                       linestyle=linestyle[0], linewidth=conf['linewidth'], label=legend_label_l[i], color=conf['da_linecolor']['left'][i])
         # line without markers    
         else:
           for i in range(0, len(y_col_name_l)):
             if len(x_col_name_l)==1:
-              ax_1eft.plot(data[x_col_name_l[0]], data[y_col_name_l[i]], linestyle=conf['linestyle'][0], linewidth=conf['linewidth'], 
+              ax_1eft.plot(file[x_col_name_l[0]], file[y_col_name_l[i]], linestyle=conf['linestyle'][0], linewidth=conf['linewidth'], 
                       label=legend_label_l[i], color=conf['da_linecolor']['left'][i])
             else:
-              ax_1eft.plot(data[x_col_name_l[i]], data[y_col_name_l[i]], linestyle=conf['linestyle'][0], linewidth=conf['linewidth'], 
+              ax_1eft.plot(file[x_col_name_l[i]], file[y_col_name_l[i]], linestyle=conf['linestyle'][0], linewidth=conf['linewidth'], 
                       label=legend_label_l[i], color=conf['da_linecolor']['left'][i])
       
       ## instantiate a left axis that shares the same x-axis
@@ -381,12 +382,12 @@ class line:
         # line with markers
         if conf['markers'] == True:
           for i in range(0, len(y_col_name_r)):
-            ax_right.plot(data.index, data[y_col_name_r[i]], linestyle=conf['linestyle'][3], marker=conf['markers_shape'][i], markersize=conf['markersize'], 
+            ax_right.plot(file.index, file[y_col_name_r[i]], linestyle=conf['linestyle'][3], marker=conf['markers_shape'][i], markersize=conf['markersize'], 
                 linewidth=conf['linewidth'], label=legend_label_r[i], color=conf['da_linecolor']['right'][i])    
         # line without markers    
         else:
           for i in range(0, len(y_col_name_r)):
-            ax_right.plot(data.index, data[y_col_name_r[i]], linestyle=conf['linestyle'][3],  
+            ax_right.plot(file.index, file[y_col_name_r[i]], linestyle=conf['linestyle'][3],  
                 linewidth=conf['linewidth'], label=legend_label_r[i], color=conf['da_linecolor']['right'][i]) 
       # x column is not index
       else:
@@ -394,18 +395,18 @@ class line:
         if conf['markers'] == True:   
           for i in range(0, len(y_col_name_r)):
             if len(x_col_name_r)==1:
-              ax_right.plot(data[x_col_name_r[0]], data[y_col_name_r[i]], linestyle=conf['linestyle'][3], marker=conf['markers_shape'][i], markersize=conf['markersize'], 
+              ax_right.plot(file[x_col_name_r[0]], file[y_col_name_r[i]], linestyle=conf['linestyle'][3], marker=conf['markers_shape'][i], markersize=conf['markersize'], 
                   linewidth=conf['linewidth'], label=legend_label_r[i], color=conf['da_linecolor']['right'][i])
             else:
-              ax_right.plot(data[x_col_name_r[i]], data[y_col_name_r[i]], linestyle=conf['linestyle'][3], marker=conf['markers_shape'][i], markersize=conf['markersize'], 
+              ax_right.plot(file[x_col_name_r[i]], file[y_col_name_r[i]], linestyle=conf['linestyle'][3], marker=conf['markers_shape'][i], markersize=conf['markersize'], 
                   linewidth=conf['linewidth'], label=legend_label_r[i], color=conf['da_linecolor']['right'][i])
         else:
           for i in range(0, len(y_col_name_r)):
             if len(x_col_name_r)==1:
-              ax_right.plot(data[x_col_name_r[0]], data[y_col_name_r[i]], linestyle=conf['linestyle'][3],
+              ax_right.plot(file[x_col_name_r[0]], file[y_col_name_r[i]], linestyle=conf['linestyle'][3],
                   linewidth=conf['linewidth'], label=legend_label_r[i],color=conf['da_linecolor']['right'][i])
             else:
-              ax_right.plot(data[x_col_name_r[i]], data[y_col_name_r[i]], linestyle=conf['linestyle'][3],  
+              ax_right.plot(file[x_col_name_r[i]], file[y_col_name_r[i]], linestyle=conf['linestyle'][3],  
                   linewidth=conf['linewidth'], label=legend_label_r[i],color=conf['da_linecolor']['right'][i])
       
       
@@ -427,12 +428,12 @@ class line:
           
           if conf['markers'] == True:
             for i in range(0, len(y_col_name_l)):
-              zoomed_left_axis.plot(data.index, data[y_col_name_l[i]], marker=conf['markers_shape'][i], markersize=conf['markersize'], 
+              zoomed_left_axis.plot(file.index, file[y_col_name_l[i]], marker=conf['markers_shape'][i], markersize=conf['markersize'], 
                         linestyle=conf['linestyle'][0], linewidth=conf['linewidth'], label=legend_label_l[i], color=conf['da_linecolor']['left'][i])    
           # line without markers    
           else:
             for i in range(0, len(y_col_name_l)):
-              zoomed_left_axis.plot(data.index, data[y_col_name_l[i]], linestyle=conf['linestyle'][0], 
+              zoomed_left_axis.plot(file.index, file[y_col_name_l[i]], linestyle=conf['linestyle'][0], 
                       linewidth=conf['linewidth'], label=legend_label_l[i], color=conf['da_linecolor']['left'][i])
 
         # x column is not index
@@ -441,19 +442,19 @@ class line:
           if conf['markers'] == True:
             for i in range(0, len(y_col_name_l)):
               if len(x_col_name_l)==1:
-                zoomed_left_axis.plot(data[x_col_name_l[0]], data[y_col_name_l[i]], marker=conf['markers_shape'][i], markersize=conf['markersize'], 
+                zoomed_left_axis.plot(file[x_col_name_l[0]], file[y_col_name_l[i]], marker=conf['markers_shape'][i], markersize=conf['markersize'], 
                         linestyle=conf['linestyle'][0], linewidth=conf['linewidth'], label=legend_label_l[i], color=conf['da_linecolor']['left'][i])
               else: 
-                zoomed_left_axis.plot(data[x_col_name_l[i]], data[y_col_name_l[i]], marker=conf['markers_shape'][i], markersize=conf['markersize'], 
+                zoomed_left_axis.plot(file[x_col_name_l[i]], file[y_col_name_l[i]], marker=conf['markers_shape'][i], markersize=conf['markersize'], 
                         linestyle=conf['linestyle'][0], linewidth=conf['linewidth'], label=legend_label_l[i], color=conf['da_linecolor']['left'][i])
           # line without markers    
           else:
             for i in range(0, len(y_col_name_l)):
               if len(x_col_name_l)==1:
-                zoomed_left_axis.plot(data[x_col_name_l[0]], data[y_col_name_l[i]], linestyle=conf['linestyle'][0], linewidth=conf['linewidth'], 
+                zoomed_left_axis.plot(file[x_col_name_l[0]], file[y_col_name_l[i]], linestyle=conf['linestyle'][0], linewidth=conf['linewidth'], 
                         label=legend_label_l[i], color=conf['da_linecolor']['left'][i])
               else:
-                zoomed_left_axis.plot(data[x_col_name_l[i]], data[y_col_name_l[i]], linestyle=conf['linestyle'][0], linewidth=conf['linewidth'], 
+                zoomed_left_axis.plot(file[x_col_name_l[i]], file[y_col_name_l[i]], linestyle=conf['linestyle'][0], linewidth=conf['linewidth'], 
                         label=legend_label_l[i], color=conf['da_linecolor']['left'][i])
 
         ## inset plot x,y axis range limit
@@ -470,12 +471,12 @@ class line:
           # line with markers
           if conf['markers'] == True:
             for i in range(0, len(y_col_name_r)):
-              zoomed_right_axis.plot(data.index, data[y_col_name_r[i]], linestyle=conf['linestyle'][3], marker=conf['markers_shape'][i], markersize=conf['markersize'], 
+              zoomed_right_axis.plot(file.index, file[y_col_name_r[i]], linestyle=conf['linestyle'][3], marker=conf['markers_shape'][i], markersize=conf['markersize'], 
                   linewidth=conf['linewidth'], label=legend_label_r[i], color=conf['da_linecolor']['right'][i])    
           # line without markers    
           else:
             for i in range(0, len(y_col_name_r)):
-              zoomed_right_axis.plot(data.index, data[y_col_name_r[i]], linestyle=conf['linestyle'][3],  
+              zoomed_right_axis.plot(file.index, file[y_col_name_r[i]], linestyle=conf['linestyle'][3],  
                   linewidth=conf['linewidth'], label=legend_label_r[i], color=conf['da_linecolor']['right'][i]) 
         # x column is not index
         else:
@@ -483,30 +484,30 @@ class line:
           if conf['markers'] == True:   
             for i in range(0, len(y_col_name_r)):
               if len(x_col_name_r)==1:
-                zoomed_right_axis.plot(data[x_col_name_r[0]], data[y_col_name_r[i]], linestyle=conf['linestyle'][3], marker=conf['markers_shape'][i], markersize=conf['markersize'], 
+                zoomed_right_axis.plot(file[x_col_name_r[0]], file[y_col_name_r[i]], linestyle=conf['linestyle'][3], marker=conf['markers_shape'][i], markersize=conf['markersize'], 
                     linewidth=conf['linewidth'], label=legend_label_r[i], color=conf['da_linecolor']['right'][i])
               else:
-                zoomed_right_axis.plot(data[x_col_name_r[i]], data[y_col_name_r[i]], linestyle=conf['linestyle'][3], marker=conf['markers_shape'][i], markersize=conf['markersize'], 
+                zoomed_right_axis.plot(file[x_col_name_r[i]], file[y_col_name_r[i]], linestyle=conf['linestyle'][3], marker=conf['markers_shape'][i], markersize=conf['markersize'], 
                     linewidth=conf['linewidth'], label=legend_label_r[i], color=conf['da_linecolor']['right'][i])
           else:
             for i in range(0, len(y_col_name_r)):
               if len(x_col_name_r)==1:
-                zoomed_right_axis.plot(data[x_col_name_r[0]], data[y_col_name_r[i]], linestyle=conf['linestyle'][3],
+                zoomed_right_axis.plot(file[x_col_name_r[0]], file[y_col_name_r[i]], linestyle=conf['linestyle'][3],
                     linewidth=conf['linewidth'], label=legend_label_r[i],color=conf['da_linecolor']['right'][i])
               else:
-                zoomed_right_axis.plot(data[x_col_name_r[i]], data[y_col_name_r[i]], linestyle=conf['linestyle'][3],  
+                zoomed_right_axis.plot(file[x_col_name_r[i]], file[y_col_name_r[i]], linestyle=conf['linestyle'][3],  
                     linewidth=conf['linewidth'], label=legend_label_r[i],color=conf['da_linecolor']['right'][i])
 
       ## presenting values on graph
       if conf['present_linevalue'] == True:
         if x_col_name[0] == 'index':
           for i in range(0, len(y_col_name)):
-            for x,y in zip(data.index.values.tolist(),data[y_col_name[i]].values.tolist()):
+            for x,y in zip(file.index.values.tolist(),file[y_col_name[i]].values.tolist()):
               plt.text(x, y+0.01, str(round(y,2)), color = color[i])
       
         else:
           for i in range(0, len(y_col_name)):
-            for x,y in zip(data[x_col_name[i]].values.tolist(),data[y_col_name[i]].values.tolist()):
+            for x,y in zip(file[x_col_name[i]].values.tolist(),file[y_col_name[i]].values.tolist()):
               plt.text(x, y+0.01, str(round(y,2)), color = color[i])
       else:
         pass     
@@ -516,12 +517,12 @@ class line:
       if conf['present_linevalue'] == True:
         if x_col_name_l[0] == 'index':
           for i in range(0, len(y_col_name_l)):
-            for x,y in zip(data.index.values.tolist(),data[y_col_name_l[i]].values.tolist()):
+            for x,y in zip(file.index.values.tolist(),file[y_col_name_l[i]].values.tolist()):
               plt.text(x, y+0.01, str(round(y,2)), color = color[i])
       
         else:
           for i in range(0, len(y_col_name_l)):
-            for x,y in zip(data[x_col_name_l[i]].values.tolist(),data[y_col_name_l[i]].values.tolist()):
+            for x,y in zip(file[x_col_name_l[i]].values.tolist(),file[y_col_name_l[i]].values.tolist()):
               plt.text(x, y+0.01, str(round(y,2)), color = color[i])
       else:
         pass
@@ -530,12 +531,12 @@ class line:
       if conf['present_linevalue'] == True:
         if x_col_name_r[0] == 'index':
           for i in range(0, len(y_col_name_r)):
-            for x,y in zip(data.index.values.tolist(),data[y_col_name_r[i]].values.tolist()):
+            for x,y in zip(file.index.values.tolist(),file[y_col_name_r[i]].values.tolist()):
               plt.text(x, y+0.01, str(round(y,2)), color = color[i])
       
         else:
           for i in range(0, len(y_col_name_r)):
-            for x,y in zip(data[x_col_name_r[i]].values.tolist(),data[y_col_name_r[i]].values.tolist()):
+            for x,y in zip(file[x_col_name_r[i]].values.tolist(),file[y_col_name_r[i]].values.tolist()):
               plt.text(x, y+0.01, str(round(y,2)), color = color[i])
       else:
         pass    
@@ -544,13 +545,13 @@ class line:
     if conf['x_range'] == False:
       pass
     else:
-      # x axis valure start from xaxis_start value, and end in max of the data add a small range of value
+      # x axis valure start from xaxis_start value, and end in max of the file add a small range of value
       ax_1eft.set_xlim(conf['x_range'][0], conf['x_range'][1])        
 
     if conf['y_range'] == False:
       pass
     else:
-      # y axis valure start from yaxis_start value, and end in max of the data add a small range of value
+      # y axis valure start from yaxis_start value, and end in max of the file add a small range of value
       ax_1eft.set_ylim(conf['y_range'][0], conf['y_range'][1])
   
     ## ticks setting
