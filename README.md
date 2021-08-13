@@ -43,20 +43,6 @@ area_model.area(
     file_name='Area chart'
 )
 ```
-    from paperviz.area.area import Area
-    area_model = Area()
-    area_model.area(
-        file="Example_Date\\Area\\numseunm_visitors.csv"
-        x_col_name=['index'],
-        y_col_name=['Acila_Adobe','Firehose_Museum','Chinese_American_Museum','America_Tropical_Interpretive_Center'],
-        x_lable='Index',
-        y_lable='vistors number',
-        paper_type='double',
-        plot_type='Stack',
-        title='Number of vistors in four museums',
-        save_image=True,
-        file_name='Area chart'
-    )
 
 <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/Area_chart_2.jpg" width="200" height="160" alt="Multi-item area chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/Area_chart_1.jpg" width="200" height="160" alt="Stacked area chart"/>      <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/Area_chart.jpg" width="200" height="160" alt="Precentage area chart"/>
 
