@@ -42,6 +42,7 @@ By coloring the area between the axis and the line, the area map not only emphas
         save_image=True,
         file_name='Area chart'
     )
+
 <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/Area_chart_2.jpg" width="200" height="160" alt="Multi-item area chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/Area_chart_1.jpg" width="200" height="160" alt="Stacked area chart"/>      <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/Area_chart.jpg" width="200" height="160" alt="Precentage area chart"/>
 
 ### [Bar Chart](https://github.com/swsamleo/Paper-Viz/blob/master/paperviz/bar/bar.py)
