@@ -1,19 +1,67 @@
 # import python data analysis library numpy and pandas 
-import pandas as pd
-import numpy as np
+import argparse
+# import module to read files
+import mimetypes
+import os
+import urllib
 
+import matplotlib.font_manager
 # import data visualization library matplotlib and seaborn
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
-import matplotlib.font_manager
+import numpy as np
+import pandas as pd
 import seaborn as sns
 from seaborn.utils import relative_luminance
 
-# import module to read files
-import mimetypes
-import urllib
-import os
-
+parser = argparse.ArgumentParser()
+parser.add_argument('--isframe', action='store_true')
+parser.add_argument('--type', type=str, default='single')
+parser.add_argument('--title', type=str, default='')
+parser.add_argument('--title_pad', type=int, default=10)
+parser.add_argument('--title_size', type=int, default=20)
+parser.add_argument('--title', type=str, default='center')
+parser.add_argument('--legend_label', type=str, default='')
+parser.add_argument('--plotwidth', type=int, default=10)
+parser.add_argument('--plothight', type=int, default=6)
+parser.add_argument('--line', type=int, default=1)
+parser.add_argument('--valueformat', type=str, default='{:.0f}')
+parser.add_argument('--line', type=int, default=1)
+parser.add_argument('--bar_width', type=float, default=0.8)
+parser.add_argument('--xax_length', type=int, default=1)
+parser.add_argument('--yax_length', type=int, default=1)
+parser.add_argument('--valuepad', type=int, default=1)
+parser.add_argument('--err_series', type=str, default='')
+parser.add_argument('--xtick_loc', type=int, default=1)
+parser.add_argument('--ytick_loc', type=int, default=5)
+parser.add_argument('--tick_labels', type=str, default='')
+parser.add_argument('--tick_direction', type=str, default='out')
+parser.add_argument('--fontfamily', type=str, default='sans')
+parser.add_argument('--axfont_size', type=int, default=17)
+parser.add_argument('--valuefont_size', type=int, default=13)
+parser.add_argument('--tickfont_size', type=int, default=13)
+parser.add_argument('--legfont_size', type=int, default=14)
+parser.add_argument('--labelpad', type=int, default=10)
+parser.add_argument('--fontsize', type=int, default=18)
+parser.add_argument('--legendcol', type=int, default=1)
+parser.add_argument('--legend_loc', type=str, default='upper_right')
+parser.add_argument('--gridline_width', type=float, default=0.2)
+parser.add_argument('--colors', type=str, default='1'*50)
+parser.add_argument('--bar_color', type=list, default=['#7173A9','#E8AA78','#E2918F','#629DDD',
+                         '#A4BF7F','#A5D7D8','#A48BC1','#F4D470'])
+parser.add_argument('--axis_color', type=str, default='0')
+parser.add_argument('--grid_color', type=str, default='grey')
+parser.add_argument('--edge_color', type=str, default='0')
+parser.add_argument('--font_color', type=str, default='0')
+parser.add_argument('--patterns', type=str, default=' '*50)
+parser.add_argument('--bar_pattern', type=str, default='0')
+parser.add_argument('--eline_width', type=int, default=0.7)
+parser.add_argument('--cap_size', type=int, default=0)
+parser.add_argument('--cap_thick', type=int, default=1)
+parser.add_argument('--is_save_fig', action='store_ture')
+parser.add_argument('--save_image', type=str, default='bar.pdf')
+parser.add_argument('--show_value',action='store_false')
+column_conf = parser.parse_args()
 # import google colab to use google colab as editor
 # if you use other editor, do not need to import google.colab here
 #from google.colab import drive
@@ -94,62 +142,62 @@ class bar_chart:
       ## show hatch patterns
       plt.show()
 
-    def Bar(self, file,  x_col_name,  y_col_name, x_label, y_label,  paper_type, direction,  **kwargs):
+    def Bar(self, file,  x_col_name,  y_col_name, x_label, y_label,  direction,  **kwargs):
 
 
              
-      single_column_conf = {'isframe':False,
-                  'type': 'single',
-                  'title':'',
-                  'title_pad':10,
-                  'title_size':20,
-                  'title_loc':'center',
-                  'legend_label':'',
-                  'plotwidth':10,
-                  'plothight':6,
-                  'line_width':1,
-                  'valueformat':'{:.0f}',
-                  'bar_width':0.8,
-                  'xax_length':1,
-                  'yax_length':1,
-                  'valuepad':1,
-                  'err_series':'',
-                  'xtick_loc':1,
-                  'ytick_loc':5,
-                  'tick_labels':'',
-                  'tick_direction':'out',
-                  'fontfamily':'sans',
-                  'axfont_size':17,
-                  'valuefont_size':13,
-                  'tickfont_size':13,
-                  'legfont_size':14,
-                  'labelpad':10,
-                  'fontsize':18,
-                  'legendcol':1,
-                  'legend_loc':'upper right',
-                  'gridline_width':0.2,
-                  'colors':'1' * 50,
-                  'bar_color':['#7173A9','#E8AA78','#E2918F','#629DDD',
-                         '#A4BF7F','#A5D7D8','#A48BC1','#F4D470'],
-                  'axis_color':'0',
-                  'grid_color':'grey',
-                  'edge_color':'0',
-                  'font_color':'0',
-                  'patterns':' ' * 50,
-                  'bar_pattern':'0',
-                  'eline_width':0.7,
-                  'cap_size':0,
-                  'cap_thick':1,
-                  'is_save_fig':False,
-                  'save_image':'bar.pdf',
-                  'show_value':True}
+      # column_conf = {'isframe':False,
+      #             'type': 'single',
+      #             'title':'',
+      #             'title_pad':10,
+      #             'title_size':20,
+      #             'title_loc':'center',
+      #             'legend_label':'',
+      #             'plotwidth':10,
+      #             'plothight':6,
+      #             'line_width':1,
+      #             'valueformat':'{:.0f}',
+      #             'bar_width':0.8,
+      #             'xax_length':1,
+      #             'yax_length':1,
+      #             'valuepad':1,
+      #             'err_series':'',
+      #             'xtick_loc':1,
+      #             'ytick_loc':5,
+      #             'tick_labels':'',
+      #             'tick_direction':'out',
+      #             'fontfamily':'sans',
+      #             'axfont_size':17,
+      #             'valuefont_size':13,
+      #             'tickfont_size':13,
+      #             'legfont_size':14,
+      #             'labelpad':10,
+      #             'fontsize':18,
+      #             'legendcol':1,
+      #             'legend_loc':'upper right',
+      #             'gridline_width':0.2,
+      #             'colors':'1' * 50,
+      #             'bar_color':['#7173A9','#E8AA78','#E2918F','#629DDD',
+      #                    '#A4BF7F','#A5D7D8','#A48BC1','#F4D470'],
+      #             'axis_color':'0',
+      #             'grid_color':'grey',
+      #             'edge_color':'0',
+      #             'font_color':'0',
+      #             'patterns':' ' * 50,
+      #             'bar_pattern':'0',
+      #             'eline_width':0.7,
+      #             'cap_size':0,
+      #             'cap_thick':1,
+      #             'is_save_fig':False,
+      #             'save_image':'bar.pdf',
+      #             'show_value':True}
 
       #double_column_conf                 
                   
-      if paper_type == 'single':
-        conf = single_column_conf
-      elif paper_type == 'double':
-        conf = double_column_conf 
+      
+      conf = vars(column_conf)
+      # elif paper_type == 'double':
+      #   conf = double_column_conf 
     
       # when new configuraton is set, update the original one
       conf.update(kwargs)
