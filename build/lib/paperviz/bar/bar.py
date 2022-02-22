@@ -17,16 +17,17 @@ from seaborn.utils import relative_luminance
 parser = argparse.ArgumentParser()
 parser.add_argument('--isframe', action='store_true')
 parser.add_argument('--type', type=str, default='single')
+# parser.add_argument('--type', type=str, default='group')
+
 parser.add_argument('--title', type=str, default='')
 parser.add_argument('--title_pad', type=int, default=10)
 parser.add_argument('--title_size', type=int, default=20)
-parser.add_argument('--title', type=str, default='center')
+parser.add_argument('--title_loc', type=str, default='center')
 parser.add_argument('--legend_label', type=str, default='')
 parser.add_argument('--plotwidth', type=int, default=10)
 parser.add_argument('--plothight', type=int, default=6)
 parser.add_argument('--line', type=int, default=1)
 parser.add_argument('--valueformat', type=str, default='{:.0f}')
-parser.add_argument('--line', type=int, default=1)
 parser.add_argument('--bar_width', type=float, default=0.8)
 parser.add_argument('--xax_length', type=int, default=1)
 parser.add_argument('--yax_length', type=int, default=1)
@@ -44,7 +45,7 @@ parser.add_argument('--legfont_size', type=int, default=14)
 parser.add_argument('--labelpad', type=int, default=10)
 parser.add_argument('--fontsize', type=int, default=18)
 parser.add_argument('--legendcol', type=int, default=1)
-parser.add_argument('--legend_loc', type=str, default='upper_right')
+parser.add_argument('--legend_loc', type=str, default='upper right')
 parser.add_argument('--gridline_width', type=float, default=0.2)
 parser.add_argument('--colors', type=str, default='1'*50)
 parser.add_argument('--bar_color', type=list, default=['#7173A9','#E8AA78','#E2918F','#629DDD',
@@ -55,10 +56,12 @@ parser.add_argument('--edge_color', type=str, default='0')
 parser.add_argument('--font_color', type=str, default='0')
 parser.add_argument('--patterns', type=str, default=' '*50)
 parser.add_argument('--bar_pattern', type=str, default='0')
-parser.add_argument('--eline_width', type=int, default=0.7)
+parser.add_argument('--eline_width', type=float, default=0.7)
+parser.add_argument('--line_width', type=int, default=1)
+
 parser.add_argument('--cap_size', type=int, default=0)
 parser.add_argument('--cap_thick', type=int, default=1)
-parser.add_argument('--is_save_fig', action='store_ture')
+parser.add_argument('--is_save_fig', action='store_true')
 parser.add_argument('--save_image', type=str, default='bar.pdf')
 parser.add_argument('--show_value',action='store_false')
 column_conf = parser.parse_args()
@@ -85,7 +88,7 @@ class bar_chart:
     def read_file(self,file):
       file_url = urllib.request.pathname2url(file)
       ftype = mimetypes.guess_type(file_url, strict = True)[0]
-
+      path=''
       ## read data file according to format, default file types: csv/excel/text
       # read csv format data
       if 'csv' in ftype:
@@ -96,6 +99,8 @@ class bar_chart:
       # read text format data
       elif ftype == 'text/plain':
           data = pd.read_csv(path + file, sep="\t")
+      elif 'excel' in ftype:
+          data = pd.read_csv(path + file)
       else:
           print("Cannot read file, change file type.")
       return data
@@ -143,7 +148,7 @@ class bar_chart:
       plt.show()
 
     def Bar(self, file,  x_col_name,  y_col_name, x_label, y_label,  direction,  **kwargs):
-
+      
 
              
       # column_conf = {'isframe':False,
@@ -234,6 +239,7 @@ class bar_chart:
           categories.append(x + 1.0)
           ticklabel_list.append(v)
         # choose the direction of bar: 'vertical' or 'horizontal'
+     
         if direction == 'vertical':
           rectobj = ax.bar(x=categories, height=data[y_col_name], width=conf['bar_width'], 
                     data=data, label=conf['legend_label'],edgecolor=conf['edge_color'], 
@@ -300,6 +306,8 @@ class bar_chart:
         if direction == 'vertical':      
           # set location of bars on x-axis
           # initialise list
+          conf['legend_label']=y_col_name
+
           n_groups = len(y_col_name)
           xloc_list = [0]*n_groups
           xloc = np.arange(len(data[x_col_name]))
@@ -325,6 +333,7 @@ class bar_chart:
         elif direction == 'horizontal':  
           ## set locations for the bars on y axis
           # initialise list
+          conf['legend_label']=x_col_name
           n_groups = len(x_col_name)
           yloc_list=[0]*n_groups
           yloc = np.arange(len(data[y_col_name]))
@@ -363,6 +372,7 @@ class bar_chart:
         ax.yaxis.set_major_locator(ticker.MultipleLocator(conf['ytick_loc']))
         
         if direction == 'vertical':
+
           ## adjust the location of xticks label
           if conf['tick_labels'] == '':
             plt.xticks([x + conf['bar_width']*0.5*(n_groups-1) for x in range(len(data[x_col_name]))], data[x_col_name].tolist())
@@ -476,6 +486,7 @@ class bar_chart:
           # alpha: adjust the transparency
         
         elif direction == 'horizontal':
+          
           if conf['tick_labels']=='':
             plt.yticks([y  for y in range(len(data[y_col_name]))], data[y_col_name].tolist())
           else:
