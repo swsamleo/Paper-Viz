@@ -88,7 +88,7 @@ class bar_chart:
     def read_file(self,file):
       file_url = urllib.request.pathname2url(file)
       ftype = mimetypes.guess_type(file_url, strict = True)[0]
-      path=''
+      
       ## read data file according to format, default file types: csv/excel/text
       # read csv format data
       if 'csv' in ftype:
