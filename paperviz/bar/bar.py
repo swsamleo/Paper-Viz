@@ -17,8 +17,6 @@ from seaborn.utils import relative_luminance
 parser = argparse.ArgumentParser()
 parser.add_argument('--isframe', action='store_true')
 parser.add_argument('--type', type=str, default='single')
-# parser.add_argument('--type', type=str, default='group')
-
 parser.add_argument('--title', type=str, default='')
 parser.add_argument('--title_pad', type=int, default=10)
 parser.add_argument('--title_size', type=int, default=20)
@@ -85,6 +83,18 @@ class bar_chart:
     ## read file function: read three kinds of format file csv/excel/text
     # if you have other format of file, please change the function manually
     # file: str, filename (e.g.'Vertical_Bar.txt')
+    def checkitem(self,conf):
+      if conf['type'] not in ['single']:
+        raise TypeError(f'the value of the type must be "single" !')
+      if conf['title_loc'] not in ['center','left','right']:
+        raise TypeError(f'the value of the title_loc must be "center","left", or "right"!')
+      if conf['tick_direction'] not in ['out','in','inout']:
+        raise TypeError(f'the value of the tick_direction must be "out","in", or "inout"!')
+      if conf['legend_loc'] not in ['best','upper right','upper left','lower left','lower right','right','center left','center right'
+      ,'lower center','upper center','center']:
+        raise TypeError(f'the value of the legend_loc must be "best","upper right","upper left",...!')
+     
+
     def read_file(self,file):
       file_url = urllib.request.pathname2url(file)
       ftype = mimetypes.guess_type(file_url, strict = True)[0]
@@ -201,6 +211,7 @@ class bar_chart:
                   
       
       conf = vars(column_conf)
+      self.checkitem(conf)
       # elif paper_type == 'double':
       #   conf = double_column_conf 
     
