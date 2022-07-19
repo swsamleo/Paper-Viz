@@ -16,23 +16,21 @@ import numpy as np
 import matplotlib.patches as mpatches
 from sklearn.linear_model import LinearRegression
 
-## import module to read files
 import mimetypes
 import urllib
 import os
+import platform
 
-path_current = os.getcwd()
-# the path is where the dataset saved
-path = path_current + 'Example_Data/Scatter/' 
-# the "path_img" is the position where final image will be saved
-path_img = path_current + '/Images/'
+
 class Scatter:
     # read data
-    def __init__(self, path=path,path_img=path_img):
-    
-      self.path=path
-      self.path_img=path_img
-    def read_file(self, file):
+    def __init__(self, file):
+
+        self.path = self.get_cwd()
+        self.data = self.read_file(file, self.path)
+        self.path_img = self.get_cwd()
+   
+    def read_file(self, file, path):
         """Read different types of files and return pandas dataframe.
 
         This function can transform multiple file type such as csv/excel/text into
@@ -47,24 +45,45 @@ class Scatter:
 
         """
         # Get the file URL
-        file_url = urllib.request.pathname2url(file)  # try catch
+        # try:
+        file_url = path + file
+
+        ftype = mimetypes.guess_type(file_url, strict=True)[0]
+        # except FileNotFoundError:
+        #     print('e')
+
+        # try catch
         # use mimetypes package to guess the file type
         # For example: 'file.csv' will return 'csv'
-        ftype = mimetypes.guess_type(file_url, strict=True)[0]
-        ## read data file according to its formate, default includes three types of files: csv/excel/text
+        # ftype = mimetypes.guess_type(file_url, strict=True)[0]
+        ## read data file according to its format, default includes three types of files: csv/excel/text
         # read csv format data
         if 'csv' in ftype:
-            # usecols: return a subset of the columns, here choose one column to use in the line chart
-            data = pd.read_csv(self.path + file)
+            data = pd.read_csv(file_url)
+        elif 'excel' in ftype:
+            data = pd.read_csv(file_url)
         # read excel format data
         elif 'sheet' in ftype:
-            data = pd.read_excel(self.path + file)
-        # read text format data
+            data = pd.read_excel(file_url)
+        # read text format data from
         elif ftype == 'text/plain':
-            data = pd.read_csv(self.path + file, sep="\t")
+            data = pd.read_csv(file_url, sep="\t")
+
+
         else:
-            print("File type cannot find!")
+            raise FileNotFoundError("File type cannot find!")
+
+        self.__dict__['data'] = data
         return data
+
+    def get_cwd(self):
+        # get the current path of file .
+        if platform.system().lower() == 'windows':
+            path = os.getcwd() + '/'
+
+        elif platform.system().lower() == 'linux':
+            path = os.getcwd().replace('/', '\\') + '/'
+        return path
 
     def linear_trend(self, data, x_col_name, y_col_name):
         """Add the trend line for the scatter plot
@@ -91,10 +110,10 @@ class Scatter:
 
     def scatter_plot(self,
                      file,
-                     x_col_name,
-                     y_col_name,
-                     x_label,
-                     y_label,
+                     x_col_name = None,
+                     y_col_name = None,
+                     x_label = None,
+                     y_label = None,
                      output_name=None,
                      **kwargs):
         """Basic scatter plot with trend line or not
@@ -113,6 +132,19 @@ class Scatter:
             output_name : the output file name. The deafult output name is dataset name. The output file type is PDF. For example, The output file name would be :'dataset1.pdf'
 
         """
+        header_list = self.data.columns.values.tolist()
+
+        if x_col_name is None:
+            x_col_name = header_list[1]
+        if y_col_name is None:
+            y_col_name = header_list[0]
+        if x_label is None:
+            x_label = header_list[1]
+        if y_label is None:
+            y_label = header_list[0]
+
+
+
         conf = {
             'is_save':False,
             'plotwidth':
@@ -194,18 +226,18 @@ class Scatter:
                       labelpad=conf['labelpad'])
 
         # Input the valid filename and return the pandas dataframe for drawing
-        data = self.read_file(file)
+        # data = self.read_file(self.file)
 
         # scatter plot
-        ax.scatter(data[x_col_name],
-                   data[y_col_name],
+        ax.scatter(self.data[x_col_name],
+                   self.data[y_col_name],
                    s=conf['scatter_size'],
                    c=conf['colors_list'][0])
 
         # add the trend line
         # The default is not with trend line, The user need to type trend_line=True in the parameter
         if conf['trend_line'] == True:
-            self.linear_trend(data, x_col_name, y_col_name)
+            self.linear_trend(self.data, x_col_name, y_col_name)
 
         # xtricks and yticks font size
         plt.xticks(fontsize=conf['xtrick_fontsize'])
@@ -339,12 +371,12 @@ class Scatter:
                       labelpad=conf['labelpad'])
 
         # Input the valid filename and return the pandas dataframe for drawing
-        data = self.read_file(file)
+        # data = self.read_file(file)
 
         map_category = []
         # create the list to get the category unique value
         # Example: ['Asia' 'Europe' 'Africa' 'Americas' 'Oceania']
-        category_list = data[category_col].unique()
+        category_list = self.data[category_col].unique()
 
         # map each category item to one color
         # {'Asia': 'r', 'Europe': 'b', 'Africa': 'y','Americas':'g','Oceania':'c'}
@@ -352,11 +384,11 @@ class Scatter:
             zip(category_list, conf['colors_list'][:len(category_list)]))
 
         # color for each item
-        category = data[category_col].map(map_category)
+        category = self.data[category_col].map(map_category)
 
         # plot the scatter plot
-        scatter = ax.scatter(data[x_col_name],
-                             data[y_col_name],
+        scatter = ax.scatter(self.data[x_col_name],
+                             self.data[y_col_name],
                              s=conf['scatter_size'],
                              color=category,
                              label=category,
@@ -388,7 +420,7 @@ class Scatter:
         # save the plot
         plt.tight_layout()
         if conf['is_save']==True:
-            plt.savefig(path_img + output_name)
+            plt.savefig(self.path_img + output_name)
 
         # show the plot
         plt.show()
@@ -514,12 +546,12 @@ class Scatter:
                       labelpad=conf['labelpad'])
 
         # Input the valid filename and return the pandas dataframe for drawing
-        data = self.read_file(file)
+        # data = self.read_file(self.file)
 
         map_category = []
         # create the list to get the category unique value
         # Example: ['Asia' 'Europe' 'Africa' 'Americas' 'Oceania']
-        category_list = data[category_col].unique()
+        category_list = self.data[category_col].unique()
 
         # map each category item to one color
         # {'Asia': 'r', 'Europe': 'b', 'Africa': 'y','Americas':'g','Oceania':'c'}
@@ -527,13 +559,13 @@ class Scatter:
             zip(category_list, conf['marker_type'][:len(category_list)]))
 
         # separete differnt color for each item
-        category = data[category_col].map(map_category)
+        category = self.data[category_col].map(map_category)
 
         # scatter plot with multiple marker
         # This for loop is going to draw different markers based on categories
         # For example, it will plot category 1 for marker 'x' and then plot category 2 for marker 'o'.
         for kind in map_category:
-            data_category = data[data[category_col] == kind]
+            data_category = self.data[self.data[category_col] == kind]
             plt.scatter(data_category[x_col_name],
                         data_category[y_col_name],
                         s=conf['scatter_size'],
@@ -542,7 +574,7 @@ class Scatter:
                         edgecolors='grey')
 
         # add category(different marker) legend
-        unique_list = data[category_col].unique()
+        unique_list = self.data[category_col].unique()
         plt.legend(labels=unique_list,fontsize=conf['legend_size'])
 
         # xtricks and yticks font size
