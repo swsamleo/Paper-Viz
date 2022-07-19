@@ -6,46 +6,94 @@ import seaborn as sns
 import matplotlib
 import matplotlib.pyplot as plt
 import matplotlib.font_manager
-
 import mimetypes
-import urllib
 import os
-
-
-#from google.colab import drive	
-#drive.mount('/content/drive')
-
-## setting path
-# get current path
-path_current = os.getcwd()
-# the path is where the dataset saved
-path = path_current + '/Example_Data/hist/' 
-# the "path_img" is the position where final image will be saved
-path_img = path_current + '/Images/'
+import matplotlib.pyplot as plt
+import pandas as pd
+import platform
 
 class hist_plot:
     # read data
-  def __init__(self, path=path,path_img=path_img):
-    
-      self.path=path
-      self.path_img=path_img
-  def read_file(self,file):
-    file_url = urllib.request.pathname2url(file)
-    ftype = mimetypes.guess_type(file_url, strict=True)[0]
-    ## read data file according to its formate, default includes three types of files: csv/excel/text
-    # read csv format data from the parking dataset
-    if 'csv' in ftype:
-      # usecols: return a subset of the columns, here choose one column to use in the line chart
-      data = pd.read_csv(self.path+file)
-    # read excel format data from the parking dataset
-    elif 'sheet' in ftype:
-      data = pd.read_excel(self.path+file)
-    # read text format data from the parking dataset
-    elif ftype == 'text/plain':
-      data = pd.read_csv(self.path+file, sep="\t")
-    else:
-      print("File type cannot find!")
-    return data
+  def __init__(self, file):
+
+      self.path = self.get_cwd()
+      self.data = self.read_file(file, self.path)
+      self.path_img = self.get_cwd()
+
+  def get_cwd(self):
+      # get the current path of file .
+      if platform.system().lower() == 'windows':
+          path = os.getcwd() + '/'
+
+      elif platform.system().lower() == 'linux':
+          path = os.getcwd().replace('/', '\\') + '/'
+      return path
+
+
+  # def read_file(self,file):
+  #   file_url = urllib.request.pathname2url(file)
+  #   ftype = mimetypes.guess_type(file_url, strict=True)[0]
+  #   ## read data file according to its formate, default includes three types of files: csv/excel/text
+  #   # read csv format data from the parking dataset
+  #   if 'csv' in ftype:
+  #     # usecols: return a subset of the columns, here choose one column to use in the line chart
+  #     data = pd.read_csv(self.path+file)
+  #   # read excel format data from the parking dataset
+  #   elif 'sheet' in ftype:
+  #     data = pd.read_excel(self.path+file)
+  #   # read text format data from the parking dataset
+  #   elif ftype == 'text/plain':
+  #     data = pd.read_csv(self.path+file, sep="\t")
+  #   else:
+  #     print("File type cannot find!")
+  #   return data
+
+  def read_file(self, file, path):
+        """Read different types of files and return pandas dataframe.
+
+        This function can transform multiple file type such as csv/excel/text into
+        a pandas dataframe. User need to input the filename such as: 'file.csv'.
+        If the file type cannot be find or not support it, it will return the message.
+
+        Args:
+            file: filename of user data source
+
+        Returns:
+            data : A pandas dataframe
+
+        """
+        # Get the file URL
+        # try:
+        file_url = path + file
+
+        ftype = mimetypes.guess_type(file_url, strict=True)[0]
+        # except FileNotFoundError:
+        #     print('e')
+
+        # try catch
+        # use mimetypes package to guess the file type
+        # For example: 'file.csv' will return 'csv'
+        # ftype = mimetypes.guess_type(file_url, strict=True)[0]
+        ## read data file according to its format, default includes three types of files: csv/excel/text
+        # read csv format data
+        if 'csv' in ftype:
+            data = pd.read_csv(file_url)
+        elif 'excel' in ftype:
+            data = pd.read_csv(file_url)
+        # read excel format data
+        elif 'sheet' in ftype:
+            data = pd.read_excel(file_url)
+        # read text format data from
+        elif ftype == 'text/plain':
+            data = pd.read_csv(file_url, sep="\t")
+
+
+        else:
+            raise FileNotFoundError("File type cannot find!")
+
+        self.__dict__['data'] = data
+        return data
+
 
   # check the available file name
   # if the input file name already existed then rename to file_1, file_2
@@ -53,10 +101,10 @@ class hist_plot:
     n=[1]
     def check_meta(file_name):
         file_name_new=file_name
-        if file_name in [os.path.splitext(i)[0] for i in os.listdir(path_img)]:   
+        if file_name in [os.path.splitext(i)[0] for i in os.listdir(self.path_img)]:
             file_name_new=file_name+'_'+str(n[0])
             n[0]+=1
-        if file_name_new in [os.path.splitext(i)[0] for i in os.listdir(path_img)]:   
+        if file_name_new in [os.path.splitext(i)[0] for i in os.listdir(self.path_img)]:
             file_name_new=check_meta(file_name)
         return file_name_new
     available_name=check_meta(filename)
@@ -65,7 +113,7 @@ class hist_plot:
   # file: file name of your data source
   # x_col_name: ['x_column_name_a','x_column_name_b'...]
   # paper_type : 'single' or 'double'
-  def hist(self,file ,x_col_name,paper_type,**kwargs):
+  def hist(self,file ,x_col_name=None,paper_type=None,**kwargs):
     # Configuration of the histogram chart
     # plotwidth: width of the plot
     # plotheight: height of the plot
@@ -98,6 +146,12 @@ class hist_plot:
     # save_image: True or False as options. If it is True, save chart
     # savefig_bbox_inches: Bounding box in inches
     # file_name: the file name in saving image
+    header_list = self.data.columns.values.tolist()
+
+    if x_col_name is None:
+        x_col_name = header_list[1]
+    if paper_type is None:
+        paper_type = 'double'
 
     single_column_conf={ 'plotwidth':8,
                         'plotheight':6, 
@@ -181,18 +235,12 @@ class hist_plot:
     # x,y label setting
     ax_left.set_xlabel(conf['x_label'], fontproperties=conf['my_font'], fontsize=conf['labeltext_size'], labelpad=conf['labelpad'])
     ax_left.set_ylabel(conf['y_label'], fontproperties=conf['my_font'], fontsize=conf['labeltext_size'], labelpad=conf['labelpad'])
-    
-    # read file 
-    try:
-      data = self.read_file(file)
-    except Exception:
-      print('Sorry, this file does not exist, please check the file name')
-   
+
     #plot
     # single column histogram
     if len(x_col_name) == 1:
       pal=conf['color']
-      n, bins, patches=ax_left.hist(data[x_col_name[0]],bins=conf['bins'],density=conf['density'],alpha=conf['alpha'],
+      n, bins, patches=ax_left.hist(self.data[x_col_name[0]],bins=conf['bins'],density=conf['density'],alpha=conf['alpha'],
                                     orientation=conf['orientation'],histtype=conf['histtype'],stacked=conf['stacked'],
                                     )      
       pal=sns.color_palette('hls',len(patches))
@@ -203,8 +251,8 @@ class hist_plot:
       # if density is true, the histogram means density, if density_line is True, draw density line
       if conf['density'] ==True and conf['density_line']==True:
         # get the density line
-        mu=np.mean(data[x_col_name[0]])
-        sigma=np.std(data[x_col_name[0]])
+        mu=np.mean(self.data[x_col_name[0]])
+        sigma=np.std(self.data[x_col_name[0]])
         y = ((1 / (np.sqrt(2 * np.pi) * sigma)) *
           np.exp(-0.5 * (1 / sigma * (bins - mu))**2))
         ax_left.plot(bins,y,'-',color='black',linewidth=1)
@@ -213,10 +261,10 @@ class hist_plot:
       # stacked histogram
       if conf['stacked'] != True:
         for i in range(len(x_col_name)):
-          n, bins, patches=ax_left.hist(data[x_col_name[i]],bins=conf['bins'],density=conf['density'],alpha=conf['alpha'],
+          n, bins, patches=ax_left.hist(self.data[x_col_name[i]],bins=conf['bins'],density=conf['density'],alpha=conf['alpha'],
                                       color=conf['color'][i],orientation=conf['orientation'],histtype=conf['histtype'],stacked=conf['stacked'],label=x_col_name[i])
-          mu=np.mean(data[x_col_name[i]])
-          sigma=np.std(data[x_col_name[i]])
+          mu=np.mean(self.data[x_col_name[i]])
+          sigma=np.std(self.data[x_col_name[i]])
           for i in range(len(patches)):
             patches[i].set_edgecolor('black')  
           if conf['density'] ==True and conf['density_line']==True:
@@ -228,11 +276,11 @@ class hist_plot:
       else:  
         datalist=[]
         num=0
-        for i in range(len(data)):
-          datalist.append(data.loc[i].values)
+        for i in range(len(self.data)):
+          datalist.append(self.data.loc[i].values)
           # set the size of palette
-          if len(data.loc[i].values)>num:
-            num=len(data.loc[i].values)
+          if len(self.data.loc[i].values)>num:
+            num=len(self.data.loc[i].values)
         data=np.array(datalist)
         # each columns has one color
         color=sns.color_palette("hls", num)
