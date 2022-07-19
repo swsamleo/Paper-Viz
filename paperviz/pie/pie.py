@@ -7,53 +7,84 @@ import seaborn as sns
 import matplotlib
 import matplotlib.pyplot as plt
 import matplotlib.font_manager
-import matplotlib.patches as mpatches
-
+# Get the file path and file type
 import mimetypes
 import urllib
 import os
+## import data visualization library matplotlib and seaborn
+## import module to read files
+import mimetypes
+import os
+import urllib
+import matplotlib.patches as mpatches
+import matplotlib.pyplot as plt
+import pandas as pd
+import platform
+import requests
 
-
-#from google.colab import drive	
-#drive.mount('/content/drive')
-
-## setting path
-# get current path
-path_current = os.getcwd()
-# the path is where the dataset saved
-path = path_current + '/Example_Data/Pie/' 
-# the "path_img" is the position where final image will be saved
-path_img = path_current + '/Images/'
 
 class Pie_plot: 
-  # read data
-  def __init__(self, path=path,path_img=path_img):
-    
-      self.path=path
-      self.path_img=path_img
-  def read_file(self,file):
-    
-    file_url = urllib.request.pathname2url(file)
-    ftype = mimetypes.guess_type(file_url, strict=True)[0]
-  
-    ## read data file according to its formate, default includes three types of files: csv/excel/text
-    # read csv format data from the parking dataset
-    if 'csv' in ftype:
-      # usecols: return a subset of the columns, here choose one column to use in the line chart
-      data = pd.read_csv(self.path+file)
-    elif  'excel'in ftype:
-      # usecols: return a subset of the columns, here choose one column to use in the line chart
-      data = pd.read_csv(self.path+file)
-    # read excel format data from the parking dataset
-    elif 'sheet' in ftype:
-      data = pd.read_excel(self.path+file)
-      
-    # read text format data from the parking dataset
-    elif ftype == 'text/plain':
-      data = pd.read_csv(self.path+file, sep="\t")
-    else:
-      print("File type cannot find!")
-    return data
+  def __init__(self, file):
+
+    self.path = self.get_cwd()
+    self.data = self.read_file(file, self.path)
+    self.path_img = self.get_cwd()
+
+
+  def get_cwd(self):
+      # get the current path of file .
+    if platform.system().lower() == 'windows':
+          path = os.getcwd() + '/'
+
+    elif platform.system().lower() == 'linux':
+          path = os.getcwd().replace('/', '\\') + '/'
+    return path
+
+  def read_file(self, file, path):
+      """Read different types of files and return pandas dataframe.
+
+      This function can transform multiple file type such as csv/excel/text into
+      a pandas dataframe. User need to input the filename such as: 'file.csv'.
+      If the file type cannot be find or not support it, it will return the message.
+
+      Args:
+          file: filename of user data source
+
+      Returns:
+          data : A pandas dataframe
+
+      """
+      # Get the file URL
+      # try:
+      file_url = path + file
+      ftype = mimetypes.guess_type(file_url, strict=True)[0]
+      # except FileNotFoundError:
+      #     print('e')
+
+      # try catch
+      # use mimetypes package to guess the file type
+      # For example: 'file.csv' will return 'csv'
+      # ftype = mimetypes.guess_type(file_url, strict=True)[0]
+      ## read data file according to its format, default includes three types of files: csv/excel/text
+      # read csv format data
+      if 'csv' in ftype:
+          data = pd.read_csv(file_url)
+      elif 'excel' in ftype:
+          data = pd.read_csv(file_url)
+      # read excel format data
+      elif 'sheet' in ftype:
+          data = pd.read_excel(file_url)
+      # read text format data from
+      elif ftype == 'text/plain':
+          data = pd.read_csv(file_url, sep="\t")
+
+
+      else:
+          raise FileNotFoundError("File type cannot find!")
+
+      self.__dict__['data'] = data
+      return data
+
 
   def explode(self, label, explode_label,explode_value):
     explode_list=[explode_value if i in explode_label else 0 for i in label]
@@ -63,10 +94,10 @@ class Pie_plot:
     n=[1]
     def check_meta(file_name):
         file_name_new=file_name
-        if file_name in [os.path.splitext(i)[0] for i in os.listdir(path_img)]:   
+        if file_name in [os.path.splitext(i)[0] for i in os.listdir(self.path_img)]:
             file_name_new=file_name+'_'+str(n[0])
             n[0]+=1
-        if file_name_new in [os.path.splitext(i)[0] for i in os.listdir(path_img)]:   
+        if file_name_new in [os.path.splitext(i)[0] for i in os.listdir(self.path_img)]:
             file_name_new=check_meta(file_name)
         return file_name_new
     available_name=check_meta(filename)
@@ -77,7 +108,7 @@ class Pie_plot:
   # label: the columns name of pie chart label
   # paper_type: 'single' or 'double'
 
-  def Pie(self, file, value, label, paper_type, **kwargs):
+  def Pie(self, file, value=None, label=None, paper_type=None, **kwargs):
     # Configuration of the pie chart
     # plotwidth: width of the plot
     # plotheight: height of the plot
@@ -119,6 +150,16 @@ class Pie_plot:
     # save_image: True or False as options. If it is True, save chart
     # savefig_bbox_inches: Bounding box in inches
     # file_name: the file name in saving image
+
+    header_list = self.data.columns.values.tolist()
+
+    if value is None:
+        value = [header_list[1]]
+    if label is None:
+        label = [header_list[0]]
+    if paper_type is None:
+        paper_type = 'double'
+
     single_column_conf={ 'plotwidth':8,
                   'plotheight':8, 
                   'my_font':'DejaVu Sans',
@@ -199,17 +240,18 @@ class Pie_plot:
       conf = single_column_conf
     elif paper_type == 'double':
       conf = double_column_conf  
+
     conf.update(kwargs)
 
   # create figure and set figure size  
     fig, ax_left = plt.subplots(figsize = (conf['plotwidth'], conf['plotheight']))   
 
   #read data
-    try:
-      data = self.read_file(file)
-      
-    except Exception:
-      print('Sorry, this file does not exist, please check the file name') 
+    # try:
+    #   data = self.read_file(file)
+    #
+    # except Exception:
+    #   print('Sorry, this file does not exist, please check the file name')
 
     # get actual value
     def make_autopct(values):
@@ -229,12 +271,12 @@ class Pie_plot:
         if conf['info_style'] =='Simple':
         #show actual value
           if conf['actual_values'] == True:
-            autopct=make_autopct(data[value[0]])
+            autopct=make_autopct(self.data[value[0]])
           # dont show actual value
           else:
             autopct=conf['autopct']
 
-          wedges, texts, autotexts=ax_left.pie(x=data[value[0]],labels=data[label[0]],autopct=autopct,pctdistance=conf['pctdistance'], labeldistance=conf['labeldistance'],
+          wedges, texts, autotexts=ax_left.pie(x=self.data[value[0]],labels=self.data[label[0]],autopct=autopct,pctdistance=conf['pctdistance'], labeldistance=conf['labeldistance'],
                     wedgeprops={ 'linewidth' : conf['linewidth'], 'edgecolor' : conf['edgecolor'] },colors=conf['palette'],startangle=conf['startangle'],textprops={'fontsize':conf['labeltext_size']},radius=conf['radius']) 
           #rotate the value text
           for i, p in enumerate(wedges):
@@ -247,14 +289,14 @@ class Pie_plot:
         else:
           #show actual value
           if conf['actual_values'] == True:
-            autopct=make_autopct(data[value[0]])
+            autopct=make_autopct(self.data[value[0]])
           # dont show
           else:
             autopct=conf['autopct']
           # outside box
           if conf['info_style']=='Outside_box':            
             #get each part's wedges, texts, autotexts
-            wedges, texts, autotexts=ax_left.pie(x=data[value[0]],labels=data[label[0]],autopct=autopct,
+            wedges, texts, autotexts=ax_left.pie(x=self.data[value[0]],labels=self.data[label[0]],autopct=autopct,
                         wedgeprops={ 'linewidth' : conf['linewidth'], 'edgecolor' : conf['edgecolor'] },textprops={'alpha':0},colors=conf['palette'],startangle=conf['startangle'],radius=conf['radius']) 
             # draw info box
             bbox_props = dict(boxstyle="square,pad=0.3", fc="w", ec="k", lw=0.5,alpha=0)
@@ -276,7 +318,7 @@ class Pie_plot:
                           horizontalalignment=horizontalalignment, **kw)
           #(change_radius,change_font,change_both)    
           else:  
-            wedges, texts, autotexts=ax_left.pie(x=data[value[0]],labels=data[label[0]],autopct=autopct,pctdistance=conf['pctdistance'], labeldistance=conf['labeldistance'],
+            wedges, texts, autotexts=ax_left.pie(x=self.data[value[0]],labels=self.data[label[0]],autopct=autopct,pctdistance=conf['pctdistance'], labeldistance=conf['labeldistance'],
                         wedgeprops={ 'linewidth' : conf['linewidth'], 'edgecolor' : conf['edgecolor'] },colors=conf['palette'],startangle=conf['startangle'],radius=conf['radius']) 
             # create a list to store each part angle
             anglist=[]
@@ -353,13 +395,13 @@ class Pie_plot:
         labeldistance=conf['labeldistance']
         for i in range(len(value)):
           if conf['actual_values'] == True:
-            autopct=make_autopct(data[value[-(i+1)]])
+            autopct=make_autopct(self.data[value[-(i+1)]])
           else:
             autopct=conf['autopct']
 
           if i == 0:
             #draw the first layer(most outside layer)
-            wedges, texts, autotexts=ax_left.pie(x=data[value[-(i+1)]],labels=data[label[0]],autopct=autopct,pctdistance=pctdistance, labeldistance=labeldistance,
+            wedges, texts, autotexts=ax_left.pie(x=self.data[value[-(i+1)]],labels=self.data[label[0]],autopct=autopct,pctdistance=pctdistance, labeldistance=labeldistance,
                         wedgeprops={ 'linewidth' : conf['linewidth'], 'edgecolor' : conf['edgecolor'] },textprops={'fontsize':conf['font_size']},colors=conf['palette'],startangle=conf['startangle'],radius=radius) 
             # hide outside label show
             plt.setp(texts,alpha=0)
@@ -372,7 +414,7 @@ class Pie_plot:
 
           else:
             # draw the inside layers
-            wedges, texts, autotexts=ax_left.pie(x=data[value[-(i+1)]],autopct=autopct,pctdistance=pctdistance,
+            wedges, texts, autotexts=ax_left.pie(x=self.data[value[-(i+1)]],autopct=autopct,pctdistance=pctdistance,
                         wedgeprops={ 'linewidth' : conf['linewidth'], 'edgecolor' : conf['edgecolor'] },colors=conf['palette'],textprops={'fontsize':conf['font_size']},startangle=conf['startangle'],radius=radius) 
             for i, p in enumerate(wedges):
               ang = (p.theta2 - p.theta1)/2. + p.theta1
@@ -406,13 +448,13 @@ class Pie_plot:
     if conf['explode'] == True:    
       if conf['info_style'] =='Simple':
         if conf['actual_values'] == True:
-          autopct=make_autopct(data[value[0]])
+          autopct=make_autopct(self.data[value[0]])
         else:
           autopct=conf['autopct'] 
           # get explode list   
-        explode_list=self.explode(data[label[0]], conf['explode_label'],conf['explode_value'])
+        explode_list=self.explode(self.data[label[0]], conf['explode_label'],conf['explode_value'])
 
-        wedges, texts, autotexts = ax_left.pie(x=data[value[0]],labels=data[label[0]],autopct=autopct,pctdistance=conf['pctdistance'], labeldistance=conf['labeldistance'],
+        wedges, texts, autotexts = ax_left.pie(x=self.data[value[0]],labels=self.data[label[0]],autopct=autopct,pctdistance=conf['pctdistance'], labeldistance=conf['labeldistance'],
                     wedgeprops={'linewidth' : conf['linewidth'], 'edgecolor' : conf['edgecolor'] },textprops={'fontsize':conf['labeltext_size']},colors=conf['palette']
                     ,startangle=conf['startangle'],radius=conf['radius'],explode=explode_list)
         
@@ -425,14 +467,14 @@ class Pie_plot:
       else:
         #have actual value
         if conf['actual_values'] == True:
-          autopct=make_autopct(data[value[0]])
+          autopct=make_autopct(self.data[value[0]])
         # dont have
         else:
           autopct=conf['autopct']
-        explode_list=self.explode(data[label[0]], conf['explode_label'],conf['explode_value'])
+        explode_list=self.explode(self.data[label[0]], conf['explode_label'],conf['explode_value'])
 
         if conf['info_style']=='Outside_box':
-            wedges, texts, autotexts=ax_left.pie(x=data[value[0]],labels=data[label[0]],autopct=autopct,
+            wedges, texts, autotexts=ax_left.pie(x=self.data[value[0]],labels=self.data[label[0]],autopct=autopct,
                         wedgeprops={ 'linewidth' : conf['linewidth'], 'edgecolor' : conf['edgecolor'] },textprops={'alpha':0},colors=conf['palette'],startangle=conf['startangle'],radius=conf['radius'],explode=explode_list) 
             bbox_props = dict(boxstyle="square,pad=0.3", fc="w", ec="k", lw=0.72,alpha=0)
             kw = dict(arrowprops=dict(arrowstyle="-"),bbox=bbox_props, zorder=0, va="center",size=conf['font_size'])
@@ -449,7 +491,7 @@ class Pie_plot:
               ax_left.annotate(infolist[i], xy=(x, y), xytext=(1.1*np.sign(x), 1.1*y),
                           horizontalalignment=horizontalalignment, **kw)         
         else:
-          wedges, texts, autotexts=ax_left.pie(x=data[value[0]],labels=data[label[0]],autopct=autopct,pctdistance=conf['pctdistance'], labeldistance=conf['labeldistance'],
+          wedges, texts, autotexts=ax_left.pie(x=self.data[value[0]],labels=self.data[label[0]],autopct=autopct,pctdistance=conf['pctdistance'], labeldistance=conf['labeldistance'],
                       wedgeprops={ 'linewidth' : conf['linewidth'], 'edgecolor' : conf['edgecolor'] },colors=conf['palette'],startangle=conf['startangle'],radius=conf['radius'],explode=explode_list) 
           anglist=[]
           for i,p in enumerate(wedges):
