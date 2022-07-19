@@ -1,54 +1,76 @@
-import pandas as pd
+# Data analysis library numpy and pandas
 import numpy as np
-
-# Data visualization library matplotlib and seaborn
-import seaborn as sns
 import matplotlib
-import matplotlib.pyplot as plt
 import matplotlib.font_manager
-
 import mimetypes
-import urllib
 import os
-
-
-#from google.colab import drive	
-#drive.mount('/content/drive')
-
-## setting path
-# get current path
-path_current = os.getcwd()
-# the path is where the dataset saved
-path = path_current + '/Example_Data/heat/' 
-# the "path_img" is the position where final image will be saved
-path_img = path_current + '/Images/'
+import matplotlib.pyplot as plt
+import pandas as pd
+import platform
 
 class heat_map:
     # read data
-  def __init__(self, path=path,path_img=path_img):
-    
-      self.path=path
-      self.path_img=path_img
-  def read_file(self,file):
-    file_url = urllib.request.pathname2url(file)
-    ftype = mimetypes.guess_type(file_url, strict=True)[0]
-    ## read data file according to its formate, default includes three types of files: csv/excel/text
-    # read csv format data from the parking dataset
-    if 'csv' in ftype:
-      # usecols: return a subset of the columns, here choose one column to use in the line chart
-      data = pd.read_csv(self.path+file)
-    # read excel format data from the parking dataset
-    elif 'sheet' in ftype:
-      data = pd.read_excel(self.path+file)
-    # read text format data from the parking dataset
-    elif ftype == 'text/plain':
-      data = pd.read_csv(self.path+file, sep="\t")
-    else:
-      print("File type cannot find!")
-    return data
+  def __init__(self, file):
 
-  # check the available file name
-  # if the input file name already existed then rename to file_1, file_2
+    self.path = self.get_cwd()
+    self.data = self.read_file(file, self.path)
+    self.path_img = self.get_cwd()
+
+  def get_cwd(self):
+        # get the current path of file .
+        if platform.system().lower() == 'windows':
+            path = os.getcwd() + '/'
+
+        elif platform.system().lower() == 'linux':
+            path = os.getcwd().replace('/', '\\') + '/'
+        return path
+
+  def read_file(self, file, path):
+      """Read different types of files and return pandas dataframe.
+
+      This function can transform multiple file type such as csv/excel/text into
+      a pandas dataframe. User need to input the filename such as: 'file.csv'.
+      If the file type cannot be find or not support it, it will return the message.
+
+      Args:
+          file: filename of user data source
+
+      Returns:
+          data : A pandas dataframe
+
+      """
+      # Get the file URL
+      # try:
+      file_url = path + file
+
+      ftype = mimetypes.guess_type(file_url, strict=True)[0]
+      # except FileNotFoundError:
+      #     print('e')
+
+      # try catch
+      # use mimetypes package to guess the file type
+      # For example: 'file.csv' will return 'csv'
+      # ftype = mimetypes.guess_type(file_url, strict=True)[0]
+      ## read data file according to its format, default includes three types of files: csv/excel/text
+      # read csv format data
+      if 'csv' in ftype:
+          data = pd.read_csv(file_url)
+      elif 'excel' in ftype:
+          data = pd.read_csv(file_url)
+      # read excel format data
+      elif 'sheet' in ftype:
+          data = pd.read_excel(file_url)
+      # read text format data from
+      elif ftype == 'text/plain':
+          data = pd.read_csv(file_url, sep="\t")
+
+
+      else:
+          raise FileNotFoundError("File type cannot find!")
+
+      self.__dict__['data'] = data
+      return data
+
   def get_available_name(self,filename):
     n=[1]
     def check_meta(file_name):
@@ -63,9 +85,9 @@ class heat_map:
     return available_name
   # file: file name of your data source
   # row_labels: the x axis labels
-  # col_labels: the y axis labels
-  # paper_type : 'single' or 'double'
-  def heat(self, file, row_labels, col_labels, paper_type, **kwargs):
+  # col_labels: the y axis labels/8-
+  # paper_type : 'single' or 'double'lk
+  def heat(self, file, row_labels = None, col_labels = None, paper_type = None, **kwargs):
     # Configuration of the heatmap
     # plotwidth: width of the plot
     # plotheight: height of the plot
@@ -89,6 +111,22 @@ class heat_map:
     # save_image: True or False as options. If it is True, save chart
     # savefig_bbox_inches: Bounding box in inches
     # file_name: the file name in saving image
+    header_list = self.data.columns.values.tolist()
+
+    df_li = self.data.values.tolist()
+    # print(df_li)
+    column_list = []
+    for i in df_li:
+        column_list.append(i[0])
+
+
+    if col_labels is None:
+        col_labels = header_list[0]
+    if row_labels is None:
+        row_labels = column_list
+    if paper_type is None:
+        paper_type = 'double'
+
     single_column_conf={ 'plotwidth':8,
                       'plotheight':6, 
                       'my_font':'DejaVu Sans',
@@ -145,7 +183,8 @@ class heat_map:
     if paper_type == 'single':
       conf = single_column_conf
     elif paper_type == 'double':
-      conf = double_column_conf  
+      conf = double_column_conf
+
 
     # when new configuraton is set, update the original one
     conf.update(kwargs)  
@@ -155,33 +194,27 @@ class heat_map:
     # x,y label setting                   
     ax_left.set_xlabel(conf['x_label'], fontproperties=conf['my_font'], fontsize=conf['labeltext_size'], labelpad=conf['labelpad'])
     ax_left.set_ylabel(conf['y_label'], fontproperties=conf['my_font'], fontsize=conf['labeltext_size'], labelpad=conf['labelpad'])
-    
-    # read file 
-    try:
-      data = self.read_file(file)
-    except Exception:
-      print('Sorry, this file does not exist, please check the file name')
-    
 
     # plot
     # find the row_label
-    if row_labels not in list(data.columns):
+    if row_labels not in list(self.data.columns):
       k=''
-      for i in data.columns:
-        if set(row_labels) <= set(data[i].values): 
+      for i in self.data.columns:
+        if set(row_labels) <= set(self.data[i].values):
           k=i
         else:
           pass
 
-      data=data.set_index(k)
+      print(k)
+      data=self.data.set_index(k)
       data.index.name=None
     # plot heatmap        
     im=ax_left.imshow(data,cmap=conf['cmap'],alpha=conf['alpha'])
-    ax_left.set_xticks(np.arange(len(data.columns)))
-    ax_left.set_yticks(np.arange(len(data.index)))
+    ax_left.set_xticks(np.arange(len(self.data.columns)))
+    ax_left.set_yticks(np.arange(len(self.data.index)))
     # and label them with the respective list entries
-    ax_left.set_xticklabels(data.columns,fontsize=conf['labeltext_size'])
-    ax_left.set_yticklabels(data.index,fontsize=conf['labeltext_size'])
+    ax_left.set_xticklabels(self.data.columns,fontsize=conf['labeltext_size'])
+    ax_left.set_yticklabels(self.data.index,fontsize=conf['labeltext_size'])
     # rotate x, y axis
     plt.setp(ax_left.get_xticklabels(), rotation=conf['xlabel_rotate'], ha="right",
           rotation_mode="anchor")
