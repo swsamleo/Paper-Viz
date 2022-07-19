@@ -1,48 +1,90 @@
-# Data analysis library numpy and pandas
-import pandas as pd
-import numpy as np
-
-# Data visualization library matplotlib and seaborn
 import seaborn as sns
-import matplotlib
-import matplotlib.pyplot as plt
-import matplotlib.font_manager
-import matplotlib.patches as mpatches
-
 import mimetypes
-import urllib
 import os
+import matplotlib.pyplot as plt
+import pandas as pd
+import platform
 
-#from google.colab import drive	
-#drive.mount('/content/drive')
 
-## setting path
-# get current path
-path_current = os.getcwd()
-# the path is where the dataset saved
-path = path_current + '/Example_Data/Box/' 
-# the "path_img" is the position where final image will be saved
-path_img = path_current + '/Images/'
+class Box_plot:
+  def __init__(self, file):
 
-class Box_plot: 
+      self.path = self.get_cwd()
+      self.data = self.read_file(file, self.path)
+      self.path_img = self.get_cwd()
+
+
+  def get_cwd(self):
+      # get the current path of file .
+      if platform.system().lower() == 'windows':
+          path = os.getcwd() + '/'
+
+      elif platform.system().lower() == 'linux':
+          path = os.getcwd().replace('/', '\\') + '/'
+      return path
+
+  def read_file(self, file, path):
+      """Read different types of files and return pandas dataframe.
+
+      This function can transform multiple file type such as csv/excel/text into
+      a pandas dataframe. User need to input the filename such as: 'file.csv'.
+      If the file type cannot be find or not support it, it will return the message.
+
+      Args:
+          file: filename of user data source
+
+      Returns:
+          data : A pandas dataframe
+
+      """
+      # Get the file URL
+      # try:
+      file_url = path + file
+      ftype = mimetypes.guess_type(file_url, strict=True)[0]
+      # except FileNotFoundError:
+      #     print('e')
+
+      # try catch
+      # use mimetypes package to guess the file type
+      # For example: 'file.csv' will return 'csv'
+      # ftype = mimetypes.guess_type(file_url, strict=True)[0]
+      ## read data file according to its format, default includes three types of files: csv/excel/text
+      # read csv format data
+      if 'csv' in ftype:
+          data = pd.read_csv(file_url)
+      elif 'excel' in ftype:
+          data = pd.read_csv(file_url)
+      # read excel format data
+      elif 'sheet' in ftype:
+          data = pd.read_excel(file_url)
+      # read text format data from
+      elif ftype == 'text/plain':
+          data = pd.read_csv(file_url, sep="\t")
+
+
+      else:
+          raise FileNotFoundError("File type cannot find!")
+
+      self.__dict__['data'] = data
+      return data
   # read data
-  def read_file(self,file):
-    file_url = urllib.request.pathname2url(file)
-    ftype = mimetypes.guess_type(file_url, strict=True)[0]
-    ## read data file according to its formate, default includes three types of files: csv/excel/text
-    # read csv format data from the parking dataset
-    if 'csv' in ftype:
-      # usecols: return a subset of the columns, here choose one column to use in the line chart
-      data = pd.read_csv(path+file)
-    # read excel format data from the parking dataset
-    elif 'sheet' in ftype:
-      data = pd.read_excel(path+file)
-    # read text format data from the parking dataset
-    elif ftype == 'text/plain':
-      data = pd.read_csv(path+file, sep="\t")
-    else:
-      print("File type cannot find!")
-    return data
+  # def read_file(self,file):
+  #   file_url = urllib.request.pathname2url(file)
+  #   ftype = mimetypes.guess_type(file_url, strict=True)[0]
+  #   ## read data file according to its formate, default includes three types of files: csv/excel/text
+  #   # read csv format data from the parking dataset
+  #   if 'csv' in ftype:
+  #     # usecols: return a subset of the columns, here choose one column to use in the line chart
+  #     data = pd.read_csv(path+file)
+  #   # read excel format data from the parking dataset
+  #   elif 'sheet' in ftype:
+  #     data = pd.read_excel(path+file)
+  #   # read text format data from the parking dataset
+  #   elif ftype == 'text/plain':
+  #     data = pd.read_csv(path+file, sep="\t")
+  #   else:
+  #     print("File type cannot find!")
+  #   return data
 
   # check the available file name
   # if the input file name already existed then rename to file_1, file_2 
@@ -50,10 +92,10 @@ class Box_plot:
     n=[1]
     def check_meta(file_name):
         file_name_new=file_name
-        if file_name in [os.path.splitext(i)[0] for i in os.listdir(path_img)]:   
+        if file_name in [os.path.splitext(i)[0] for i in os.listdir(self.path_img)]:
             file_name_new=file_name+'_'+str(n[0])
             n[0]+=1
-        if file_name_new in [os.path.splitext(i)[0] for i in os.listdir(path_img)]:   
+        if file_name_new in [os.path.splitext(i)[0] for i in os.listdir(self.path_img)]:
             file_name_new=check_meta(file_name)
         return file_name_new
     available_name=check_meta(filename)
@@ -62,7 +104,7 @@ class Box_plot:
   # file: file name of your data source
   # x_col_name: ['x_column_name_a','x_column_name_b'...]
   # paper_type : 'single' or 'double'
-  def box(self, file, x_col_name, paper_type, **kwargs):
+  def box(self, file, x_col_name=None, paper_type=None, **kwargs):
     # Configuration of the box plot
     # plotwidth: width of the plot
     # plotheight: height of the plot
@@ -94,6 +136,11 @@ class Box_plot:
     # save_image: True or False as options. If it is True, save chart
     # savefig_bbox_inches: Bounding box in inches
     # file_name: the file name in saving image
+
+    if x_col_name is None:
+        x_col_name = ['line1']
+    if paper_type is None:
+        paper_type = 'double'
 
     single_column_conf={ 'plotwidth':8,#weight
                       'plotheight':6, #height
@@ -172,12 +219,7 @@ class Box_plot:
     # create figure and set figure size  
     fig, ax_left = plt.subplots(figsize = (conf['plotwidth'], conf['plotheight']))   
     
-    #read data
-    try:
-      data = self.read_file(file)
-    except Exception:
-      print('Sorry, this file does not exist, please check the file name') 
-    # draw back grid of whole plot
+
     if conf['backgrid'] == True:
       ax_left.grid(linestyle="--", linewidth=conf['gridlinewidth'], color='gray', alpha=0.5)
     
@@ -190,7 +232,7 @@ class Box_plot:
     for i in range(len(x_col_name)):
       # if the showmeans is false, draw the box plot only includes details of medians
       if conf['showmeans'] == False:
-        box=ax_left.boxplot(data[x_col_name[i]],positions=[i],labels=[x_col_name[i]],patch_artist=conf['patch_artist'],vert=conf['vert'],widths=conf['widths'],
+        box=ax_left.boxplot(self.data[x_col_name[i]],positions=[i],labels=[x_col_name[i]],patch_artist=conf['patch_artist'],vert=conf['vert'],widths=conf['widths'],
                         boxprops={'facecolor':conf['palette'][i],'color':conf['palette'][i],'linestyle': conf['box_linestyle'], 'linewidth': conf['box_linewidth']},
                         medianprops={'color':conf['medianline_color']},
                         flierprops=dict(marker=conf['markers_shape'][i],markeredgecolor=conf['palette'][i]),
@@ -237,5 +279,5 @@ class Box_plot:
     if conf['save_image'] == True:
       file_name=conf['file_name']
       file_newname = self.get_available_name(file_name)
-      plt.savefig(path_img+file_newname, bbox_inches=conf['savefig_bbox_inches'],dpi=600,format='jpg')  
+      plt.savefig(self.path_img+file_newname, bbox_inches=conf['savefig_bbox_inches'],dpi=600,format='jpg')
     plt.show()
