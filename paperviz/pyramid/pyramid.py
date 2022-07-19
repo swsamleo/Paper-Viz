@@ -6,45 +6,83 @@ import seaborn as sns
 import matplotlib
 import matplotlib.pyplot as plt
 import matplotlib.font_manager
-
+# Get the file path and file type
 import mimetypes
 import urllib
 import os
+## import data visualization library matplotlib and seaborn
+## import module to read files
+import mimetypes
+import os
+import urllib
+import matplotlib.patches as mpatches
+import matplotlib.pyplot as plt
+import pandas as pd
+import platform
+import requests
+import collections
 
-
-#from google.colab import drive	
-#drive.mount('/content/drive')
-
-## setting path
-# get current path
-path_current = os.getcwd()
-# the path is where the dataset saved
-path = path_current + '/Example_Data/pyramid/' 
-# the "path_img" is the position where final image will be saved
-path_img = path_current + '/Images/'
 
 class pyramid:
     # read data
-  def read_file(self,file):
-    file_url = urllib.request.pathname2url(file)
-    ftype = mimetypes.guess_type(file_url, strict=True)[0]
-    ## read data file according to its formate, default includes three types of files: csv/excel/text
-    # read csv format data from the parking dataset
-    if 'csv' in ftype:
-      # usecols: return a subset of the columns, here choose one column to use in the line chart
-      data = pd.read_csv(path+file)
-    # read excel format data from the parking dataset
-    elif 'excel' in ftype:
-      # usecols: return a subset of the columns, here choose one column to use in the line chart
-      data = pd.read_csv(path+file)
-    elif 'sheet' in ftype:
-      data = pd.read_excel(path+file)
-    # read text format data from the parking dataset
-    elif ftype == 'text/plain':
-      data = pd.read_csv(path+file, sep="\t")
-    else:
-      print("File type cannot find!")
-    return data
+  def __init__(self, file):
+        self.path = self.get_cwd()
+        self.data = self.read_file(file, self.path)
+        self.path_img = self.get_cwd()
+
+  def get_cwd(self):
+        # get the current path of file .
+        if platform.system().lower() == 'windows':
+            path = os.getcwd() + '/'
+
+        elif platform.system().lower() == 'linux':
+            path = os.getcwd().replace('/', '\\') + '/'
+        return path
+
+  def read_file(self, file, path):
+        """Read different types of files and return pandas dataframe.
+
+        This function can transform multiple file type such as csv/excel/text into
+        a pandas dataframe. User need to input the filename such as: 'file.csv'.
+        If the file type cannot be find or not support it, it will return the message.
+
+        Args:
+            file: filename of user data source
+
+        Returns:
+            data : A pandas dataframe
+
+        """
+        # Get the file URL
+        # try:
+        file_url = path + file
+        ftype = mimetypes.guess_type(file_url, strict=True)[0]
+        # except FileNotFoundError:
+        #     print('e')
+
+        # try catch
+        # use mimetypes package to guess the file type
+        # For example: 'file.csv' will return 'csv'
+        # ftype = mimetypes.guess_type(file_url, strict=True)[0]
+        ## read data file according to its format, default includes three types of files: csv/excel/text
+        # read csv format data
+        if 'csv' in ftype:
+            data = pd.read_csv(file_url)
+        elif 'excel' in ftype:
+            data = pd.read_csv(file_url)
+        # read excel format data
+        elif 'sheet' in ftype:
+            data = pd.read_excel(file_url)
+        # read text format data from
+        elif ftype == 'text/plain':
+            data = pd.read_csv(file_url, sep="\t")
+
+
+        else:
+            raise FileNotFoundError("File type cannot find!")
+
+        self.__dict__['data'] = data
+        return data
 
   # check the available file name
   # if the input file name already existed then rename to file_1, file_2
@@ -52,10 +90,10 @@ class pyramid:
     n=[1]
     def check_meta(file_name):
       file_name_new=file_name
-      if file_name in [os.path.splitext(i)[0] for i in os.listdir(path_img)]:   
+      if file_name in [os.path.splitext(i)[0] for i in os.listdir(self.path_img)]:
           file_name_new=file_name+'_'+str(n[0])
           n[0]+=1
-      if file_name_new in [os.path.splitext(i)[0] for i in os.listdir(path_img)]:   
+      if file_name_new in [os.path.splitext(i)[0] for i in os.listdir(self.path_img)]:
           file_name_new=check_meta(file_name)
       return file_name_new
     available_name=check_meta(filename)
@@ -66,7 +104,7 @@ class pyramid:
   # y_col_name: the columns name of y axis  
   # group_col: the category columns
   # paper_type : 'single' or 'double'
-  def pyramid(self,file,x_col_name,y_col_name,group_col,paper_type ,**kwargs):  
+  def pyramid(self,file,x_col_name=None,y_col_name=None,group_col=None,paper_type=None ,**kwargs):
     # Configuration of the pyramid chart
     # plotwidth: width of the plot
     # plotheight: height of the plot
@@ -93,6 +131,17 @@ class pyramid:
     # save_image: True or False as options. If it is True, save chart
     # savefig_bbox_inches: Bounding box in inches
     # file_name: the file name in saving image
+
+    header_list = self.data.columns.values.tolist()
+
+    if x_col_name is None:
+        x_col_name = [header_list[2]]
+    if y_col_name is None:
+        y_col_name = [header_list[0]]
+    if group_col is None:
+        group_col = [header_list[1]]
+    if paper_type is None:
+        paper_type = 'double'
 
     single_column_conf={ 'plotwidth':8,
                       'plotheight':6, 
@@ -162,14 +211,14 @@ class pyramid:
     fig, ax_left = plt.subplots(figsize = (conf['plotwidth'], conf['plotheight']))
  
     # read file 
-    try:
-      data = self.read_file(file)
-    except Exception:
-      print('Sorry, this file does not exist, please check the file name')   
+    # try:
+    #   data = self.read_file(file)
+    # except Exception:
+    #   print('Sorry, this file does not exist, please check the file name')
     
     #plot
     #check if there are repetitive records in y columns
-    data=data.groupby([group_col[0], y_col_name[0]], as_index=False).sum()
+    data=self.data.groupby([group_col[0], y_col_name[0]], as_index=False).sum()
     
     # if two category values have same plus or minus characteristic, change one of them
     if len(data[group_col[0]].unique()) ==2:
@@ -250,7 +299,7 @@ class pyramid:
     if conf['save_image'] == True:
       file_name=conf['file_name']
       file_newname = self.get_available_name(file_name)
-      plt.savefig(path_img+file_newname, bbox_inches=conf['savefig_bbox_inches'],dpi=600,format='jpg') 
+      plt.savefig(self.path_img+file_newname, bbox_inches=conf['savefig_bbox_inches'],dpi=600,format='jpg')
      
     # showing the image
     plt.show()
