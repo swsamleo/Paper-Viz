@@ -1,31 +1,50 @@
-## import python data analysis library 
+# Data analysis library numpy and pandas
 import pandas as pd
+import numpy as np
 
-## import data visualization library matplotlib and seaborn
+# Data visualization library matplotlib and seaborn
 import seaborn as sns
 import matplotlib
 import matplotlib.pyplot as plt
-from matplotlib.ticker import MultipleLocator, FormatStrFormatter, AutoMinorLocator, FuncFormatter
-from matplotlib.ticker import AutoMinorLocator, MultipleLocator, FuncFormatter
-from matplotlib import rc
-# from mpl_toolkits.axes_grid.inset_locator import (inset_axes, InsetPosition, mark_inset, zoomed_inset_axes)
-import matplotlib.cm as cm
-import numpy as np
-import matplotlib.patches as mpatches
-from matplotlib.spines import Spine
-
-## import module to read files
+import matplotlib.font_manager
+# Get the file path and file type
 import mimetypes
 import urllib
 import os
-path_current = os.getcwd()
-# the path is where the dataset saved
-path = path_current + '/Example_Data/Radar/' 
-# the "path_img" is the position where final image will be saved
-path_img = path_current + '/Images/'
+## import data visualization library matplotlib and seaborn
+## import module to read files
+import mimetypes
+import os
+import urllib
+import matplotlib.patches as mpatches
+import matplotlib.pyplot as plt
+import pandas as pd
+import platform
+import requests
+import collections
+#
+# path_current = os.getcwd()
+# # the path is where the dataset saved
+# path = path_current + '/Example_Data/Radar/'
+# # the "path_img" is the position where final image will be saved
+# path_img = path_current + '/Images/'
 class Radar:
+    def __init__(self, file):
+
+        self.path = self.get_cwd()
+        self.data = self.read_file(file, self.path)
+        self.path_img = self.get_cwd()
+
+    def get_cwd(self):
+        # get the current path of file .
+        if platform.system().lower() == 'windows':
+            path = os.getcwd() + '/'
+
+        elif platform.system().lower() == 'linux':
+            path = os.getcwd().replace('/', '\\') + '/'
+        return path
     # read data
-    def read_file(self, file):
+    def read_file(self, file, path):
         """Read different types of files and return pandas dataframe.
 
         This function can transform multiple file type such as csv/excel/text into
@@ -40,29 +59,39 @@ class Radar:
 
         """
         # Get the file URL
-        file_url = urllib.request.pathname2url(file)  # try catch
+        # try:
+        file_url = path + file
+
+        ftype = mimetypes.guess_type(file_url, strict=True)[0]
+        # except FileNotFoundError:
+        #     print('e')
+
+        # try catch
         # use mimetypes package to guess the file type
         # For example: 'file.csv' will return 'csv'
-        ftype = mimetypes.guess_type(file_url, strict=True)[0]
-        ## read data file according to its formate, default includes three types of files: csv/excel/text
+        # ftype = mimetypes.guess_type(file_url, strict=True)[0]
+        ## read data file according to its format, default includes three types of files: csv/excel/text
         # read csv format data
         if 'csv' in ftype:
-            # usecols: return a subset of the columns, here choose one column to use in the line chart
-            data = pd.read_csv(path + file,indexc_col=0)
-        # read excel format data
+            data = pd.read_csv(file_url)
         elif 'excel' in ftype:
-            # usecols: return a subset of the columns, here choose one column to use in the line chart
-            data = pd.read_csv(path + file,index_col=0)
+            data = pd.read_csv(file_url)
+        # read excel format data
         elif 'sheet' in ftype:
-            data = pd.read_excel(path + file,index_col=0)
-        # read text format data
+            data = pd.read_excel(file_url)
+        # read text format data from
         elif ftype == 'text/plain':
-            data = pd.read_csv(path + file, sep="\t")
+            data = pd.read_csv(file_url, sep="\t")
+
+
         else:
-            print("File type cannot find!")
+            raise FileNotFoundError("File type cannot find!")
+
+        self.__dict__['data'] = data
         return data
 
-    def radar_plot(self, file, index_col, category_col, y_col_list, y_lim,output_name,
+
+    def radar_plot(self, file, index_col=None, category_col=None, y_col_list=None, y_lim=None,output_name=None,
                    **kwargs):
         """Radar chart with selected overlay
 
@@ -85,6 +114,23 @@ class Radar:
             y_lim: The Y lim value
 
         """
+        header_list = self.data.columns.values.tolist()
+        df_li = self.data.values.tolist()
+        df = df_li[0]
+
+
+        if index_col is None:
+            index_col = header_list[0]
+        if category_col is None:
+            header_list.pop(0)
+            category_col = header_list
+        if y_col_list is None:
+            y_col_list = str(df[0])
+        if y_lim is None:
+            y_lim = 100
+        if output_name is None:
+            output_name = 'radar.pdf'
+
 
         conf = {
             'figsize': 
@@ -132,11 +178,11 @@ class Radar:
         conf.update(kwargs)
 
         # Input the valid filename and return the pandas dataframe for drawing
-        data = self.read_file(file)
+        # data = self.read_file(sfile)
 
         # set the index column
         
-        # data = data.set_index(index_col)
+        data = self.data.set_index(index_col)
         # set the selected category from user input
         data = data[category_col]
 
@@ -206,7 +252,7 @@ class Radar:
         # save the plot
         plt.show()
         plt.tight_layout()
-        plt.savefig(path_img + output_name)
+        plt.savefig(self.path_img + output_name)
 
     def spider_plot(self, file, index_col, category_col, y_col_list, y_lim,output_name,
                     **kwargs):
@@ -282,15 +328,15 @@ class Radar:
         conf.update(kwargs)
 
         # read file
-        data = self.read_file(file)
+        # data = self.read_file(file)
 
         # set the index column
-        data = data.set_index(index_col)
+        data = self.data.set_index(index_col)
         # set the selected category from user input
        
-        data = data[category_col]
+        data = self.data[category_col]
         # set the y column
-        data = data.loc[y_col_list]
+        data = self.data.loc[y_col_list]
         # create the close shape list
         close_shape = []
         # plot height and width
@@ -339,7 +385,7 @@ class Radar:
         plt.ylim(y_lim)
 
         # save the plot
-        plt.savefig(path_img + output_name)
+        plt.savefig(self.path_img + output_name)
 
         # plot title
         plt.title(conf['plot_title'],
@@ -363,4 +409,4 @@ class Radar:
         # save the plot
         plt.tight_layout()
         plt.show()
-        plt.savefig(path_img + output_name)
+        plt.savefig(self.path_img + output_name)
