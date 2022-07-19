@@ -1,7 +1,8 @@
 from time_series import TimeSeries
 
-file = 'Example_Data\Time_series/mortality.csv'
-ts = TimeSeries(file)
+file_name = "mortality.csv'"
+
+ts = TimeSeries(file_name)
 ts.plot(
     x_col_name='date',
     y_col_name=['mdeaths', 'fdeaths'],

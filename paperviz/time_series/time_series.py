@@ -7,6 +7,8 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 from mpl_toolkits.axes_grid1.inset_locator import zoomed_inset_axes 
 from mpl_toolkits.axes_grid1.inset_locator import mark_inset
+import platform
+import os
 
 class TimeSeries:
     """
@@ -21,13 +23,16 @@ class TimeSeries:
     """
     
     def __init__(self, file):
-        try:
-            self.data = self.read_file(file)
-        except FileNotFoundError:
-            print('This file does not exist, please check the file name.')
-        else:
+        # try:
+        #     self.data = self.read_file(file)
+        # except FileNotFoundError:
+        #     print('This file does not exist, please check the file name.')
+        # else:
             # keyword arguments
-            self.conf = {
+        self.path = self.get_cwd()
+        self.data = self.read_file(file, self.path)
+        self.path_img = self.get_cwd()
+        self.conf = {
                 'title': None, 'title_size': 16,
                 'xlabel': None, 'ylabel': [],
                 'xlabel_size': 15, 'ylabel_size': 15,
@@ -71,34 +76,56 @@ class TimeSeries:
                 'save_fig': False,
                 'fig_path': None,
             }
-    
-    def read_file(self, file):
+
+    def get_cwd(self):
+        # get the current path of file .
+        if platform.system().lower() == 'windows':
+            path = os.getcwd() + '/'
+
+        elif platform.system().lower() == 'linux':
+            path = os.getcwd().replace('/', '\\') + '/'
+        return path
+
+    def read_file(self, file,path):
         """Read csv, excel, text format file
         Args:
             file: the input dataset
-            
+
         Returns:
-            The data read from the file  
+            The data read from the file
         """
-        ftype = mimetypes.guess_type(file, strict=True)[0]
-        if ftype is None:
-            print('Cannot guess file type!')
-            return None
+        file_url = path + file
+
+        ftype = mimetypes.guess_type(file_url, strict=True)[0]
+
+        # except FileNotFoundError:
+        #     print('e')
+
+        # try catch
+        # use mimetypes package to guess the file type
+        # For example: 'file.csv' will return 'csv'
+        # ftype = mimetypes.guess_type(file_url, strict=True)[0]
+        ## read data file according to its format, default includes three types of files: csv/excel/text
         # read csv format data
-        if 'excel' in ftype:
-            data = pd.read_csv(file)
+        if 'csv' in ftype:
+            data = pd.read_csv(file_url)
+        elif 'excel' in ftype:
+            data = pd.read_csv(file_url)
         # read excel format data
         elif 'sheet' in ftype:
-            data = pd.read_excel(file)
-        # read text format data
+            data = pd.read_excel(file_url)
+        # read text format data from
         elif ftype == 'text/plain':
-            data = pd.read_csv(file)
+            data = pd.read_csv(file_url, sep="\t")
+
+
         else:
-            data = None
-            print("File type cannot find!")
+            raise FileNotFoundError("File type cannot find!")
+
+        self.__dict__['data'] = data
         return data
     
-    def plot(self, x_col_name, y_col_name, start_time=None, end_time=None, **kwargs):
+    def plot(self, x_col_name = None, y_col_name = None, start_time=None, end_time=None, **kwargs):
         """show one or more variables over a period of time
         Args:
             x_col_name: name of the date variable
@@ -110,7 +137,13 @@ class TimeSeries:
         Returns:
             None
         """
-        
+        header_list = self.data.columns.values.tolist()
+
+        if x_col_name is None:
+            x_col_name = header_list[0]
+        if y_col_name is None:
+            header_list.pop(0)
+            y_col_name = header_list
         # when new self.configuraton is set, update the original one
         self.conf.update(kwargs)
 
@@ -301,5 +334,5 @@ class TimeSeries:
         if self.conf['save_fig']:
             fig_path = ("ts_plot.png" if self.conf['fig_path'] is None
                         else self.conf['fig_path'])
-            plt.savefig(fig_path, dpi=500)
+            plt.savefig(self.path_img, dpi=500)
         plt.show()
