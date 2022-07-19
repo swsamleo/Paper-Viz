@@ -12,37 +12,68 @@ import matplotlib.patches as mpatches
 import mimetypes
 import urllib
 import os
+import platform
 
-#from google.colab import drive	
-#drive.mount('/content/drive')
 
-## setting path
-# get current path
-path_current = os.getcwd()
-# the path is where the dataset saved
-path = path_current + '/Example_Data/Violin/' 
-# the "path_img" is the position where final image will be saved
-path_img = path_current + '/Images/'
+class Violin_plot:
+  def __init__(self, file):
 
-class Violin_plot: 
+      self.path = self.get_cwd()
+      self.data = self.read_file(file, self.path)
+      self.path_img = self.get_cwd()
+  def get_cwd(self):
+      # get the current path of file .
+      if platform.system().lower() == 'windows':
+          path = os.getcwd() + '/'
+
+      elif platform.system().lower() == 'linux':
+          path = os.getcwd().replace('/', '\\') + '/'
+      return path
   # read data
-  def read_file(self,file):
-    file_url = urllib.request.pathname2url(file)
-    ftype = mimetypes.guess_type(file_url, strict=True)[0]
-    ## read data file according to its formate, default includes three types of files: csv/excel/text
-    # read csv format data from the parking dataset
-    if 'csv' in ftype:
-      # usecols: return a subset of the columns, here choose one column to use in the line chart
-      data = pd.read_csv(path+file)
-    # read excel format data from the parking dataset
-    elif 'sheet' in ftype:
-      data = pd.read_excel(path+file)
-    # read text format data from the parking dataset
-    elif ftype == 'text/plain':
-      data = pd.read_csv(path+file, sep="\t")
-    else:
-      print("File type cannot find!")
-    return data
+  def read_file(self, file, path):
+      """Read different types of files and return pandas dataframe.
+
+      This function can transform multiple file type such as csv/excel/text into
+      a pandas dataframe. User need to input the filename such as: 'file.csv'.
+      If the file type cannot be find or not support it, it will return the message.
+
+      Args:
+          file: filename of user data source
+
+      Returns:
+          data : A pandas dataframe
+
+      """
+      # Get the file URL
+      # try:
+      file_url = path + file
+      ftype = mimetypes.guess_type(file_url, strict=True)[0]
+      # except FileNotFoundError:
+      #     print('e')
+
+      # try catch
+      # use mimetypes package to guess the file type
+      # For example: 'file.csv' will return 'csv'
+      # ftype = mimetypes.guess_type(file_url, strict=True)[0]
+      ## read data file according to its format, default includes three types of files: csv/excel/text
+      # read csv format data
+      if 'csv' in ftype:
+          data = pd.read_csv(file_url)
+      elif 'excel' in ftype:
+          data = pd.read_csv(file_url)
+      # read excel format data
+      elif 'sheet' in ftype:
+          data = pd.read_excel(file_url)
+      # read text format data from
+      elif ftype == 'text/plain':
+          data = pd.read_csv(file_url, sep="\t")
+
+
+      else:
+          raise FileNotFoundError("File type cannot find!")
+
+      self.__dict__['data'] = data
+      return data
 
   # check the available file name
   # if the input file name already existed then rename to file_1, file_2   
@@ -50,10 +81,10 @@ class Violin_plot:
     n=[1]
     def check_meta(file_name):
         file_name_new=file_name
-        if file_name in [os.path.splitext(i)[0] for i in os.listdir(path_img)]:   
+        if file_name in [os.path.splitext(i)[0] for i in os.listdir(self.path_img)]:
             file_name_new=file_name+'_'+str(n[0])
             n[0]+=1
-        if file_name_new in [os.path.splitext(i)[0] for i in os.listdir(path_img)]:   
+        if file_name_new in [os.path.splitext(i)[0] for i in os.listdir(self.path_img)]:
             file_name_new=check_meta(file_name)
         return file_name_new
     available_name=check_meta(filename)
@@ -62,7 +93,7 @@ class Violin_plot:
   # file: file name of your data source
   # x_col_name: ['x_column_name_a','x_column_name_b'...]
   # paper_type : 'single' or 'double'
-  def Violin(self,file,x_col_name,paper_type  ,**kwargs):
+  def Violin(self,file,x_col_name = None ,paper_type =None  ,**kwargs):
     # Configuration of the box plot
     # plotwidth: width of the plot
     # plotheight: height of the plot
@@ -89,6 +120,16 @@ class Violin_plot:
     # save_image: True or False as options. If it is True, save chart
     # savefig_bbox_inches: Bounding box in inches
     # file_name: the file name in saving image
+
+    header_list = self.data.columns.values.tolist()
+
+    if x_col_name is None:
+        header_list.pop()
+        x_col_name = header_list
+    if paper_type is None:
+        paper_type = 'single'
+
+
     single_column_conf={ 'plotwidth':8,
                   'plotheight':6, 
                   'my_font':'DejaVu Sans',
@@ -160,10 +201,10 @@ class Violin_plot:
     fig, ax_left = plt.subplots(figsize = (conf['plotwidth'], conf['plotheight']))   
 
     # read data
-    try:
-      data = self.read_file(file)
-    except Exception:
-      print('Sorry, this file does not exist, please check the file name')   
+    # try:
+    #   data = self.read_file(file)
+    # except Exception:
+    #   print('Sorry, this file does not exist, please check the file name')
     if conf['backgrid'] == True:
       ax_left.grid(linestyle="--", linewidth=conf['gridlinewidth'], color='gray', alpha=0.5)
 
@@ -177,7 +218,7 @@ class Violin_plot:
       # arrange all violin plot, each violin use one of palette color
       # the defult violin has medians and extrema line
       for i in range(len(x_col_name)):
-        violin=ax_left.violinplot(data[x_col_name[i]],positions=[i],widths=conf['width'],
+        violin=ax_left.violinplot(self.data[x_col_name[i]],positions=[i],widths=conf['width'],
                           showmeans=conf['showmeans'],showextrema=conf['showextrema'],showmedians=conf['showmedians'],
                           quantiles=conf['quantiles'])
         #set color of each line
@@ -200,15 +241,15 @@ class Violin_plot:
     # category violin plot
     else:  
       #check the category only have 2    
-      if len(data[conf['category']].unique())==2:
-        cate=data[conf['category']].unique()         
+      if len(self.data[conf['category']].unique())==2:
+        cate=self.data[conf['category']].unique()
       # separte left and right data  
         dataleft=[]        
         for i in x_col_name:                 
-          dataleft.append(np.array(data[data[conf['category']]==cate[0]][i]))
+          dataleft.append(np.array(self.data[self.data[conf['category']]==cate[0]][i]))
         dataright=[]
         for i in x_col_name:
-          dataright.append(np.array(data[data[conf['category']]==cate[1]][i]))
+          dataright.append(np.array(self.data[self.data[conf['category']]==cate[1]][i]))
         # get the violin ticks
         ticklist=[]
         for i in range(len(x_col_name)):
@@ -282,5 +323,5 @@ class Violin_plot:
     if conf['save_image'] == True:
       file_name=conf['file_name']
       file_newname = self.get_available_name(file_name)
-      plt.savefig(path_img+file_newname, bbox_inches=conf['savefig_bbox_inches'],dpi=600,format='jpg')  
+      plt.savefig(self.path_img+file_newname, bbox_inches=conf['savefig_bbox_inches'],dpi=600,format='jpg')
     plt.show()     
