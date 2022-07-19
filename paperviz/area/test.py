@@ -1,5 +1,5 @@
 from area import Area_plot
-model=Area_plot(path='Example_Data\\Area\\',path_img='Images\\')
+model=Area_plot(path=r'C:\Users\87139\Desktop\Paper-Viz-master\Example_Data',path_img='Images\\')
 model.area(
     file="museum_visitors_line.csv",
     x_col_name=['index'],

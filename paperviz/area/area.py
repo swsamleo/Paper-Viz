@@ -1,74 +1,98 @@
-# Data analysis library numpy and pandas
-import pandas as pd
-import numpy as np
 
-# Data visualization library matplotlib and seaborn
 import seaborn as sns
 import matplotlib
-import matplotlib.pyplot as plt
 import matplotlib.font_manager
-# Get the file path and file type
 import mimetypes
-import urllib
 import os
-
-#from google.colab import drive	
-#drive.mount('/content/drive')
-
-## setting path
-# get current path
-path_current = os.getcwd()
-# the path is where the dataset saved
-path = path_current + 'Example_Data/Area/' 
-# the "path_img" is the position where final image will be saved
-path_img = path_current + '/Images/'
+import matplotlib.pyplot as plt
+import pandas as pd
+import platform
 
 
 class Area_plot: 
   # read data
-  def __init__(self, path=path,path_img=path_img):
-    
-      self.path=path
-      self.path_img=path_img
-  def read_file(self,file):
-    file_url = urllib.request.pathname2url(file)
-    ftype = mimetypes.guess_type(file_url, strict=True)[0]
-   
-    ## read data file according to its formate, default includes three types of files: csv/excel/text
-    # read csv format data from the parking dataset
-    if 'csv' or 'excel' in ftype:
-      # usecols: return a subset of the columns, here choose one column to use in the line chart
-      data = pd.read_csv(self.path+file)
-    # read excel format data from the parking dataset
-    elif 'sheet' in ftype:
-      data = pd.read_excel(self.path+file)
-    # read text format data from the parking dataset
-    elif ftype == 'text/plain':
-      data = pd.read_csv(self.path+file, sep="\t")
-    else:
-      print("File type cannot find!")
-    return data
+  def __init__(self, file):
 
+      self.path = self.get_cwd()
+      self.data = self.read_file(file, self.path)
+      self.path_img = self.get_cwd()
+
+
+  def get_cwd(self):
+      # get the current path of file .
+      if platform.system().lower() == 'windows':
+          path = os.getcwd() + '/'
+
+      elif platform.system().lower() == 'linux':
+          path = os.getcwd().replace('/', '\\') + '/'
+      return path
+
+  def read_file(self, file, path):
+      """Read different types of files and return pandas dataframe.
+
+      This function can transform multiple file type such as csv/excel/text into
+      a pandas dataframe. User need to input the filename such as: 'file.csv'.
+      If the file type cannot be find or not support it, it will return the message.
+
+      Args:
+          file: filename of user data source
+
+      Returns:
+          data : A pandas dataframe
+
+      """
+      # Get the file URL
+      # try:
+      file_url = path + file
+
+      ftype = mimetypes.guess_type(file_url, strict=True)[0]
+      # except FileNotFoundError:
+      #     print('e')
+
+      # try catch
+      # use mimetypes package to guess the file type
+      # For example: 'file.csv' will return 'csv'
+      # ftype = mimetypes.guess_type(file_url, strict=True)[0]
+      ## read data file according to its format, default includes three types of files: csv/excel/text
+      # read csv format data
+      if 'csv' in ftype:
+          data = pd.read_csv(file_url)
+      elif 'excel' in ftype:
+          data = pd.read_csv(file_url)
+      # read excel format data
+      elif 'sheet' in ftype:
+          data = pd.read_excel(file_url)
+      # read text format data from
+      elif ftype == 'text/plain':
+          data = pd.read_csv(file_url, sep="\t")
+
+
+      else:
+          raise FileNotFoundError("File type cannot find!")
+
+      self.__dict__['data'] = data
+      return data
   # Data sorting function 
   # x_col_name:'index' or actual columns name
   # y_col_name: actual y columns name
   # sort the databy using average value,
-  def sort(self,data,x_col_name,y_col_name):
+
+  def sort(self,file,x_col_name,y_col_name):
     # if the x_col_name is index return sorted y columns name and new index
     if x_col_name[0] == 'index':      
       for i in y_col_name: 
-        data.loc['sort',i]=data.loc[:'sort',i].mean()
-      newdata=data[y_col_name].sort_values(axis=1,ascending=False,by='sort')      
+        self.data.loc['sort',i]=self.data.loc[:'sort',i].mean()
+      newdata=self.data[y_col_name].sort_values(axis=1,ascending=False,by='sort')
       y_col_name=newdata.columns.tolist()
       y_col_name=[i for i in y_col_name if i not in x_col_name]
-      data.drop(['sort'],inplace=True)
-      data.index = pd.RangeIndex(start=0, stop=len(data.index), step=1) 
-      return y_col_name,data.index
+      self.data.drop(['sort'],inplace=True)
+      self.data.index = pd.RangeIndex(start=0, stop=len(self.data.index), step=1)
+      return y_col_name,self.data.index
     else:
       for i in y_col_name:
-        data.loc['sort',i]=data.loc[:'sort',i].mean()   
-      newdata=pd.concat([data[x_col_name],data[y_col_name].sort_values(axis=1,ascending=False,by='sort')],axis=1)    
-      newdata=data[y_col_name].sort_values(axis=1,ascending=False,by='sort')
+        self.data.loc['sort',i]=self.data.loc[:'sort',i].mean()
+      newdata=pd.concat([self.data[x_col_name],self.data[y_col_name].sort_values(axis=1,ascending=False,by='sort')],axis=1)
+      newdata=self.data[y_col_name].sort_values(axis=1,ascending=False,by='sort')
       y_col_name=newdata.columns.tolist()
       y_col_name=[i for i in y_col_name if i not in x_col_name]
       return y_col_name
@@ -93,7 +117,7 @@ class Area_plot:
   # y_col_name: ['y_column_name_a','y_column_name_b'...]
   # plot_type: type of plot: stack ,percentage or simple
   # paper_type : 'single' or 'double'
-  def area(self, file,  x_col_name,  y_col_name, plot_type,paper_type,**kwargs):
+  def area(self, file,  x_col_name=None, y_col_name=None, plot_type=None,paper_type=None,**kwargs):
     
     # Configuration of the line chart
     # plotwidth: width of the plot
@@ -128,6 +152,17 @@ class Area_plot:
     # save_image: True or False as options. If it is True, save chart
     # savefig_bbox_inches: Bounding box in inches
     # file_name: the file name in saving image
+    header_list = self.data.columns.values.tolist()
+
+    if x_col_name is None:
+        x_col_name = ['index']
+    if y_col_name is None:
+        y_col_name = header_list
+    if paper_type is None:
+        paper_type = 'double'
+    if plot_type is None:
+        plot_type = 'Stack'
+
 
     single_column_conf={ 'plotwidth':8,#weight
                         'plotheight':6, #height
@@ -135,7 +170,7 @@ class Area_plot:
                         'backgrid':True,
                         'isframe':True,
                         'linewidth':2,
-                        'gridlinewidth':0.5,
+                        # 'gridlinewidth':0.5,
                         'labeltext_size':15,
                         'x_label':None,
                         'y_label':None,
@@ -162,7 +197,7 @@ class Area_plot:
                         'sort':True,
                         'file_name':'area_chart',
                         'savefig_bbox_inches':'tight',
-                        'file_name':'area_chart',
+
                         }  
     double_column_conf={ 'plotwidth':8,#weight
                         'plotheight':6, #height
@@ -199,7 +234,7 @@ class Area_plot:
                         'file_name':'area_chart',
                        
                         }
-                         
+    conf = []
     if paper_type == 'single':
       conf = single_column_conf
     elif paper_type == 'double':
@@ -215,11 +250,11 @@ class Area_plot:
     if conf['backgrid'] == True:
       ax_left.grid(linestyle="--", linewidth=conf['gridlinewidth'], color='gray', alpha=0.5)
             
-    # read file 
-    try:
-      data = self.read_file(file)
-    except Exception:
-      print('Sorry, this file does not exist, please check the file name')
+    # # read file
+    # try:
+    #   data = self.read_file(file,path)
+    # except Exception:
+    #   print('Sorry, this file does not exist, please check the file name')
  
  
     #plot
@@ -230,15 +265,15 @@ class Area_plot:
       if x_col_name[0] =='index':  
         ydata=[]
 
-        for i in data[y_col_name]:
-            ydata.append(data[i].tolist()) 
+        for i in self.data[y_col_name]:
+            ydata.append(self.data[i].tolist())
         # determine the number of y columns is more than critical value or not
         # if yes, using the setted color palette
         if len(y_col_name)<=conf['y_col_num']:        
-          ax_left.stackplot(data.index,ydata,colors=conf['Stack_colour_set'],labels=y_col_name,alpha=conf['alpha']) ##
+          ax_left.stackplot(self.data.index,ydata,colors=conf['Stack_colour_set'],labels=y_col_name,alpha=conf['alpha']) ##
         # if not, using the seaborn color palette
         else:
-          ax_left.stackplot(data.index,ydata,colors=conf['palette'],labels=y_col_name,alpha=conf['alpha'])
+          ax_left.stackplot(self.data.index,ydata,colors=conf['palette'],labels=y_col_name,alpha=conf['alpha'])
         # scale y axis to get more blank            
         ax_left_ylim = ax_left.get_ylim()
         ax_left.set_ylim(ax_left_ylim[0],ax_left_ylim[1]*conf['y_scale'])
@@ -246,15 +281,15 @@ class Area_plot:
       # if x colunm is not index
       else:
         ydata=[]
-        for i in data[y_col_name]:
-            ydata.append(data[i].tolist()) 
+        for i in self.data[y_col_name]:
+            ydata.append(self.data[i].tolist())
         # determine the number of y columns is more than critical value or not
         # if yes, using the setted color palette
         if len(y_col_name)<=conf['y_col_num']:         
-          ax_left.stackplot(data[x_col_name[0]],ydata,colors=conf['Stack_colour_set'],labels=y_col_name,alpha=conf['alpha'])
+          ax_left.stackplot(self.data[x_col_name[0]],ydata,colors=conf['Stack_colour_set'],labels=y_col_name,alpha=conf['alpha'])
         # if not, using the seaborn color palette  
         else:
-          ax_left.stackplot(data[x_col_name[0]],ydata,colors=conf['palette'],labels=y_col_name,alpha=conf['alpha'])
+          ax_left.stackplot(self.data[x_col_name[0]],ydata,colors=conf['palette'],labels=y_col_name,alpha=conf['alpha'])
         # scale y axis to get more blank    
         ax_left_ylim = ax_left.get_ylim()
         ax_left.set_ylim(ax_left_ylim[0],ax_left_ylim[1]*conf['y_scale']) 
@@ -265,7 +300,7 @@ class Area_plot:
       if x_col_name[0] =='index':
         ydata=[]
         # get the percentange of each part
-        data = data[y_col_name].divide(data[y_col_name].sum(axis=1), axis=0)
+        data = self.data[y_col_name].divide(self.data[y_col_name].sum(axis=1), axis=0)
         for i in data[y_col_name]:
             ydata.append(data[i].tolist()) 
         # determine the number of y columns is more than critical value or not
@@ -282,7 +317,7 @@ class Area_plot:
       # if x colunm is not index
       else:
         ydata=[]
-        data = data[y_col_name].divide(data[y_col_name].sum(axis=1), axis=0)
+        data = self.data[y_col_name].divide(self.data[y_col_name].sum(axis=1), axis=0)
 
         for i in data[y_col_name]:
           ydata.append(data[i].tolist()) 
@@ -302,21 +337,21 @@ class Area_plot:
         # data handling by using sort function
         if conf['sort'] == True:
           # if the input x coluns is index, the function return the sorted y columns and new index
-          y_col_name=self.sort(data,x_col_name,y_col_name)[0]
-          data.index=self.sort(data,x_col_name,y_col_name)[1]
+          y_col_name=self.sort(self.data,x_col_name,y_col_name)[0]
+          self.data.index=self.sort(self.data,x_col_name,y_col_name)[1]
         
         for i in range(0,len(y_col_name)):
           # determine the number of y columns is more than critical value or not
           # if yes, using the setted color palette
           if len(y_col_name)<=conf['y_col_num']:                     
-            ax_left.fill_between(data.index, data[y_col_name[i]], color=conf['Area_colour_set'][i],
+            ax_left.fill_between(self.data.index, self.data[y_col_name[i]], color=conf['Area_colour_set'][i],
                  alpha=0.7, label=y_col_name[i])
           # if not, using the seaborn color palette    
           else:
-            ax_left.fill_between(data.index, data[y_col_name[i]], color=conf['palette'][i],
+            ax_left.fill_between(self.data.index, self.data[y_col_name[i]], color=conf['palette'][i],
                  alpha=0.7, label=y_col_name[i])
           # draw the bounday line   
-          ax_left.plot(data.index, data[y_col_name[i]], color="Black", alpha=conf['alpha'], linewidth=conf['arealinewidth'])
+          ax_left.plot(self.data.index, self.data[y_col_name[i]], color="Black", alpha=conf['alpha'], linewidth=conf['arealinewidth'])
         # scale y axis to get more blank 
         ax_left_ylim = ax_left.get_ylim()         
         ax_left.set_ylim(ax_left_ylim[0],ax_left_ylim[1]*conf['y_scale'])
@@ -326,16 +361,16 @@ class Area_plot:
         #data handling by using sort function
         if conf['sort'] == True:
           # if the x column name is actual columns name, the function return sorted y columns name
-          y_col_name=self.sort(data,x_col_name,y_col_name)
+          y_col_name=self.sort(self.data,x_col_name,y_col_name)
         
         for i in range(0,len(y_col_name)):
           if len(y_col_name)<=conf['y_col_num']: 
-            ax_left.fill_between(data[x_col_name[0]], data[y_col_name[i]], color=conf['Area_colour_set'][i],
+            ax_left.fill_between(self.data[x_col_name[0]], self.data[y_col_name[i]], color=conf['Area_colour_set'][i],
                   alpha=conf['alpha'], label=y_col_name[i])
           else:
-            ax_left.fill_between(data[x_col_name[0]], data[y_col_name[i]], color=conf['palette'][i],
+            ax_left.fill_between(self.data[x_col_name[0]], self.data[y_col_name[i]], color=conf['palette'][i],
                   alpha=conf['alpha'], label=y_col_name[i])
-          ax_left.plot(data[x_col_name[0]], data[y_col_name[i]], color="Black", alpha=conf['alpha'], linewidth=conf['arealinewidth'])
+          ax_left.plot(self.data[x_col_name[0]], self.data[y_col_name[i]], color="Black", alpha=conf['alpha'], linewidth=conf['arealinewidth'])
         ax_left_ylim = ax_left.get_ylim()          
         ax_left.set_ylim(ax_left_ylim[0],ax_left_ylim[1]*conf['y_scale'])
     
@@ -378,7 +413,8 @@ class Area_plot:
       file_name=conf['file_name']
       # use function to get available file name
       file_newname = self.get_available_name(file_name)
-      plt.savefig(self.path_img+file_newname, bbox_inches=conf['savefig_bbox_inches'],dpi=600,format='jpg') 
+      # plt.savefig(self.path_img+file_newname, bbox_inches=conf['savefig_bbox_inches'],dpi=600,format='jpg')
+      plt.savefig(self.path_img + file_name )
      
     # showing the image
     plt.show()
