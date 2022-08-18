@@ -28,7 +28,7 @@ By coloring the area between the axis and the line, the area map not only emphas
 - Stacked area chart
 - Percentange area chart
 ```    
-from area import Area_plot
+from paperviz.area.area import Area_plot
 
 file_name = "museum_visitors_line.csv"
 a = Area_plot(file_name)
@@ -55,7 +55,7 @@ A bubble chart is a variation of a scatter chart in which the data points are re
 - Bubble plot with a color map
 
 ``` 
-from bubble import Bubble
+from from paperviz.bubble.bubble import Bubble
 
 file_name = "bubble_gdp.xlsx"
 b = Bubble(file_name)
