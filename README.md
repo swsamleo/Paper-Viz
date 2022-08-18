@@ -28,20 +28,11 @@ By coloring the area between the axis and the line, the area map not only emphas
 - Stacked area chart
 - Percentange area chart
 ```    
-from paperviz.area.area import Area
-area_model = Area()
-area_model.area(
-    file="Example_Date\\Area\\numseunm_visitors.csv"
-    x_col_name=['index'],
-    y_col_name=['Acila_Adobe','Firehose_Museum','Chinese_American_Museum','America_Tropical_Interpretive_Center'],
-    x_lable='Index',
-    y_lable='vistors number',
-    paper_type='double',
-    plot_type='Stack',
-    title='Number of vistors in four museums',
-    save_image=True,
-    file_name='Area chart'
-)
+from area import Area_plot
+
+file_name = "museum_visitors_line.csv"
+a = Area_plot(file_name)
+a.area(file_name)
 ```
 
 <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/Area_chart_2.jpg" width="200" height="160" alt="Multi-item area chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/Area_chart_1.jpg" width="200" height="160" alt="Stacked area chart"/>      <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/Area_chart.jpg" width="200" height="160" alt="Precentage area chart"/>
@@ -53,6 +44,8 @@ A bar chart is a classic way to visualise items based on counting or any given i
 - Error bar chart with two groups
 - Stacked bar chart with two groups
 
+
+
 <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/bar.jpg" width="210" height="160" alt="Single item bar chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/bar_grouped.jpg" width="210" height="160" alt="Multi-item grouped bar chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/bar_error.jpg" width="210" height="160" alt="Error bar chart with two groups"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/bar_stacked.jpg" width="210" height="160" alt="Stacked bar chart with two groups"/>
 
 ### [Bubble Plot](https://github.com/swsamleo/Paper-Viz/blob/master/paperviz/bubble/bubble.py)
@@ -60,6 +53,14 @@ A bubble chart is a variation of a scatter chart in which the data points are re
 - Bubble chart with each bubble name and sizes
 - Multi-item bubble plot with categorical colors
 - Bubble plot with a color map
+
+``` 
+from bubble import Bubble
+
+file_name = "bubble_gdp.xlsx"
+b = Bubble(file_name)
+b.bubble_plot(file_name)
+``` 
 
 <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/bubble/gdp.jpg" width="240" height="190" alt="Bubble chart with each bubble name and sizes"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/bubble/gdp_continent.jpg" width="240" height="190" alt="Multi-item bubble plot with categorical colors"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/bubble/gdp_colorbar.jpg" width="240" height="190" alt="Bubble plot with a color map"/>
 
@@ -69,6 +70,13 @@ A scatter plot is a basic chart used to study the relationship between two varia
 - Multi-item scatter plot
 - Scatter plot with multi-mark
 
+``` 
+from scatter import Scatter
+
+file_name = 'ice_cream.xlsx'
+a = Scatter(file_name)
+a.scatter_plot(file='ice_cream.xlsx')
+``` 
 
 <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/scatter/ice_cream.jpg" width="240" height="190" alt="Single item scatter plot"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/scatter/smoker.jpg" width="240" height="190" alt="Multi-item scatter plot"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/scatter/marker.jpg" width="240" height="190" alt="Scatter plot with multi-mark"/>
 
@@ -92,11 +100,28 @@ A histogram is a graphical display of data using bars of different heights. In a
 - Multi-item histogram which height means actual value
 - Stacked histogram
 
+
+``` 
+from histogram import hist_plot
+
+file_name = "2.xlsx"
+a = hist_plot(file_name)
+a.hist(file_name)
+``` 
+
 <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/histogram.jpg" width="210" height="170" alt="Single item histogram with a density curve"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/histogram_1.jpg" width="210" height="170" alt="Multi-item histogram"/>    <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/histogram_2.jpg" width="210" height="170" alt="Stacked histogram"/>
 
 ### [Heatmap](https://github.com/swsamleo/Paper-Viz/blob/master/paperviz/heatmap/heatmap.py)
 A heatmap is a graphical representation of data where the individual values contained in a matrix are represented as colors.
 - Heatmap with values in blue to yellow colours
+
+``` 
+from heatmap import heat_map
+
+file_name = '1.xlsx'
+a = heat_map(file_name)
+a.heat( file='1.xlsx')
+``` 
 
 <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/heatmap.jpg" width="210" height="170" alt="Heatmap with values in blue to yellow colours"/>        
 
@@ -107,6 +132,14 @@ Time series plots are used to show how a given metric changes over time.
 - Time series plot with multivariables
 - Time series plot with multiple plots
 - Time series plot with regional zoom-in
+
+``` 
+from time_series import TimeSeries
+
+file_name = "mortality.csv"
+ts = TimeSeries(file_name)
+ts.plot()
+``` 
 
 <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/Time_series/ts_max.png" width="200" height="160" alt="Time series plot with maximum, minimum values"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/Time_series/ts_peaks" width="200" height="160" alt="Time series plot with peaks and troughs"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/Time_series/ts_multivariable.png" width="200" height="160" alt="Time series plot with multivariables"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/Time_series/ts_multiple_plot.png" width="160" height="200" alt="Time series with multiple plots"/> <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/Time_series/ts_zoomin.png" width="300" height="200" alt="Time series plot with regional zoom-in"/>
 
@@ -127,6 +160,15 @@ A pie chart is the classic way of displaying composition. However, it is general
 - Pie chart with some labels exploration
 - Multi-layer pie chart
 
+
+``` 
+from pie import Pie_plot
+
+file_name = '1.xlsx'
+a = Pie_plot(file_name)
+a.Pie(file_name )
+``` 
+
 <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/pie_chart.jpg" width="320" height="290" alt="pie_chart_with_outside_annotation"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/pie_chart_1.jpg" width="320" height="290" alt="pie_chart_with_changeable_radius_and_fontsize"/>         <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/pie_chart_2.jpg" width="290" height="290" alt="pie_chart_with_label_exploration"/>     <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/pie_chart_3.jpg" width="290" height="290" alt="multi layer pie chart"/>
 
 
@@ -134,6 +176,14 @@ A pie chart is the classic way of displaying composition. However, it is general
 The pyramid can be used to show the distribution of groups sorted by number, or it can be used to show the step-by-step filtering of the population.
 - Pyramid with actual value annotation
 - Pyramid with sort functions
+
+``` 
+from pyramid import pyramid
+
+file_name = 'email_campaign_funnel.csv'
+a = pyramid(file_name)
+a.pyramid(file='email_campaign_funnel.csv')
+``` 
 
 <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/pyramid.jpg" width="230" height="200" alt="Population pyramid with annotation"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/pyramid_1.jpg" width="230" height="200" alt="Population pyramid with sort function"/>        
 
@@ -150,11 +200,27 @@ A radar chart is a graphical method of displaying multivariate data in the form 
 - Radar chart with multiple groups
 - Spider chart with multiple groups
 
+``` 
+from radar import Radar
+
+file_name = 'ronaldo.xlsx'
+a = Radar(file_name)
+a.radar_plot(file_name)
+``` 
+
 <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/radar/football.jpg" width="260" height="180" alt="Radar chart with single groups"/>  <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/radar/car.jpg" width="260" height="180" alt="Radar chart with multiple groups"/>  <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/radar/sick.jpg" width="260" height="180" alt="Spider chart with multiple groups"/>
 
 ### [Violin Plot](https://github.com/swsamleo/Paper-Viz/blob/master/paperviz/violin/violin.py)
 A violin plot is a method of plotting numeric data. It is similar to a box plot, with the addition of a rotated kernel density plot on each side.
 - Violin plot
 - category violin plot
+
+``` 
+from violin import Violin_plot
+
+file_name = '4.xlsx'
+a = Violin_plot(file_name)
+a.Violin(file='4.xlsx')
+``` 
 
 <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/violin_plot.jpg" width="210" height="170" alt="Violin plot"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/violin_plot_1.jpg" width="210" height="170" alt="category violin plot"/>
