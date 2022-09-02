@@ -139,6 +139,12 @@ A line chart or line plot or line graph or curve chart is a type of chart which 
 - Double axis line chart
 - Insetplot line chart
 
+``` 
+import paperviz
+model=paperviz.Line(path=paperviz.__path__[0])
+model.plot()
+``` 
+
 <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/multi-line.png" width="200" height="160" alt="Multi-line chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/multiline-different-markers.png" width="200" height="160" alt="Multi-item line chart with categorical colours and marks"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/double_axis_line.png" width="200" height="160" alt="Double axis line chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/inset_line_plot.png" width="200" height="160" alt="Insetplot line chart"/>
 
 ### [Pie Chart](https://github.com/swsamleo/Paper-Viz/blob/master/paperviz/pie/pie.py)
