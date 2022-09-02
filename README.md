@@ -53,11 +53,9 @@ A bubble chart is a variation of a scatter chart in which the data points are re
 - Bubble plot with a color map
 
 ``` 
-from from paperviz.bubble.bubble import Bubble
-
-file_name = "bubble_gdp.xlsx"
-b = Bubble(file_name)
-b.bubble_plot(file_name)
+import paperviz
+model=paperviz.Bubble(path=paperviz.__path__[0])
+model.bubble_plot()
 ``` 
 
 <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/bubble/gdp.jpg" width="240" height="190" alt="Bubble chart with each bubble name and sizes"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/bubble/gdp_continent.jpg" width="240" height="190" alt="Multi-item bubble plot with categorical colors"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/bubble/gdp_colorbar.jpg" width="240" height="190" alt="Bubble plot with a color map"/>
