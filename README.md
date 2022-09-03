@@ -32,6 +32,10 @@ import paperviz
 model=paperviz.Area(path=paperviz.__path__[0])
 model.plot()
 ```
+Configuration:
+-file: file name of your data source
+-x_col_name: ['x_column_name_a','x_column_name_b'...]
+-paper_type : 'single' or 'double'
 
 <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/Area_chart_2.jpg" width="200" height="160" alt="Multi-item area chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/Area_chart_1.jpg" width="200" height="160" alt="Stacked area chart"/>      <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/Area_chart.jpg" width="200" height="160" alt="Precentage area chart"/>
 
@@ -41,9 +45,17 @@ A bar chart is a classic way to visualise items based on counting or any given i
 - Multi-item grouped bar chart
 - Error bar chart with two groups
 - Stacked bar chart with two groups
-
-
-
+```    
+import paperviz
+model=paperviz.Bar(path=paperviz.__path__[0])
+model.plot()
+```
+Configuration:
+-file: file name of your data source
+-x_col_name: ['x_column_name_a','x_column_name_b'...]
+-paper_type : 'single' or 'double'
+-x_label: the content of x label
+-y_label: the content of y label
 <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/bar.jpg" width="210" height="160" alt="Single item bar chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/bar_grouped.jpg" width="210" height="160" alt="Multi-item grouped bar chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/bar_error.jpg" width="210" height="160" alt="Error bar chart with two groups"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/bar_stacked.jpg" width="210" height="160" alt="Stacked bar chart with two groups"/>
 
 ### [Bubble Plot](https://github.com/swsamleo/Paper-Viz/blob/master/paperviz/bubble/bubble.py)
