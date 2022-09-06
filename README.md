@@ -131,7 +131,7 @@ A heatmap is a graphical representation of data where the individual values cont
 
 ``` 
 import paperviz
-model=paperviz.Hist(path=paperviz.path[0])
+model=paperviz.Heat(path=paperviz.path[0])
 model.plot()
 ``` 
 
