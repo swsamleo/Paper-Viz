@@ -45,17 +45,9 @@ A bar chart is a classic way to visualise items based on counting or any given i
 - Multi-item grouped bar chart
 - Error bar chart with two groups
 - Stacked bar chart with two groups
-```    
-import paperviz
-model=paperviz.Bar(path=paperviz.__path__[0])
-model.plot()
-```
-Configuration:
-- file: file name of your data source
-- x_col_name: ['x_column_name_a','x_column_name_b'...]
-- paper_type : 'single' or 'double'
-- x_label: the content of x label
-- y_label: the content of y label
+
+
+
 <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/bar.jpg" width="210" height="160" alt="Single item bar chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/bar_grouped.jpg" width="210" height="160" alt="Multi-item grouped bar chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/bar_error.jpg" width="210" height="160" alt="Error bar chart with two groups"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/bar_stacked.jpg" width="210" height="160" alt="Stacked bar chart with two groups"/>
 
 ### [Bubble Plot](https://github.com/swsamleo/Paper-Viz/blob/master/paperviz/bubble/bubble.py)
@@ -69,6 +61,12 @@ import paperviz
 model=paperviz.Bubble(path=paperviz.__path__[0])
 model.bubble_plot()
 ``` 
+Configuration:
+- file: file name of your data source
+- x_col_name: The X column name
+- y_col_name: The Y column name
+- x_label: the content of x label
+- y_label: the content of y label
 
 <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/bubble/gdp.jpg" width="240" height="190" alt="Bubble chart with each bubble name and sizes"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/bubble/gdp_continent.jpg" width="240" height="190" alt="Multi-item bubble plot with categorical colors"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/bubble/gdp_colorbar.jpg" width="240" height="190" alt="Bubble plot with a color map"/>
 
@@ -83,6 +81,13 @@ import paperviz
 model=paperviz.Scat(path=paperviz.path[0])
 model.plot()
 ``` 
+
+Configuration:
+- file: file name of your data source
+- x_col_name: The X column name
+- y_col_name: The Y column name
+- x_label: x axis label
+- y_label: y axis label
 
 <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/scatter/ice_cream.jpg" width="240" height="190" alt="Single item scatter plot"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/scatter/smoker.jpg" width="240" height="190" alt="Multi-item scatter plot"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/scatter/marker.jpg" width="240" height="190" alt="Scatter plot with multi-mark"/>
 
@@ -113,6 +118,11 @@ model=paperviz.Hist(path=paperviz.path[0])
 model.plot()
 ``` 
 
+Configuration:
+- file: file name of your data source
+- x_col_name: The X column name
+- paper_type : 'single' or 'double' 
+
 <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/histogram.jpg" width="210" height="170" alt="Single item histogram with a density curve"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/histogram_1.jpg" width="210" height="170" alt="Multi-item histogram"/>    <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/histogram_2.jpg" width="210" height="170" alt="Stacked histogram"/>
 
 ### [Heatmap](https://github.com/swsamleo/Paper-Viz/blob/master/paperviz/heatmap/heatmap.py)
@@ -124,6 +134,10 @@ import paperviz
 model=paperviz.Hist(path=paperviz.path[0])
 model.plot()
 ``` 
+
+Configuration:
+- file: file name of your data source
+- paper_type : 'single' or 'double'
 
 <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/heatmap.jpg" width="210" height="170" alt="Heatmap with values in blue to yellow colours"/>        
 
@@ -141,6 +155,14 @@ model=paperviz.Time(path=paperviz.path[0])
 model.plot()
 ``` 
 
+Configuration:
+- file: file name of your data source
+- paper_type : 'single' or 'double'
+- x_col_name: name of the date variable
+- y_col_name: list of names for y variable
+- start_time: the start date on the timeline
+- end_time: the end date on the timeline
+
 <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/Time_series/ts_max.png" width="200" height="160" alt="Time series plot with maximum, minimum values"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/Time_series/ts_peaks" width="200" height="160" alt="Time series plot with peaks and troughs"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/Time_series/ts_multivariable.png" width="200" height="160" alt="Time series plot with multivariables"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/Time_series/ts_multiple_plot.png" width="160" height="200" alt="Time series with multiple plots"/> <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/Time_series/ts_zoomin.png" width="300" height="200" alt="Time series plot with regional zoom-in"/>
 
 ### [Line Chart](https://github.com/swsamleo/Paper-Viz/blob/master/paperviz/line/line.py)
@@ -156,6 +178,15 @@ import paperviz
 model=paperviz.Line(path=paperviz.__path__[0])
 model.plot()
 ``` 
+
+Configuration:
+- file: file name of your data source
+- x_col_name: ['index'] or ['x_column_name_a','x_column_name_b'...]
+- y_col_name: ['y_column_name_a','y_column_name_b'...]
+- x_label: x axis label
+- y_label: y axis label
+- legend_label: legend labels names
+- paper_type: 'single' or 'double'
 
 <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/multi-line.png" width="200" height="160" alt="Multi-line chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/multiline-different-markers.png" width="200" height="160" alt="Multi-item line chart with categorical colours and marks"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/double_axis_line.png" width="200" height="160" alt="Double axis line chart"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/inset_line_plot.png" width="200" height="160" alt="Insetplot line chart"/>
 
@@ -173,6 +204,10 @@ model=paperviz.Time(path=paperviz.path[0])
 model.plot()
 ``` 
 
+Configuration:
+- file: file name of your data source
+- paper_type: 'single' or 'double'
+
 <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/pie_chart.jpg" width="320" height="290" alt="pie_chart_with_outside_annotation"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/pie_chart_1.jpg" width="320" height="290" alt="pie_chart_with_changeable_radius_and_fontsize"/>         <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/pie_chart_2.jpg" width="290" height="290" alt="pie_chart_with_label_exploration"/>     <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/pie_chart_3.jpg" width="290" height="290" alt="multi layer pie chart"/>
 
 
@@ -187,6 +222,12 @@ model=paperviz.Pie(path=paperviz.path[0])
 model.plot()
 ``` 
 
+Configuration:
+- file: file name of your data source
+- x_col_name: ['index'] or ['x_column_name_a','x_column_name_b'...]
+- y_col_name: ['y_column_name_a','y_column_name_b'...]
+- paper_type: 'single' or 'double'
+
 <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/pyramid.jpg" width="230" height="200" alt="Population pyramid with annotation"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/pyramid_1.jpg" width="230" height="200" alt="Population pyramid with sort function"/>        
 
 ### [Box Plot](https://github.com/swsamleo/Paper-Viz/blob/master/paperviz/box/box.py)
@@ -194,11 +235,18 @@ A box plot or boxplot is a method for graphically depicting groups of numerical 
 - Multi-item box plot
 - Multi-item box plot with annotation
 
-``` 
+```    
 import paperviz
-model=paperviz.Pie(path=paperviz.path[0])
+model=paperviz.Bar(path=paperviz.__path__[0])
 model.plot()
-``` 
+```
+
+Configuration:
+- file: file name of your data source
+- x_col_name: ['x_column_name_a','x_column_name_b'...]
+- paper_type : 'single' or 'double'
+- x_label: the content of x label
+- y_label: the content of y label
 
 <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/box_plot.jpg" width="210" height="210" alt="Multi-item box plot"/>     <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/box_plot_1.jpg" width="210" height="210" alt="Multi-item box plot with annotation"/>
 
@@ -214,6 +262,13 @@ model=paperviz.Radar(path=paperviz.path[0])
 model.plot()
 ``` 
 
+Configuration:
+- file: file name of your data source, it support csv/excel,text.for example:'new_file.csv'
+- index_col: The index column. Normally it should be the name of the content
+- category_col: input list of attributes for the radar plot
+- y_col_name: input list of items
+- y_lim: The Y lim value
+            
 <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/radar/football.jpg" width="260" height="180" alt="Radar chart with single groups"/>  <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/radar/car.jpg" width="260" height="180" alt="Radar chart with multiple groups"/>  <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/radar/sick.jpg" width="260" height="180" alt="Spider chart with multiple groups"/>
 
 ### [Violin Plot](https://github.com/swsamleo/Paper-Viz/blob/master/paperviz/violin/violin.py)
@@ -226,5 +281,10 @@ import paperviz
 model=paperviz.Radar(path=paperviz.path[0])
 model.plot()
 ``` 
+
+Configuration:
+- file: file name of your data source
+- x_col_name: ['x_column_name_a','x_column_name_b'...]
+- paper_type : 'single' or 'double'
 
 <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/violin_plot.jpg" width="210" height="170" alt="Violin plot"/>        <img src="https://github.com/swsamleo/Paper-Viz/raw/master/Images/violin_plot_1.jpg" width="210" height="170" alt="category violin plot"/>
