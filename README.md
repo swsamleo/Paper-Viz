@@ -3,7 +3,7 @@
 # Data Visualisation - CRUISE Group
 Leader: Dr Wei Shao \
 Associated Leader: Dr Nan Gao \
-Team Member: Zhiqiu Chen, Ying Guo, Lanzhou Jiang, Junwei Ye, Haoran Ma, Zhengyuan Xu, Ziyan Peng
+Team Member: Zhiqiu Chen, Ying Guo, Lanzhou Jiang, Junwei Ye, Yufan Kang, Haoran Ma, Zhengyuan Xu, Ziyan Peng
 ## Professional Python graphs for Scientific Papers
 These visualisation codes show visualization modules by Seaborn and Matplotlib of Python. The codes were written by Cruise Group of RMIT University. Please refer to the following contents for details. If you're not into reading lenghty explanations at all, feel free to jump right into the commented code.
 # Dependencies
